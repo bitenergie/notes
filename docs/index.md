@@ -2,7 +2,7 @@
 aliases: 
 tags: 
 date created: Monday, February 6th 2023, 4:06:08 am
-date modified: Monday, February 6th 2023, 4:28:06 am
+date modified: Monday, February 6th 2023, 4:33:08 am
 ---
 
 # Obsidian Notes
@@ -19,4 +19,4 @@ The notes appear as pages within these sections. For example, [[Note 1]] in `Top
 
 ## Test for Bitenergie
 
-created gh-pages branch …
+created gh-pages branch
