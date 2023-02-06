@@ -2,7 +2,7 @@
 aliases: 
 tags: 
 date created: Monday, February 6th 2023, 4:06:08 am
-date modified: Monday, February 6th 2023, 4:09:36 am
+date modified: Monday, February 6th 2023, 4:28:06 am
 ---
 
 # Obsidian Notes
