@@ -232,7 +232,7 @@ Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen u
 | $140-200$                            | $100-140$                                           | $80-120$                | `erwünscht`       |
 | $<140$                               | $<100$                                              | $<80$                   | `nicht notwendig` |
 
-<iframe width="100%" height="500px" src="/plots/is_cooling.html" title="is Cooling"></iframe>
+<iframe width="100%" height="500px" src="https://bitenergie.github.io/notes/plots/is_cooling.html" title="is Cooling"></iframe>
 
 ### Resultate
 
@@ -248,7 +248,7 @@ Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen u
 | **Jährliche Volllaststunden der Raumkühlung** | ohne Fensterlüftung, ohne Prozessanlagen         | $t_C$    | $h$       | 225                             |
 | **Jährlicher Klimakältebedarf**               | ohne Fensterlüftung, ohne Prozessanlagen         | $Q_C$    | $kWh/m^2$ | -5.42  |
 
-<iframe width="100%" height="500px" src="/plots/cooling.html" title="Cooling"></iframe>
+<iframe width="100%" height="500px" src="https://bitenergie.github.io/notes/plots/cooling.html" title="Cooling"></iframe>
 
 ## :fontawesome-solid-fire: Raumheizung
 
@@ -261,7 +261,7 @@ Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen u
 
 #### Ergebnisse
 
-<iframe width="100%" height="500px" src="/plots/heating.html" title="Heating"></iframe>
+<iframe width="100%" height="500px" src="https://bitenergie.github.io/notes/plots/heating.html" title="Heating"></iframe>
 
 | **Name**                                                                           | Symbol       | Einheit       | Standardwert                                         |
 | ---------------------------------------------------------------------------------- | ------------ | ------------- | ---------------------------------------------------- |
@@ -299,15 +299,15 @@ Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen u
 
 ### Klima / Kälte
 
-<iframe width="100%" height="500px" src="/plots/ddy_august.html" title="Cooling"></iframe>
+<iframe width="100%" height="500px" src="https://bitenergie.github.io/notes/plots/ddy_august.html" title="Cooling"></iframe>
 
 ### Co_2
 
-<iframe width="100%" height="500px" src="/plots/co_2.html" title="co2"></iframe>
+<iframe width="100%" height="500px" src="https://bitenergie.github.io/notes/plots/co_2.html" title="co2"></iframe>
 
 ### Relative Feuchte (März)
 
-<iframe width="100%" height="500px" src="/plots/rel_hum.html" title="rel_moisture"></iframe>
+<iframe width="100%" height="500px" src="https://bitenergie.github.io/notes/plots/rel_hum.html" title="rel_moisture"></iframe>
 
 ## SVG Dateien
 
