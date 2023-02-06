@@ -1,4 +1,4 @@
-# 
+# MFH
 
 ``` mermaid
 graph LR
@@ -262,9 +262,6 @@ Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen u
 #### Ergebnisse
 
 <iframe width="100%" height="500px" src="https://bitenergie.github.io/notes/plots/heating.html" title="Heating"></iframe>
-
-
-<div w3-include-html="/plots/heating_cdn.html"></div>
 
 | **Name**                                                                           | Symbol       | Einheit       | Standardwert                                         |
 | ---------------------------------------------------------------------------------- | ------------ | ------------- | ---------------------------------------------------- |
