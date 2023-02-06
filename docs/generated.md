@@ -251,7 +251,7 @@ Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen u
 <iframe width="100%" height="500px" src="https://bitenergie.github.io/notes/plots/cooling.html" title="Cooling"></iframe>
 
 ## :fontawesome-solid-fire: Raumheizung
- 
+  
 | **Name**                                       | Symbol             | Einheit       | Standardwert                                      |
 | ---------------------------------------------- | ------------------ | ------------- | ------------------------------------------------- |
 | Zeitkonstante                                  | $t$                | $h$           | 221.19815668202764                     |
