@@ -25,6 +25,14 @@ theme:
 
     features:
       - navigation.footer
+
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://fosstodon.org/@squidfunk
+      
 # Extensions
 markdown_extensions:
   - footnotes
@@ -51,11 +59,6 @@ plugins:
   - roamlinks 
   - mermaid2
 
-extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/github
-      link: https://fosstodon.org/@squidfunk
 
 extra_javascript:
   - javascripts/mathjax.js

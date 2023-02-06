@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <script>
+      let urlValue = "material";
+      let e = {};
+
+      async function getUsers() {
+        try {
+          urlValue = e.options[e.selectedIndex].value;
+        } catch (error) {
+          console.log(error);
+        }
+
+        let url = "http://localhost:8000/" + urlValue + "/";
+        try {
+          let res = await fetch(url);
+          return await res.json();
+        } catch (error) {
+          console.log(error);
+        }
+      }
+
+      async function renderUsers() {
+        let users = await getUsers();
+        let html = "";
+        console.log(users);
+        Object.entries(users).forEach(([key, value]) => {
+          console.log(`${key} ${value}`);
+
+          
+          let htmlSegment = `<div class="user">
+                                   <h2>${key} = <span style="color:red"> ${value} </span></h2>
+                               </div>`;
+
+          html += htmlSegment;
+        });
+        let container = document.querySelector(".container");
+        container.innerHTML = html;
+        
+      }
+
+      renderUsers();
+      let logBtn = "";
+      
+
+      // Now we know that foo is defined, we are good to go.
+    </script>
+  </head>
+
+  <body>
+    <script></script>
+
+    <p id="demo">Fetch a file to change this text.</p>
+
+    <div class="container"></div>
+    <label for="cars">Choose url</label>
+
+    <select name="cars" id="urls">
+      <option value="acoustics">acoustics</option>
+      <option value="climate">climate</option>
+      <option value="dimension">dimension</option>
+      <option value="electricequipment">electricequipment</option>
+      <option value="heating">heating</option>
+      <option value="lighting">lighting</option>
+      <option value="material">material</option>
+      <option value="person">person</option>
+      <option value="scheduleruleannual">scheduleruleannual</option>
+      <option value="scheduleruleweek">scheduleruleweek</option>
+      <option value="siabasemodel">siabasemodel</option>
+      <option value="ventilation">ventilation</option>
+      <option value="space_types">space_types</option>
+      <option value="model">model</option>
+    </select>
+
+    <button id="log">Log</button>
+
+    <script>
+              logBtn = document.getElementById("log");
+      logBtn.addEventListener("click", renderUsers);
+
+
+      e = document.getElementById("urls");
+      var strUrl = e.options[e.selectedIndex].text;
+      urlValue = e.options[e.selectedIndex].value;
+      console.log(urlValue, strUrl);
+    </script>
+
+  </body>
+</html>
