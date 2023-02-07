@@ -5,8 +5,8 @@
 Die Spalte «Standardwert» enthält Parameter, welche typische Planungswerte
 für Neubauten u n d Gesamterneuerungen darstellen. Diese sollten i n der
 Planung verwendet werden, falls keine genaueren Angaben vorhanden sind.
-Die S t a n d a r d w e r t e w e r d e n i n d e r R e g e l v o n Einzel- o d e r S y s t e m a n f o r d e r u n -
-gen an den Grenzwert gemäss den zugrundeliegenden SIA-Normen u n d
+Die Standardwertewerden inderRegelvonEinzel- oder Systemanforderun-
+genan den Grenzwert gemäss den zugrundeliegenden SIA-Normen und
 -Merkblättern abgeleitet.
 
 ## «Zielwert»
@@ -15,8 +15,8 @@ gen an den Grenzwert gemäss den zugrundeliegenden SIA-Normen u n d
 Die Spalte «Zielwert» enthält Parameter, weiche optimale Planungswerte für
 Neubauten u n d Gesamterneuerungen darstellen. Diese sollten i n der Planung
 im Rahmen der technischen und wirtschaftlichen Möglichkeiten angestrebt
-w e r d e n . D i e Z i e l w e r t e w e r d e n i n d e r R e g e l v o n Einzel- o d e r S y s t e m a n f o r d e -
-rungen an den Zielwert gemäss den zugrundeliegenden SIA-Normen u n d
+werden.Die Zielwerte werden in der Regel von Einzel- oder Systemanforde-
+rungenan den Zielwert gemäss den zugrundeliegenden SIA-Normen und
 -Merkblättern abgeleitet.
 
 ## «Bestand»
@@ -26,17 +26,34 @@ hende, energetisch nicht erneuerte Gebäude mit Baujahr vor 1980 darstellen
 sollen. Diese können in der Planung als Ausgangswerte für bestehende Ge-
 bäude verwendet werden, solange keine genaueren Angaben vorhanden sind.
 
+
+## Heizung
+
+$H_T = (A_{op} * U_{op} + A_w * U_w) * 1,1$
+
+
+$H_V = n_{min,i} * V_i * p * c * A_{NGF}$
+
+- $n_{min,i}$ = thermisch wirksame Mindest-Luftwechselrate des beheizten Raumsgemäss SIA 384/2 , Tabelle 5 , in h“
+- Nettovolumen 
+
+$H_H = H_T+H_V$
+
+$\psi_{HL} = [(H_H * (\theta_{i,des,H} - \theta_e - \theta_{cor}))] / A_{NFG}$
+
+## Warmwasser
+
 $Q_w = [V_w * p_w * c_p * (\theta_w - \theta_{cw}) * d_p * f_p] / A_{p,NGF}$
 
 
-$V_W$ = Wasserbedarf pro Person
-$p_w$ = spezifische Dichte v o n Wasser: 1,00 kg/l 
-$c_p$ = spezifische Wärmekapazität von Wasser : 0,00116 k W h / (kg-K)
-$\theta_{W}$ = Solltemperatur des Warmwassers: 60 °C
-$\theta_{CW}$ = Kaltwassertemperatur: 10°C
-$d_p$ =  Nutzungstage pro Jahrgemäss 1.1.2.5
-$f_p$ = Jahresgleichzeitigkeit gemäss 1.1.2.7
-$A_{RNGF}$ =  Personenfläche
+- $V_W$ = Wasserbedarf pro Person
+- $p_w$ = spezifische Dichte v o n Wasser: 1,00 kg/l 
+- $c_p$ = spezifische Wärmekapazität von Wasser : 0,00116 k W h / (kg-K)
+- $\theta_{W}$ = Solltemperatur des Warmwassers: 60 °C
+- $\theta_{CW}$ = Kaltwassertemperatur: 10°C
+- $d_p$ =  Nutzungstage pro Jahrgemäss 1.1.2.5
+- $f_p$ = Jahresgleichzeitigkeit gemäss 1.1.2.7
+- $A_{RNGF}$ =  Personenfläche
 
 | Elek                                        | trische Energie |                      | Ther             | mische Ene        | rgie         |               |
 | ------------------------------------------- | --------------- | -------------------- | ---------------- | ----------------- | ------------ | ------------- |
