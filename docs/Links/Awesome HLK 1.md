@@ -7,11 +7,9 @@
 - [Blenderbim](https://blenderbim.org/) - Ein [Blender](https://blender.org) add-on das .ifc Dateine in Blender verfügbar macht BIM ❤️
 - [FreeCAD](https://freecad.org) - 3D CAD mit IFC support
 
-
 ## Tools
 
 ### Excel
-
 
 !!! warning
     - Makros in Excel sind ein beliebtes mittel um Schadsoftware zu verbreiten!
