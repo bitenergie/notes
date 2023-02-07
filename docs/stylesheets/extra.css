@@ -1,0 +1,20 @@
+.md-typeset__table {
+    min-width: 100%;
+}
+
+.md-grid {
+    max-width: 100%;
+    /* or 100%, if you want to stretch to full-width */
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
+
+@media print {
+
+
+    h3 {
+        page-break-before: always
+    }
+}

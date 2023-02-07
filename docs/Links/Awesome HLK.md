@@ -26,6 +26,12 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [EW-kollektor](https://hetag.ch)
 - [Hydra](nordweschweiz) Thermische Solaranlagen Hydraulik
 
+## Simulation
+
+- [Open Studio]()
+- [energyplus]()
+- [ladybug tools]()
+
 ### Lieferanten Tools
 
 - [PV rechner]() Polysun basierter
@@ -129,15 +135,19 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 
 ## Gebäude Automation
 
-- [bacnet yabe](https://sourceforge.net/projects/yetanotherbacnetexplorer/)
+### viewer
+
+- [Bacnet yabe](https://sourceforge.net/projects/yetanotherbacnetexplorer/)
+- [Modbus Tool](https://github.com/ClassicDIY/ModbusTool)
+
+### Editor 
+
 - [openplc Editor](https://openplcproject.com/download/)
 - [node red](https://nodered.org/)
-- [Home Assistant](https://www.home-assistant.io/)
-- [grafana](https://grafana.com/)
 - [4diac](https://www.eclipse.org/4diac/)
 
-## Energie Berechnungen
+### Monitoring
 
-- [Open Studio]()
-- [energyplus]()
-- [ladybug tools]()
+- [Home Assistant](https://www.home-assistant.io/)
+- [grafana](https://grafana.com/)
+
