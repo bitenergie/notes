@@ -6,14 +6,19 @@ graph RL
     A[(SIA2024)]
     end
     subgraph Beleuchtung
+    style Beleuchtung text-align:left
     A --->|Nutzstzunden| B(fa:fa-lightbulb SIA387/4)
-    B-. Leistung und Energie Beleuchtung .-> A
+    B --->|Leistung und Energie Beleuchtung| A
+    style B text-align:left
     end
     subgraph Lüftungs- und Klimaanlagen
+    style Heizlast text-align:left
     C --->|Lüftungsanlagen| A
+    style C text-align:left
     A --->|Volllaststunden| C(fa:fa-wind SIA382/1)
     end
     subgraph Heizlast
+    style Heizlast text-align:left
     E --->|Norm-Heizlast| A
     A --->|Rumlufttemperatur Auslegung Heizung| E[fa:fa-fire SIA384/2]
     end
@@ -26,6 +31,7 @@ graph RL
     subgraph Brauchwarmwasser
     G(fa:fa-glass-water SIA385/2) --->|Nutzwarmwasser| A
     end
+    style B text-align:left
 ```
 
 Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen und Anforderungen an den Energiebedarf gemäss SIA 380/2 können mit dynamischen Gebäudesimulationsprogrammen erstellt werden. Dabei gelten die Anforderungen der entsprechenden Normen. Wenn keine besseren Angaben vorliegen, sind für die folgenden Eingabedaten Standard-Raumnutzungsdaten gemäss Kapitel 2 zu verwenden:
