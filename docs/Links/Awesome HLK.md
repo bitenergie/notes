@@ -7,12 +7,7 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 
 # Software
 
-## Featured 💥
-
-- [Blenderbim](https://blenderbim.org/) - Ein [Blender](https://blender.org) add-on das .ifc Dateine in Blender verfügbar macht BIM ❤️
-- [FreeCAD](https://freecad.org) - 3D CAD mit IFC support
-
-## Tools
+## Haustechnik 
 
 ### Excel
 
@@ -40,25 +35,27 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [Grundfos]()
 - [Soltop]()
 
-### Office
+## Office
 
-- [onlyoffice](https://www.onlyoffice.com/de/)
+### Dokumente
+
+- [onlyoffice](https://www.onlyoffice.com/)
 - [libreoffice](https://de.libreoffice.org/)
-- [openoffice](https://www.openoffice.org/de/)
+- [openoffice](https://www.openoffice.org/)
 
-#### Kommunikation
+### Kommunikation
 
 - [jitsi](https://meet.jit.si/) video call
 - [signal]() chat
 - [Thunderbird]() Outlook Alternative
 
 
-#### Produktivität
+### Produktivität
 
 - [Powertoys]() Microsoft Tool Sammlung für schnelleres arbeiten
 - [flameshot]() Screenshoot tool mit Kommentar Funktion
 
-### 2D Vektorgrafik (`.svg` `.pdf` `.dxf` `.dwg`)
+## 2D Vektorgrafik (`.svg` `.pdf` `.dxf` `.dwg`)
 
 - [diagrams.net (früher Draw.io)](https://app.diagrams.net) Microsoft Visio alternative mit mehr Funktionalität Online und Desktop Version verfügbar
 - [excalidraw](https://excalidraw.com/) Online Whiteboard
@@ -68,14 +65,16 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [Librecad](https://librecad.org/) 2d CAD, abkömmling von QCAD
 
 - [pdfsam]()
+- [okular]()
+- [tabular]()
 
 
-### Bilder, Rastergrafik (`.jpeg`, `.png`)
+## Bilder, Rastergrafik (`.jpeg`, `.png`)
 
 - [Krita](https://krita.org/en/)
 - [Gimp](https://www.gimp.org/)
 
-### Video (`.mp4`, `.avi`, `webm`)
+## Video (`.mp4`, `.avi`, `webm`)
 
 - [HandBrake](https://handbrake.fr/) video converter
 - [Kdenlive](https://kdenlive.org/de/) editor
@@ -83,21 +82,21 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [openshot](https://www.openshot.org/) editor
 - [olive video editor](https://www.olivevideoeditor.org/) editor
 
-### Projektmanagement
+## Projektmanagement
 
 - [GanttProject](https://learn.osarch.org/subcategories/103)
 - [OpenProject](https://learn.osarch.org/subcategories/126) in Premium ver. IFC
 - [ProjectLibre](https://learn.osarch.org/subcategories/127)
 
-### GIS
+## GIS
 
 - [Qgis](https://www.qgis.org/de/site/)
 - [qfield](https://qfield.org/) 🇨🇭
 - [Blender Gis addon](https://github.com/domlysz/BlenderGIS)
 
-### 3D CAD / 3D-Modelierer
+## 3D CAD / 3D-Modelierer (`.ifc`, `.step`)
 
-#### IFC
+### IFC
 
 - [Blender](https://blender.org)
 	- [Bim add-on](https://blenderbim.org)
@@ -109,12 +108,12 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 	- [BCF add-on]()
 	- [BimxBem])()
 
-#### others
+### others
 
 - [Solvespace](https://solvespace.com/index.pl) 
 - [Sweet Home 3d](https://sweethome3d.com) 
 
-#### Viewer
+### Viewer
 
 - [Gbxml viewer](https://gbxml.org)
 - [IFC++](https://ifcquery.com/) Desktop
@@ -122,22 +121,20 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [ifc-Pipeline](https://view.ifcopenshell.org/) Webserver
 - [IFC.js](https://ifcjs.github.io/web-ifc-viewer/example/index) Webbrowser
 
-### IFC Tools
+## IFC Tools
 
-- [IFC Toolbox]()
+- [IFC Toolbox](https://bimmars.com/ifctoolbox_openbim/)
 
-### Gebäude Automation
+## Gebäude Automation
 
-- [Modbus Master]()
-- [Modbus Client]()
-- pymodbus
-- bacnet yabe
-- openplc Editor
-  - Scada web server
-- node red
-- [4diac]()
+- [bacnet yabe](https://sourceforge.net/projects/yetanotherbacnetexplorer/)
+- [openplc Editor](https://openplcproject.com/download/)
+- [node red](https://nodered.org/)
+- [Home Assistant](https://www.home-assistant.io/)
+- [grafana](https://grafana.com/)
+- [4diac](https://www.eclipse.org/4diac/)
 
-### Energie Berechnungen
+## Energie Berechnungen
 
 - [Open Studio]()
 - [energyplus]()
