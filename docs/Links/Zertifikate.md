@@ -1,4 +1,4 @@
-# Zertifikate / Normen
+# Zertifikate 
 
 ## Zertifikate
 
