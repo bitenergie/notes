@@ -1,7 +1,6 @@
 
 # Software
 
-![logo](https://avatars.githubusercontent.com/u/93076030?v=4)
 
 ## Featured 💥
 
@@ -13,9 +12,8 @@
 
 ### Excel
 
-```ad-attention
+!!! warning
 Makros in Excel sind ein beliebtes mittel um Schadsoftware zu verbreiten!
-```
 
 - [Wpesti](https:endk.ch) Wärmepumpen Jahresarbeitszahl Rechner
 - [Vergleichsrechner Stadt Zürich]() 

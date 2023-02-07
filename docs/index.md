@@ -5,20 +5,7 @@ date created: Monday, February 6th 2023, 4:06:08 am
 date modified: Monday, February 6th 2023, 5:13:54 am
 ---
 
-# Obsidian Notes
+# Notes
 
-Publish your public notes with MkDocs
+![logo](https://avatars.githubusercontent.com/u/93076030?v=4)
 
-## Hello World!
-
-The `index.md` in the `/docs` folder is the homepage you see here.
-
-The folders in `/docs` appear as the main sections on the navigation bar.
-
-The notes appear as pages within these sections. For example, [[Note 1]] in `Topic 1`
-
-## Test for Bitenergie
-
-created gh-pages branch
-
-works fine…
