@@ -63,7 +63,7 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [qcad]() 2d CAD
 - [Librecad]() 2d CAD, abkömmling von QCAD
 
-### Bilder, Rastergrafik (.jpeg, .png)
+### Bilder, Rastergrafik (`.jpeg`, `.png`)
 
 - [Krita]()
 - [Gimp]()
@@ -103,10 +103,10 @@ break…
 
 ### Bim Viewer
 
-- [IFC++]() Desktop
-- [xbim] Desktop mit bcf support
-- [ifc-Pipeline]() Webserver
-- [IFC.js]() Webbrowser
+- [IFC++](https://ifcquery.com/) Desktop
+- [xbim](https://docs.xbim.net/downloads/xbimxplorer.html) Desktop mit bcf support
+- [ifc-Pipeline](https://view.ifcopenshell.org/) Webserver
+- [IFC.js](https://ifcjs.github.io/web-ifc-viewer/example/index) Webbrowser
 - [Sloth]() BCF Viewer
 
 ### IFC Tools
@@ -126,5 +126,6 @@ break…
 
 ### Energie Berechnungen
 
-- Open Studio()
-
+- [Open Studio]()
+- [energyplus]()
+- [ladybug tools]()
