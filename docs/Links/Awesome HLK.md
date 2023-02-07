@@ -17,7 +17,6 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 ### Excel
 
 !!! warning
-
 	- Makros in Excel sind ein beliebtes mittel um Schadsoftware zu verbreiten!
 
 - [Wpesti](https://www.endk.ch/de/fachleute-1/hilfsmittel) Wärmepumpen Jahresarbeitszahl Rechner
@@ -56,21 +55,25 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 
 ### 2D Vektorgrafik (`.svg` `.pdf` `.dxf` `.dwg`)
 
-- [diagrams.net (früher Draw.io)]() Microsoft Visio alternative mit mehr Funktionalität Online und Desktop Version verfügbar
-- [excalidraw]() Online Whiteboard
-- [Inkscape]() Adobe Ilustrator Alternative, import/export von ``.pdf`` und `.dxf` Zeichnungen
+- [diagrams.net (früher Draw.io)](https://app.diagrams.net) Microsoft Visio alternative mit mehr Funktionalität Online und Desktop Version verfügbar
+- [excalidraw](https://excalidraw.com/) Online Whiteboard
+- [Inkscape](https://inkscape.org/de/) Adobe Ilustrator Alternative, import/export von ``.pdf`` und `.dxf` Zeichnungen
 - [Qelectrotech](https://qelectrotech.org/) Elektroschema (Hydraulikschema)
-- [qcad]() 2d CAD
-- [Librecad]() 2d CAD, abkömmling von QCAD
+- [qcad](https://www.qcad.org) 🇨🇭 2d CAD
+- [Librecad](https://librecad.org/) 2d CAD, abkömmling von QCAD
 
 ### Bilder, Rastergrafik (`.jpeg`, `.png`)
 
-- [Krita]()
-- [Gimp]()
+- [Krita](https://krita.org/en/)
+- [Gimp](https://www.gimp.org/)
 
 ### Video (`.mp4`, `.avi`, `webm`)
 
-break…
+- [HandBrake](https://handbrake.fr/) video converter
+- [Kdenlive](https://kdenlive.org/de/) editor
+- [shotcut](https://www.shotcut.org/features/) editor
+- [openshot](https://www.openshot.org/) editor
+- [olive video editor](https://www.olivevideoeditor.org/) editor
 
 ### Projektmanagement
 
@@ -80,7 +83,9 @@ break…
 
 ### GIS
 
-- [Qgis]()
+- [Qgis](https://www.qgis.org/de/site/)
+- [qfield](https://qfield.org/) 🇨🇭
+- [Blender Gis addon](https://github.com/domlysz/BlenderGIS)
 
 ### CAD / 3D-Modelierer
 
@@ -97,17 +102,18 @@ break…
 	- [BCF add-on]()
 	- [ODA file converter])() Support für dwg Dateien in Freecad
 
-- [Solvespace]()
+#### IFC
+
+- [Solvespace](https://solvespace.com/index.pl) 
+- [Sweet Home 3d](https://sweethome3d.com) 
+
+#### Viewer
+
 - [Gbxml viewer](https://gbxml.org)
-- [Sweet Home 3d](https://sweethome3d.com)
-
-### Bim Viewer
-
 - [IFC++](https://ifcquery.com/) Desktop
 - [xbim](https://docs.xbim.net/downloads/xbimxplorer.html) Desktop mit bcf support
 - [ifc-Pipeline](https://view.ifcopenshell.org/) Webserver
 - [IFC.js](https://ifcjs.github.io/web-ifc-viewer/example/index) Webbrowser
-- [Sloth]() BCF Viewer
 
 ### IFC Tools
 
