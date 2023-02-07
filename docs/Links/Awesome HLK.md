@@ -7,7 +7,7 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 
 # Software
 
-## Haustechnik 
+## Haustechnik
 
 ### Excel
 
@@ -63,6 +63,8 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [Qelectrotech](https://qelectrotech.org/) Elektroschema (Hydraulikschema)
 - [qcad](https://www.qcad.org) 🇨🇭 2d CAD
 - [Librecad](https://librecad.org/) 2d CAD, abkömmling von QCAD
+
+### pdf viewer
 
 - [pdfsam]()
 - [okular]()
