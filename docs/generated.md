@@ -56,7 +56,7 @@ Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen u
 - Auslegungswerte der relativen Raumluftfeuchte im Heiz- und im Kühlfall
 - spezifischer Aussenluft-Volumenstrom pro Person und pro Nettogeschossfläche.
 
-!!! note 
+!!! note
     - Benutze ++alt+left-button++ um einzelne Reihen und oder Kolummnen zu makrieren
     - Benutze ++right-button++ auf einem Symbol und kopiere es als `TeX` oder `MathML`
 
