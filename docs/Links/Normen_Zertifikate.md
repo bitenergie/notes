@@ -2,9 +2,15 @@
 
 ## Zertifikate
 
-- [Minergie](https://minergie.ch)
-- [GEAK](https://geak.ch)
+## Leed
+
 - [LEED](https://www.usgbc.org/)
+
+## Minergie
+
+- [Minergie zertifizieren](https://www.minergie.ch/de/zertifizieren/minergie/)
+- [Minergie-P zertifizieren](https://www.minergie.ch/de/zertifizieren/minergie-p/)
+- [Minergie-A zertifizieren](https://www.minergie.ch/de/zertifizieren/minergie-a/)
 
 ## Geak
 
@@ -23,7 +29,7 @@
 
 ### Formulare
 
--  [Übertragungsformular](https://www.geak.ch/media/fueb_uebertragungsformular_230101_geak.pdf)
+- [Übertragungsformular](https://www.geak.ch/media/fueb_uebertragungsformular_230101_geak.pdf)
 - [Dienstleistungsvertrag](https://www.geak.ch/media/fdie_dienstleistungsvertrag_230101_geak.pdf)
 - [Abnahmeprotokolle](https://www.geak.ch/media/fabn_abnahmeprotokolle_230101_geak.pdf)
 - [Bewerbungsformular](https://www.geak.ch/media/fbew_bewerbungsfomular_230101_geak.pdf)
