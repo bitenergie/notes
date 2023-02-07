@@ -1,53 +1,7 @@
----
-aliases: 
-tags: 
 
-date created: Saturday, January 22nd 2022, 1:00:25 pm
-date modified: Saturday, March 19th 2022, 8:50:11 pm
----
+# Software
 
-<div align="center">
-<!-- title -->
-
-<!--lint ignore no-dead-urls-->
-
-# Awesome HLKE ![Awesome](https://awesome.re/badge.svg)
-
-<!-- subtitle -->
-
-Linkliste mit Links zu Software, Dokumenten und Vereinen für die HLK Branche
-
-<!-- image -->
-
-<a href="Bitenergie.ch" target="_blank" rel="noopener noreferrer">
-  <img src="https://avatars.githubusercontent.com/u/93076030?v=4" />
-</a>
-
-## [created by Bitenergie.ch](https://bitenergie.ch)
-
-<!-- translations -->
-
-Translations: [🇬🇧 en](Awesome%20MEP.md)
-
-HLKSE steht für die Gewerke Heizung, Lüftung, Kälte, Sanitär und Elektro in der Gebäudetechnik.
-
-> Die hier vorgestellten Tools sind für die …. . Es werden nur Programme vorgestellt die unter einer [freien Lizenz](https://opensource.org) oder als Freeware angeboten werden.
-
-Legende: 🛑 Freeware | 📖 Doku | ❤️ Open source 
-
-</div>
-
-
-
-<!-- TOC -->
-
-
-
-```toc
-
-```
-
-<!-- CONTENT -->
+![logo](https://avatars.githubusercontent.com/u/93076030?v=4)
 
 ## Featured 💥
 
