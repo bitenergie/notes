@@ -28,7 +28,7 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [energytools.ch]()
 - [Pvopti](nordwesstscheiz)
 - [EWS](https://hetag.ch) Hydraulischer abgleich Erdwärmesonden
-- [EWkollektor](https://hetag.ch)
+- [EW-kollektor](https://hetag.ch)
 - [Hydra](nordweschweiz) Thermische Solaranlagen Hydraulik
 
 ### Lieferanten Tools
@@ -42,14 +42,19 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 
 ### Office
 
-- [onlyoffice]()
-- [libreoffice]()
-- [openoffice]()
-- [jitsi]()
-- [pdfsam]()
-- [Wiki]()
-- [Note]()
+- [onlyoffice](https://www.onlyoffice.com/de/)
+- [libreoffice](https://de.libreoffice.org/)
+- [openoffice](https://www.openoffice.org/de/)
+
+#### Kommunikation
+
+- [jitsi](https://meet.jit.si/) video call
+- [signal]() chat
 - [Thunderbird]() Outlook Alternative
+
+
+#### Produktivität
+
 - [Powertoys]() Microsoft Tool Sammlung für schnelleres arbeiten
 - [flameshot]() Screenshoot tool mit Kommentar Funktion
 
@@ -57,10 +62,13 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 
 - [diagrams.net (früher Draw.io)](https://app.diagrams.net) Microsoft Visio alternative mit mehr Funktionalität Online und Desktop Version verfügbar
 - [excalidraw](https://excalidraw.com/) Online Whiteboard
-- [Inkscape](https://inkscape.org/de/) Adobe Ilustrator Alternative, import/export von ``.pdf`` und `.dxf` Zeichnungen
+- [Inkscape](https://inkscape.org/de/) Adobe Ilustrator Alternative, import/export von `.pdf` und `.dxf` Zeichnungen
 - [Qelectrotech](https://qelectrotech.org/) Elektroschema (Hydraulikschema)
 - [qcad](https://www.qcad.org) 🇨🇭 2d CAD
 - [Librecad](https://librecad.org/) 2d CAD, abkömmling von QCAD
+
+- [pdfsam]()
+
 
 ### Bilder, Rastergrafik (`.jpeg`, `.png`)
 
@@ -87,22 +95,21 @@ date modified: Tuesday, February 7th 2023, 11:22:11 am
 - [qfield](https://qfield.org/) 🇨🇭
 - [Blender Gis addon](https://github.com/domlysz/BlenderGIS)
 
-### CAD / 3D-Modelierer
+### 3D CAD / 3D-Modelierer
 
 #### IFC
 
 - [Blender](https://blender.org)
 	- [Bim add-on](https://blenderbim.org)
-	- [Gis add-on](xxx)
 	- [Archipack]()
 	- [CAD add-on](xx)
 	- [Construction Lines](https://www.dndrawings.com/add-ons)
 - [Freecad](https://freecad.org)
 	- [Bimtester add-on]()
 	- [BCF add-on]()
-	- [ODA file converter])() Support für dwg Dateien in Freecad
+	- [BimxBem])()
 
-#### IFC
+#### others
 
 - [Solvespace](https://solvespace.com/index.pl) 
 - [Sweet Home 3d](https://sweethome3d.com) 
