@@ -1,34 +1,6 @@
 # MFH
 
 ```mermaid
-graph TD
-    subgraph Raumnutzung
-    A[(SIA2024)]
-    end
-    subgraph Beleuchtung
-    A --->|Nutzstzunden| B(fa:fa-lightbulb SIA387/4)
-    B-. Leistung und Energie Beleuchtung .-> A
-    end
-    subgraph Lüftungs- und Klimaanlagen
-    C --->|Lüftungsanlagen| A
-    A --->|Volllaststunden| C(fa:fa-wind SIA382/1)
-    end
-    subgraph Heizlast
-    E --->|Norm-Heizlast| A
-    A --->|Rumlufttemperatur Auslegung Heizung| E[fa:fa-fire SIA384/2]
-    end
-    subgraph Energetische Berechn.
-    A --->|Grenz-/Zielwert| D(SIA380/2)
-    end
-    subgraph Energie
-    F(SIA380/1) --->|u-Werte, Heizwärmebedarf| A
-    end
-    subgraph Brauchwarmwasser
-    G(fa:fa-glass-water SIA385/2) --->|Nutzwarmwasser| A
-    end
-```
-
-```mermaid
 graph RL
     subgraph Raumnutzung
     A[(SIA2024)]
