@@ -14,14 +14,11 @@
 !!! warning
     - Makros in Excel sind ein beliebtes mittel um Schadsoftware zu verbreiten!
 
-- [Wpesti](https:endk.ch) Wärmepumpen Jahresarbeitszahl Rechner
-- [Vergleichsrechner Stadt Zürich]() 
-- [Vergleichsrechner Energieschweiz]() 
-- [Vergleichsrechner HSLU]() 
-- [Rohrnetzrechner HSLU]() Rohrnetzrechner inkl. Komponenten
+- [Wpesti](https://www.endk.ch/de/fachleute-1/hilfsmittel) Wärmepumpen Jahresarbeitszahl Rechner
+- [Vergleichsrechner Stadt Zürich](https://www.stadt-zuerich.ch/hbd/de/index/hochbau/beratung/energie-gebaeudetechnik/planungshilfen-werkzeuge.html) 
+- [Vergleichsrechner HSLU](https://www.hslu.ch/de-ch/technik-architektur/ueber-uns/organisation/kompetenzzentren-und-forschungsgruppen/bau/gebaeudetechnik-und-energie/software-tools/) 
+- [Rohrnetzrechner HSLU](https://www.hslu.ch/de-ch/technik-architektur/ueber-uns/organisation/kompetenzzentren-und-forschungsgruppen/bau/gebaeudetechnik-und-energie/software-tools/) Rohrnetzrechner inkl. Komponenten
 - [energieschweiz tools]()
-- [bosy online]()
-- [hslu tools]()
 - [Sia380.1 endk]()
 - [energytools.ch]()
 - [Pvopti](nordwesstscheiz) 
@@ -30,7 +27,6 @@
 - [Hydra](nordweschweiz) Thermische Solaranlagen Hydraulik 
 
 ### Lieferanten Tools
-
 
 - [PV rechner]() Polysun basierter 
 - [Siemens HIT]()
@@ -126,19 +122,6 @@
 
 - Open Studio()
 
-## Dokumentationen, Bücher
-
-[⬆️ Index](#Inhalt)
-
-- Freebooks faktor verlag
-- Hetag
-- Leuchturm Projekte
-- HSLU Arbeiten
-- Fachartikel
-- Siemens Anleitungen
-- Kätetechnik Kunz kältetechnik
-- Bosy online
-- Energie Schweiz
 
 ## Datenbanken
 
@@ -149,90 +132,3 @@
 - materialsdb
 - swissdata
 - eu open
-
-## Normen | Zertifikate
-
-[⬆️ Index](#Inhalt)
-
-- [SIA](https://sia.ch) - Schweizerische Ingenieure und Architekten Norm
-- [SWKI - Die Planer](https:/die-planer.ch) Energie, Umwelt und Gebäudetechnik
-- [SN]()
-- [ENDK]()
-- [VDI]()
-- [DIN]()
-
-### Heizung Und Energie
-
-#### Schweiz 🇨🇭
-
-| Norm          | Bezeichnung                                                                                                                                             | Jahr | International |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ------------- |
-| SIA 108       | Vertrag                                                                                                                                                 |      |               |
-|               |                                                                                                                                                         |      |               |
-| SIA 180       | Wärmeschutz, Feuchteschutz und Raumklima in Gebäuden                                                                                                    | 2014 |               |
-| SIA 180.081   | Wärmetechnisches Verhalten von Fenstern, Türen und Abschlüssen - Berechnung des Wärmedurchgangskoeffizienten - Teil 2: Numerisches Verfahren für Rahmen | 2017 | ISO 10077-1   |
-| SIA 180.082   | Wärmetechnisches Verhalten von Fenstern, Türen und Abschlüssen - Berechnung des Wärmedurchgangskoeffizienten - Teil 2: Numerisches Verfahren für Rahmen | 2017 | ISO 10077-2   |
-| SIA 181       | Schallschutz im Hochbau                                                                                                                                 | 2020 |               |
-| SIA 380       | Grundlage                                                                                                                                               |      |               |
-| SIA 380.1     | Energie                                                                                                                                                 | 2016 |               |
-| SIA 382.2     | Heizlast                                                                                                                                                | 2020 | ENxxx         |
-| SIA 380/6     | Ews                                                                                                                                                     | 2020 |               |
-| SIA 2024      | Standardnutzung                                                                                                                                         |      |               |
-| SWKI 2002-1   | Wasser-Wärmespeicher                                                                                                                                    | 2003 |               |
-| SWKI 91-1     | Beund Entlüftung von Heizräumen                                                                                                                         | 1997 |               |
-| SWKI 98-1     | Messkonzept für Energie und Medien                                                                                                                      | 2002 |               |
-| SWKI BT102-01 | Wasserbeschaffenheit für Gebäudetechnik-Anlagen                                                                                                         | 2012 |               |
-| SWKI HE101-01 | Instandhaltung heizungstechnischer Anlagen                                                                                                              | 2016 |               |
-| SWKI HE301-01 | Sicherheitstechnische Einrichtungen für Heizungsanlagen                                                                                                 | 2020 |               |
-|               |                                                                                                                                                         |      |               |
-|               |                                                                                                                                                         |      |               |
-|               |                                                                                                                                                         |      |               |
-
-### Sanitär
-
-### Lüftung
-
-### Kälte
-
-### Elektro
-
-### Zertifikate
-
-- [Minergie](https://minergie.ch)
-- [GEAK](https://geak.ch)
-- [LEED](https://www.usgbc.org/)
-
-## Vereine
-
-[⬆️up](#Inhalt)
-
-- [Wärmepumpe Schweiz]()
-- [Wärmepumpe DE]()
-- Wärmepumpe AU
-- [Holz]()
-- [Gas]()
-- [Oel]()
-
-## Follow
-
-[⬆️up](#Inhalt)
-
-<!-- list people worth following on social sites (Twitter, LinkedIn, GitHub, YouTube etc.) -->
-
-### Other Awesome LIst
-
-- [osarch app Liste](https://learn.osarch.org/)
-
-### Community
-
-- [osarch](https://osarch.org)
-
-## Mithelfen
-
-[⬆️ Index](#Inhalt)
-
-[Contributions of any kind welcome, just follow the guidelines](contributing.md)
-
-### Contributors
-
-<!-- [Thanks goes to these contributors](https://github.com/TODO_YOUR_REPO_NAME_HERE/g
