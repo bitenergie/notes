@@ -1,43 +1,59 @@
 # MFH
 
 ```mermaid
-graph LR
-  subgraph Raumnutzungen
-  A{SIA2024} --->|Nutzstzunden| B(SIA387/4);
-  B --->|Leistung und Energie Beleuchtung| A;
-  A --->|Volllaststunden| C(SIA382/1);
-  C --->|Lüftungsanlagen| A;
-  A --->|Grenz-/Zielwert| D(SIA380/2);
-  A --->|Rumlufttemperatur Auslegung Heizung| E[SIA384/2];
-  E --->|Norm-Heizlast| A;
-  F(SIA380/1) --->|u-Werte, Heizwärmebedarf| A;
-  G(SIA385/2) --->|Nutzwarmwasser| A;
-  end
-  subgraph Gebäudekategorie
-  A ---->|Volllaststunden| H(SIA2056);
-  H --->|Energie Allgemeine Gebäudetechnik| I{SIA2024, Anhang F};
-  I --->|Energiebedarfswerte Vorprojekt | J(SIA2024);
-  end
+graph TD
+    subgraph Raumnutzung
+    A[(SIA2024)]
+    end
+    subgraph Beleuchtung
+    A --->|Nutzstzunden| B(fa:fa-lightbulb SIA387/4)
+    B-. Leistung und Energie Beleuchtung .-> A
+    end
+    subgraph Lüftungs- und Klimaanlagen
+    C --->|Lüftungsanlagen| A
+    A --->|Volllaststunden| C(fa:fa-wind SIA382/1)
+    end
+    subgraph Heizlast
+    E --->|Norm-Heizlast| A
+    A --->|Rumlufttemperatur Auslegung Heizung| E[fa:fa-fire SIA384/2]
+    end
+    subgraph Energetische Berechn.
+    A --->|Grenz-/Zielwert| D(SIA380/2)
+    end
+    subgraph Energie
+    F(SIA380/1) --->|u-Werte, Heizwärmebedarf| A
+    end
+    subgraph Brauchwarmwasser
+    G(fa:fa-glass-water SIA385/2) --->|Nutzwarmwasser| A
+    end
 ```
 
 ```mermaid
-graph TD
-  subgraph Raumnutzungen
-  A{SIA2024} --->|Nutzstzunden| B(SIA387/4);
-  B --->|Leistung und Energie Beleuchtung| A;
-  A --->|Volllaststunden| C(SIA382/1);
-  C --->|Lüftungsanlagen| A;
-  A --->|Grenz-/Zielwert| D(SIA380/2);
-  A --->|Rumlufttemperatur Auslegung Heizung| E[SIA384/2];
-  E --->|Norm-Heizlast| A;
-  F(SIA380/1) --->|u-Werte, Heizwärmebedarf| A;
-  G(SIA385/2) --->|Nutzwarmwasser| A;
-  end
-  subgraph Gebäudekategorie
-  A ---->|Volllaststunden| H(SIA2056);
-  H --->|Energie Allgemeine Gebäudetechnik| I{SIA2024, Anhang F};
-  I --->|Energiebedarfswerte Vorprojekt | J(SIA2024);
-  end
+graph RL
+    subgraph Raumnutzung
+    A[(SIA2024)]
+    end
+    subgraph Beleuchtung
+    A --->|Nutzstzunden| B(fa:fa-lightbulb SIA387/4)
+    B-. Leistung und Energie Beleuchtung .-> A
+    end
+    subgraph Lüftungs- und Klimaanlagen
+    C --->|Lüftungsanlagen| A
+    A --->|Volllaststunden| C(fa:fa-wind SIA382/1)
+    end
+    subgraph Heizlast
+    E --->|Norm-Heizlast| A
+    A --->|Rumlufttemperatur Auslegung Heizung| E[fa:fa-fire SIA384/2]
+    end
+    subgraph Energetische Berechn.
+    A --->|Grenz-/Zielwert| D(SIA380/2)
+    end
+    subgraph Energie
+    F(SIA380/1) --->|u-Werte, Heizwärmebedarf| A
+    end
+    subgraph Brauchwarmwasser
+    G(fa:fa-glass-water SIA385/2) --->|Nutzwarmwasser| A
+    end
 ```
 
 Komfortnachweise gemäss SIA 180 und SIA 382/1 sowie die Auslegung von Anlagen und Anforderungen an den Energiebedarf gemäss SIA 380/2 können mit dynamischen Gebäudesimulationsprogrammen erstellt werden. Dabei gelten die Anforderungen der entsprechenden Normen. Wenn keine besseren Angaben vorliegen, sind für die folgenden Eingabedaten Standard-Raumnutzungsdaten gemäss Kapitel 2 zu verwenden:
