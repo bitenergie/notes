@@ -34,7 +34,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://fosstodon.org/@squidfunk
-      
+
 # Extensions
 markdown_extensions:
   - footnotes
@@ -68,12 +68,13 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
+      toc_depth: 2
+  - pymdownx.details
 
 plugins:
   - search
   - roamlinks 
   - mermaid2
-
 
 extra_javascript:
   - javascripts/mathjax.js
