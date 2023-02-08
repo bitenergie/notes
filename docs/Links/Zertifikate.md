@@ -14,6 +14,8 @@
 
 ## Geak
 
+> stand: 08.02.2023
+
 ### Broschüre und Muster GEAK
 
 - [GEAK Broschüre](https://www.geak.ch/media/basisbroschuere_2021_a4_leporello_de_web.pdf)

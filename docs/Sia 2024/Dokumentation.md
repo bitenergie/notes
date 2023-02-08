@@ -2,22 +2,82 @@
 
 ## Zusammenfassung
 
+```mermaid
+graph RL
+    subgraph Raumnutzung
+    A[(SIA2024)]
+    end
+    subgraph Beleuchtung
+    style Beleuchtung text-align:left
+    A --->|Nutzstzunden| B(fa:fa-lightbulb SIA387/4)
+    B --->|Leistung und Energie Beleuchtung| A
+    style B text-align:left
+    end
+    subgraph Lüftungs- und Klimaanlagen
+    style Heizlast text-align:left
+    C --->|Lüftungsanlagen| A
+    style C text-align:left
+    A --->|Volllaststunden| C(fa:fa-wind SIA382/1)
+    end
+    subgraph Heizlast
+    style Heizlast text-align:left
+    E --->|Norm-Heizlast| A
+    A --->|Rumlufttemperatur Auslegung Heizung| E[fa:fa-fire SIA384/2]
+    end
+    subgraph Energetische Berechn.
+    A --->|Grenz-/Zielwert| D(SIA380/2)
+    end
+    subgraph Energie
+    F(SIA380/1) --->|u-Werte, Heizwärmebedarf| A
+    end
+    subgraph Brauchwarmwasser
+    G(fa:fa-glass-water SIA385/2) --->|Nutzwarmwasser| A
+    end
+    style B text-align:left
+```
+
+```mermaid
+
+flowchart TD
+    Eingabeparampeter --> Personenprofil & Wochenprofil & Jahresprofil & Geräteprofil & Dimensionen & Material & Temperaturen 
+````
+
+```mermaid
+
+flowchart TD
+    Resultate_Eingabeparampeter --> Person & Licht & Elektrizität & Lüftung & Person & Licht & Elektrizität & Lüftung
+    Person --> Heizen & Kühlen
+    Licht --> Heizen & Kühlen
+    Elektrizität --> Heizen & Kühlen
+    Lüftung --> Heizen & Kühlen
+``` 
+
+```mermaid
+
+stateDiagram-v2
+    Eingabe --> Profile Material Dimension 
+    Eingabe --> Licht
+    Eingabe --> Elektrizität
+    Eingabe --> Lüftung
+
+``` 
+
 > Leistung: Als Leistung wird die aufgewendete energie pro stunde    
 > Energie: Als energie wird eine über mehrere stunden anfallende Leistung bezeichnet 
 > In der Norm wird die energie entweder pro Jahr (8760 h) als kwh oder pro Tag (24h) in Wh angegeben.
 
+## Kategorien
 
-
-## Standardwert
+### Standardwert
 
 Die Spalte `Standardwert` enthält Parameter, welche typische Planungswerte für Neubauten und Gesamterneuerungen darstellen. Diese sollten in der Planung verwendet werden, falls keine genaueren Angaben vorhanden sind.
 Die Standardwertewerden inderRegelvonEinzel- oder Systemanforderungenan den Grenzwert gemäss den zugrundeliegenden SIA-Normen und Merkblättern abgeleitet.
 
-## «Zielwert»
+### «Zielwert»
 
 Die Spalte `Zielwert` enthält Parameter, weiche optimale Planungswerte für Neubauten und Gesamterneuerungen darstellen. Diese sollten in der Planung im Rahmen der technischen und wirtschaftlichen Möglichkeiten angestrebt werden.Die Zielwerte werden in der Regel von Einzel- oder Systemanforderungenan den Zielwert gemäss den zugrundeliegenden SIA-Normen und Merkblättern abgeleitet.
 
-## «Bestand»
+### «Bestand»
 
 Die Spalte `Bestand` enthält Parameter, welche typische Werte für bestehende, energetisch nicht erneuerte Gebäude mit Baujahr vor `1980` darstellen sollen. Diese können in der Planung als Ausgangswerte für bestehende Gebäude verwendet werden, solange keine genaueren Angaben vorhanden sind.
 
@@ -34,7 +94,7 @@ Produkt aus `Volllaststunden` pro Tag Anzahl `Nutzungstagen` pro Jahr und `Jahre
 
 **Nutzungstage pro Jahr:**
 
-$d_P= 365d — (52 * d_{Pr,w})$
+$d_P= 365d - (52 * d_{Pr,w})$
 
 - $d_{Pr,w}$ = Ruhetage pro Woche (0,1 oder 2 Tage)
 
