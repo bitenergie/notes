@@ -48,10 +48,12 @@ nav:
       - Sia 384-7/Tabelle.md
     - SIA 2024:
       - Sia2024/index.md
-      - 2028/Monat.md
       - Sia2024/Dokumentation.md
       - Sia2024/Resultate.md
       - Sia2024/generated.md
+    - SIA 2028:
+      - sia2028/index.md
+      - sia2028/monat.md
 
 extra_css:
   - ./stylesheets/extra.css
@@ -97,7 +99,8 @@ markdown_extensions:
       permalink: true
       toc_depth: 2
   - pymdownx.details
-
+  - attr_list
+  - md_in_html
 
 plugins:
   - search
