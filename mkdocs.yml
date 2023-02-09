@@ -30,7 +30,8 @@ theme:
 nav:
   - Home:
     - index.md
-  - Jupyter: generated/gallery/
+  - Jupyter: 
+    - Gallery: generated/gallery/
   - Energievollzug:
     - Energievollzug/Tabellen.md
   - Links:
@@ -40,7 +41,8 @@ nav:
     - Links/Normen.md
     - Links/Vereine.md
     - Links/Zertifikate.md
-  - SIA:
+  - SIA: 
+    - sia.md
     - Sia 380: 
       - Sia 380-1/Fenster.md
       - Sia 380-1/Grundlagen.md
@@ -101,7 +103,7 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
   - md_in_html
-
+    
 plugins:
   - search
   - roamlinks 
@@ -109,6 +111,28 @@ plugins:
   - gallery:
       examples_dirs: docs/examples          # path to your example scripts
       gallery_dirs: docs/generated/gallery  # where to save generated gallery
+      backreferences_dir: docs/generated/backreferences  # where to generate the back references summary
+      doc_module: ['mkdocs_gallery', 'numpy']
+      image_scrapers: matplotlib
+      within_subsection_order: FileNameSortKey
+
+      #  org: bitenergie
+      #  repo: notes
+      #   branch: gh-pages  # Use a branch that hosts your docs.
+      #   #binderhub_url: https://mybinder.org
+      #   dependencies: docs/binder_cfg/requirements.txt  # binder configuration files
+      #   # see https://mybinder.readthedocs.io/en/latest/using/config_files.html#config-files
+      #   # these will be copied to the .binder/ directory of the site.
+
+      #   #notebooks_dir: notebooks  # Notebooks for Binder will be copied to this dir (relative to built doc root).
+      #   #use_jupyter_lab: True     # Binder links will start Jupyter Lab instead of the Jupyter Notebook interface.
+      # # specify the order of examples to be according to filename
+      show_memory: True
+      matplotlib_animations: True
+      image_srcset: ['2x']
+
+
+
 
 extra_javascript:
   - javascripts/mathjax.js

@@ -197,11 +197,7 @@ ax.set_theta_zero_location("N")
 ax.set_theta_direction(-1)
 ax.set_rmax(90)
 
-plt.savefig("test.png", format="png")
 plt.show()
-
-# %%
-plt.savefig("test.svg", format="svg")
 
 # %%
 
@@ -273,14 +269,11 @@ class Photovoltaik:
         )
 
 
+# %% [markdown]
+# ## System
+# 
 
-# %%
-#path = "/Users/marco/Downloads/CHE_ZH_Zurich.AP.066700_TMYx/CHE_ZH_Zurich.AP.066700_TMYx.epw"
-#path = "/Users/marco/Downloads/tmy_47.359_8.536_2005_2020.epw"
-#path= "/Users/marco/Downloads/CHE_ZH_Zurich.Affoltern.066640_TMYx.2004-2018/CHE_ZH_Zurich.Affoltern.066640_TMYx.2004-2018.epw"
-#path= "/Users/marco/Downloads/CHE_GR_Disentis.Sedrun.067820_TMYx/CHE_GR_Disentis.Sedrun.067820_TMYx.epw"
-#path = "/Users/marco/Downloads/tmy_47.401_8.546_2005_2016.epw"
-path = "/Users/marco/Downloads/Zurich-Kloten_2013.epw"
+path = "Zurich-Kloten_2013.epw"
 import numpy as np
 
 

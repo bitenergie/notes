@@ -12,9 +12,18 @@
 }
 
 @media print {
-
-
     h3 {
         page-break-before: always
     }
 }
+
+code {
+    max-height: 30em;
+    background-color: transparent;
+  }
+
+.mkd-glr-script-out-disp code {
+    max-height: 30em;
+    background-color: transparent;
+  }
+

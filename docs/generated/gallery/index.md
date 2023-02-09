@@ -2,15 +2,16 @@
 
 # Python notebooks
 
+## Beispiele
 
 
-<div class="mkd-glr-thumbcontainer" tooltip="This is a general example demonstrating a Matplotlib plot output, embedded Markdown, the use of...">
+<div class="mkd-glr-thumbcontainer" tooltip="Base test with the sia 2024 model...">
     <!--div class="figure align-default" id="id1"-->
-        <img alt="Introductory example - Plotting sin" src="images/thumb/mkd_glr_plot_0_sin_thumb.png" />
+        <img alt="SIA2024 - Model" src="images/thumb/mkd_glr_model_thumb.png" />
         <p class="caption">
             <span class="caption-text">
-                <a class="reference internal" href="plot_0_sin">
-                    <span class="std std-ref">Introductory example - Plotting sin</span>
+                <a class="reference internal" href="model">
+                    <span class="std std-ref">SIA2024 - Model</span>
                 </a>
             </span>
             <!--a class="headerlink" href="#id1" title="Permalink to this image"></a-->
@@ -20,25 +21,11 @@
 
 <div class="mkd-glr-thumbcontainer" tooltip="PVWatts">
     <!--div class="figure align-default" id="id1"-->
-        <img alt="PVWatts" src="images/thumb/mkd_glr_pvwatt_thumb.png" />
+        <img alt="PVWatts" src="images/thumb/mkd_glr_plot_1_pvwatt_thumb.png" />
         <p class="caption">
             <span class="caption-text">
-                <a class="reference internal" href="pvwatt">
+                <a class="reference internal" href="plot_1_pvwatt">
                     <span class="std std-ref">PVWatts</span>
-                </a>
-            </span>
-            <!--a class="headerlink" href="#id1" title="Permalink to this image"></a-->
-        </p>
-    <!--/div-->
-</div>
-
-<div class="mkd-glr-thumbcontainer" tooltip="Base test with the sia 2024 model...">
-    <!--div class="figure align-default" id="id1"-->
-        <img alt="SIA2024 - Model" src="images/thumb/mkd_glr_model_thumb.png" />
-        <p class="caption">
-            <span class="caption-text">
-                <a class="reference internal" href="model">
-                    <span class="std std-ref">SIA2024 - Model</span>
                 </a>
             </span>
             <!--a class="headerlink" href="#id1" title="Permalink to this image"></a-->
