@@ -1,41 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Introductory example - Plotting sin
+SIA2024 - Model
 ===================================
 
-This is a general example demonstrating a Matplotlib plot output, embedded
-Markdown, the use of math notation and cross-linking to other examples. It would be
-useful to compare the [:fontawesome-solid-download: source Python file](./plot_0_sin.py)
-with the output below.
+Base test with the sia 2024 model...
 
-Source files for gallery examples should start with a triple-quoted header
-docstring. Anything before the docstring is ignored by Mkdocs-Gallery and will
-not appear in the rendered output, nor will it be executed. This docstring
-requires a Markdown header, which is used as the title of the example and
-to correctly build cross-referencing links.
-
-Code and embedded Markdown text blocks follow the docstring. The first block
-immediately after the docstring is deemed a code block, by default, unless you
-specify it to be a text block using a line of ``#``'s or ``#%%`` (see below).
-All code blocks get executed by Mkdocs-Gallery and any output, including plots
-will be captured. Typically, code and text blocks are interspersed to provide
-narrative explanations of what the code is doing or interpretations of code
-output.
-
-Mathematical expressions can be included as LaTeX, and will be rendered with
-MathJax. See
-[mkdocs-material](https://squidfunk.github.io/mkdocs-material/reference/mathjax)
-for configuration of your `mkdocs.yml` as well as for syntax details. For example,
-we are about to plot the following function:
-
-$$
-x \\rightarrow \\sin(x)
-$$
-
-Here the function $\sin$ is evaluated at each point the variable $x$ is defined.
-When including LaTeX in a Python string, ensure that you escape the backslashes
-or use a raw docstring. You do not need to do this in
-text blocks (see below).
 """
 
 

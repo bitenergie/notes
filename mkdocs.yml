@@ -28,14 +28,9 @@ theme:
       - navigation.tabs
 
 nav:
-  - Home: index.md
-  - generated/gallery  # This node will automatically be named and have sub-nodes.
-  - SIA 2024:
-    - Sia2024/index.md
-    - 2028/Monat.md
-    - Sia2024/Dokumentation.md
-    - Sia2024/Resultate.md
-    - Sia2024/generated.md
+  - Home:
+    - index.md
+  - Jupyter: generated/gallery/
   - Energievollzug:
     - Energievollzug/Tabellen.md
   - Links:
@@ -45,12 +40,18 @@ nav:
     - Links/Normen.md
     - Links/Vereine.md
     - Links/Zertifikate.md
-  - Sia 380: 
-    - Sia 380-1/Fenster.md
-    - Sia 380-1/Grundlagen.md
-  - Sia 384-7:
-    - Sia 384-7/Tabelle.md
-
+  - SIA:
+    - Sia 380: 
+      - Sia 380-1/Fenster.md
+      - Sia 380-1/Grundlagen.md
+    - Sia 384-7:
+      - Sia 384-7/Tabelle.md
+    - SIA 2024:
+      - Sia2024/index.md
+      - 2028/Monat.md
+      - Sia2024/Dokumentation.md
+      - Sia2024/Resultate.md
+      - Sia2024/generated.md
 
 extra_css:
   - ./stylesheets/extra.css

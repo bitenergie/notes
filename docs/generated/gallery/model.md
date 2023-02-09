@@ -13,56 +13,24 @@
     to download the full example code
 
 
-Introductory example - Plotting sin
+SIA2024 - Model
 ===================================
 
-This is a general example demonstrating a Matplotlib plot output, embedded
-Markdown, the use of math notation and cross-linking to other examples. It would be
-useful to compare the [:fontawesome-solid-download: source Python file](./plot_0_sin.py)
-with the output below.
+Base test with the sia 2024 model...
 
-Source files for gallery examples should start with a triple-quoted header
-docstring. Anything before the docstring is ignored by Mkdocs-Gallery and will
-not appear in the rendered output, nor will it be executed. This docstring
-requires a Markdown header, which is used as the title of the example and
-to correctly build cross-referencing links.
-
-Code and embedded Markdown text blocks follow the docstring. The first block
-immediately after the docstring is deemed a code block, by default, unless you
-specify it to be a text block using a line of ``#``'s or ``#%%`` (see below).
-All code blocks get executed by Mkdocs-Gallery and any output, including plots
-will be captured. Typically, code and text blocks are interspersed to provide
-narrative explanations of what the code is doing or interpretations of code
-output.
-
-Mathematical expressions can be included as LaTeX, and will be rendered with
-MathJax. See
-[mkdocs-material](https://squidfunk.github.io/mkdocs-material/reference/mathjax)
-for configuration of your `mkdocs.yml` as well as for syntax details. For example,
-we are about to plot the following function:
-
-$$
-x \rightarrow \sin(x)
-$$
-
-Here the function $\sin$ is evaluated at each point the variable $x$ is defined.
-When including LaTeX in a Python string, ensure that you escape the backslashes
-or use a raw docstring. You do not need to do this in
-text blocks (see below).
-
-<!-- GENERATED FROM PYTHON SOURCE LINES 43-45 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 12-14 -->
 
 ```{.python }
 from pprint import pprint
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 46-48 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 15-17 -->
 
 ## Schedule Day
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 50-85 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 19-54 -->
 
 ```{.python }
 from schedule_day import ScheduleDay
@@ -102,12 +70,12 @@ print(schedule.get_len())
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 86-88 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 55-57 -->
 
 ## schedule annual
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 90-113 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 59-82 -->
 
 ```{.python }
 from schedule_rule_annual import ScheduleRuleAnnual
@@ -135,12 +103,12 @@ schedule_annual
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 114-116 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 83-85 -->
 
 ## schedule week
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 118-136 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 87-105 -->
 
 ```{.python }
 from schedule_rule_week import ScheduleRuleWeek
@@ -163,12 +131,12 @@ schedule_week.get_annual_active_days()
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 137-139 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 106-108 -->
 
 ## Climate
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 141-155 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 110-124 -->
 
 ```{.python }
 from climate import Climate
@@ -187,12 +155,12 @@ climate.to_dict()
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 156-158 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 125-127 -->
 
 ## Dimension
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 160-178 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 129-147 -->
 
 ```{.python }
 from dimension import Dimension
@@ -215,12 +183,12 @@ dimension
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 179-181 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 148-150 -->
 
 ## material
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 183-198 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 152-167 -->
 
 ```{.python }
 from materials import Material
@@ -240,12 +208,12 @@ material_dict
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 199-201 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 168-170 -->
 
 ## Person
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 203-224 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 172-193 -->
 
 ```{.python }
 from person import Person
@@ -271,12 +239,12 @@ person
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 225-227 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 194-196 -->
 
 ## Electric
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 229-272 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 198-241 -->
 
 ```{.python }
 from electric_equipment import ElectricEquipment
@@ -324,7 +292,7 @@ electric_equipment
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 273-287 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 242-256 -->
 
 ## Light
 
@@ -341,7 +309,7 @@ electric_equipment
 - lighting_energy = 4.21
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 289-318 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 258-287 -->
 
 ```{.python }
 from lighting import Lighting
@@ -375,12 +343,12 @@ print(light)
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 319-321 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 288-290 -->
 
 ## Ventilation
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 323-348 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 292-317 -->
 
 ```{.python }
 from ventilation import Ventilation
@@ -410,12 +378,12 @@ ventilation.to_dict()
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 349-351 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 318-320 -->
 
 ## Heating
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 353-366 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 322-335 -->
 
 ```{.python }
 from heating import Heating
@@ -433,7 +401,7 @@ print(heating)
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 367-373 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 336-342 -->
 
 ## SIA 380
 
@@ -442,7 +410,7 @@ TO-DO:
 -
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 375-411 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 344-380 -->
 
 ```{.python }
 from energy import Sia380
@@ -483,7 +451,7 @@ df_energy.round(1)
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 412-418 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 381-387 -->
 
 ```{.python }
 delta = [round(25 - i, 1) for i in temps]
@@ -494,7 +462,7 @@ pd.DataFrame(energy_cooling).sum()
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 419-422 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 388-391 -->
 
 ```{.python }
 pd.DataFrame(energy_cooling)
@@ -502,7 +470,7 @@ pd.DataFrame(energy_cooling)
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 423-501 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 392-470 -->
 
 ```{.python }
 from pprint import pprint
@@ -585,7 +553,7 @@ with open("../mkdocs_frontend/docs/plots/heating.json", "w") as f:
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 502-522 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 471-491 -->
 
 ```{.python }
 df_c = pd.DataFrame(energy_cooling, index=index["month"])
@@ -610,7 +578,7 @@ df_energy.round(1)*3.6
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 523-581 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 492-550 -->
 
 ```{.python }
 from moisture import CO2, MaxRelativeMoisture, RelativeMoisture
@@ -673,7 +641,7 @@ print(rel_mois.rel_humidity())
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 582-586 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 551-555 -->
 
 ```{.python }
 max_rel = MaxRelativeMoisture(rel_moisture, air_temperature, temperature)
@@ -682,7 +650,7 @@ print(max_rel.max_relative_humidity())
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 587-650 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 556-619 -->
 
 ```{.python }
 
@@ -750,7 +718,7 @@ df.transpose()
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 651-692 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 620-661 -->
 
 ```{.python }
 schedule_day = [
@@ -796,7 +764,7 @@ print(f"{co2.day_three()    =   } ppm")
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 693-752 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 662-721 -->
 
 ```{.python }
 import plotly.graph_objects as go
@@ -860,12 +828,12 @@ df.transpose()
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 753-755 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 722-724 -->
 
 ## design day august
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 757-865 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 726-834 -->
 
 ```{.python }
 from design_day import DesignDay
@@ -978,7 +946,7 @@ print(f"{dd.cooling_load()          =   }\n")
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 866-905 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 835-874 -->
 
 ```{.python }
 df = pd.DataFrame(dd.get_load_table())
@@ -1022,7 +990,7 @@ df.transpose()
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 906-939 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 875-908 -->
 
 ```{.python }
 import plotly.graph_objects as go
@@ -1060,12 +1028,12 @@ fig.write_html(file="../mkdocs_frontend/docs/plots/is_cooling.html", config=conf
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 940-942 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 909-911 -->
 
 ## Model 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 944-1131 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 913-1100 -->
 
 ```{.python }
 from sia_base_model import Model
@@ -1257,7 +1225,7 @@ base_model_lite.to_dict()
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 1132-1184 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 1101-1153 -->
 
 ```{.python }
 import json
@@ -1314,7 +1282,7 @@ model_dict
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 1185-1203 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 1154-1172 -->
 
 ```{.python }
 
@@ -1337,11 +1305,11 @@ print(generated_md)
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 1204-1205 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 1173-1174 -->
 
 pprint(model_dict)
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 1205-1209 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 1174-1178 -->
 
 ```{.python }
 print(json.dumps(m, sort_keys=True,  indent=2, ensure_ascii=False))
@@ -1350,7 +1318,7 @@ print(json.dumps(m, sort_keys=True,  indent=2, ensure_ascii=False))
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 1210-1219 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 1179-1188 -->
 
 ```{.python }
 
@@ -1364,7 +1332,7 @@ print(openapi_json)
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 1220-1224 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 1189-1193 -->
 
 ```{.python }
 pprint(model_dict)
@@ -1373,7 +1341,7 @@ pprint(model_dict)
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 1225-1246 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 1194-1215 -->
 
 ```{.python }
 
