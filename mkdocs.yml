@@ -1,6 +1,5 @@
 site_name: Notes by Bitenergie
 
-
 theme:
     name: 'material'
     palette:
@@ -25,6 +24,33 @@ theme:
 
     features:
       - navigation.footer
+      - navigation.instant
+      - navigation.tabs
+
+nav:
+  - Home: index.md
+  - generated/gallery  # This node will automatically be named and have sub-nodes.
+  - SIA 2024:
+    - Sia2024/index.md
+    - 2028/Monat.md
+    - Sia2024/Dokumentation.md
+    - Sia2024/Resultate.md
+    - Sia2024/generated.md
+  - Energievollzug:
+    - Energievollzug/Tabellen.md
+  - Links:
+    - Links/Awesome HLK.md
+    - Links/Datenbanken.md
+    - Links/Dokumente.md
+    - Links/Normen.md
+    - Links/Vereine.md
+    - Links/Zertifikate.md
+  - Sia 380: 
+    - Sia 380-1/Fenster.md
+    - Sia 380-1/Grundlagen.md
+  - Sia 384-7:
+    - Sia 384-7/Tabelle.md
+
 
 extra_css:
   - ./stylesheets/extra.css
@@ -71,10 +97,14 @@ markdown_extensions:
       toc_depth: 2
   - pymdownx.details
 
+
 plugins:
   - search
   - roamlinks 
   - mermaid2
+  - gallery:
+      examples_dirs: docs/examples          # path to your example scripts
+      gallery_dirs: docs/generated/gallery  # where to save generated gallery
 
 extra_javascript:
   - javascripts/mathjax.js
