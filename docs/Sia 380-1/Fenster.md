@@ -27,6 +27,7 @@ $$
 - $f_{S3,r}$ = Verschattungsfaktor rechte Seitenblende
 
 
+
 #### Horizontale Flächen
 
 Für Fenster in horizontalen Flächen wird (bis zu einer Neigung von 60 °) nur der Verschattungsfaktor Horizont fS1 gemäss Norm SIA 380/1:2016, 3.5.4.13.4 angewendet. Der Horizontwinkel wird für alle vier Himmelsrichtungen bezüglich Fenstermitte bestimmt, wobei die Beschattung durch das Gebäude selbst berücksichtigt wird. Der Verschattungsfaktor fS ergibt sich dann aus der Multiplikation der Werte für die vier Himmelsrichtungen.
@@ -50,6 +51,17 @@ Der Verschattungsfaktor «Horizont» für umliegende Gebäude, für das eigene G
   <figcaption>Horizont Grundriss</figcaption>
 </figure>
 
+| Horizon angle | Süd  | Ost, West | Nord |
+|---------------|------|-----------|------|
+| 0°            | 1,00 | 1,00      | 1,00 |
+| 10°           | 0,96 | 0,94      | 1,00 |
+| 20°           | 0,82 | 0,81      | 0,97 |
+| 30°           | 0,59 | 0,68      | 0,94 |
+| 40°           | 0,45 | 0,60      | 0,90 |
+| 50°           | 0,36 | 0,50      | 0,86 |
+| 60°           | 0,27 | 0,40      | 0,82 |
+| 70°           | 0,19 | 0,30      | 0,78 |
+
 
 #### Verschattungsfaktor Überhang $f_{s2}$
 
@@ -59,8 +71,18 @@ Der Verschattungsfaktor «Horizont» für umliegende Gebäude, für das eigene G
 </figure>
 
 
+| Overhang angle | Süd  | Ost, West | Nord |
+|----------------|------|-----------|------|
+| 0°             | 1,00 | 1,00      | 1,00 |
+| 15°            | 0,95 | 0,95      | 0,96 |
+| 30°            | 0,91 | 0,89      | 0,91 |
+| 45°            | 0,75 | 0,77      | 0,80 |
+| 60°            | 0,52 | 0,59      | 0,66 |
+| 75°            | 0,26 | 0,34      | 0,48 |
 
-#### Verschattungsfaktor Überhang $f_{s2}$
+
+
+#### Verschattungsfaktor seitenblende $f_{s2}$
 
 
 
@@ -83,6 +105,17 @@ Der Verschattungsfaktor «Horizont» für umliegende Gebäude, für das eigene G
   ![Fenster](assets/Seitenblende_Loggia_Aussen.svg){ width="500" }
   <figcaption>Seitenblende Loggia Aussen</figcaption>
 </figure>
+
+| Side panel | Orientierung der Fassade |           |      |
+|------------|--------------------------|-----------|------|
+| Angle      | Süd                      | Ost, West | Nord |
+| 0°         | 1,00                     | 1,00      | 1,00 |
+| 15°        | 0,97                     | 0,96      | 1,00 |
+| 30°        | 0,94                     | 0,92      | 1,00 |
+| 45°        | 0,84                     | 0,84      | 1,00 |
+| 60°        | 0,72                     | 0,75      | 1,00 |
+| 75°        | 0,57                     | 0,65      | 1,00 |
+
 
 ## Fenster Neubau
 

@@ -28,9 +28,7 @@ theme:
       - navigation.tabs
 
 nav:
-  - Home:
-    - index.md
-    - _static/index.html
+  - Home: index.md
   - Jupyter: 
     - Gallery: generated/gallery/
   - Energievollzug:
@@ -64,9 +62,7 @@ extra_css:
   
 extra:
   generator: false
-  social:
-    - icon: fontawesome/brands/github
-      link: https://fosstodon.org/@squidfunk
+
 
 # Extensions
 markdown_extensions:
