@@ -5,8 +5,8 @@ hide:
 ---
 # Notes
 
-!!! danger 
-  Die Werte sind nicht auf Richtigkeit geprüft!
+!!! danger
+    Die Werte sind nicht auf Richtigkeit geprüft!
 
 <!-- ![logo](https://avatars.githubusercontent.com/u/93076030?v=4)
 
