@@ -26,7 +26,7 @@ theme:
       - navigation.footer
       - navigation.instant
       - navigation.tabs
-      
+
 nav:
   - Home: index.md
   - Jupyter: 
@@ -39,7 +39,6 @@ nav:
     - Links/Vereine.md
     - Links/Zertifikate.md
   - Normen: 
-    - sia.md
     - Sia 380-1: 
       - Sia 380-1/Fenster.md
       - Sia 380-1/Grundlagen.md
@@ -52,7 +51,6 @@ nav:
       - Sia2024/Resultate.md
       - Sia2024/generated.md
     - SIA 2028:
-      - sia2028/index.md
       - sia2028/monat.md
     - Energievollzug:
       - Energievollzug/Tabellen.md
@@ -131,8 +129,6 @@ plugins:
       show_memory: True
       matplotlib_animations: True
       image_srcset: ['2x']
-
-
 
 
 extra_javascript:
