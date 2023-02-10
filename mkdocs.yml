@@ -30,6 +30,7 @@ theme:
 nav:
   - Home:
     - index.md
+    - _static/index.html
   - Jupyter: 
     - Gallery: generated/gallery/
   - Energievollzug:
@@ -43,9 +44,10 @@ nav:
     - Links/Zertifikate.md
   - SIA: 
     - sia.md
-    - Sia 380: 
+    - Sia 380-1: 
       - Sia 380-1/Fenster.md
       - Sia 380-1/Grundlagen.md
+      - Sia 380-1/wärmebrücken.md
     - Sia 384-7:
       - Sia 384-7/Tabelle.md
     - SIA 2024:

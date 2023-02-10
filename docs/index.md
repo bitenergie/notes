@@ -1,11 +1,46 @@
 ---
-aliases: 
-tags: 
-date created: Monday, February 6th 2023, 4:06:08 am
-date modified: Monday, February 6th 2023, 5:13:54 am
+hide:
+  - navigation
+  - toc
 ---
-
 # Notes
 
 ![logo](https://avatars.githubusercontent.com/u/93076030?v=4)
 
+<style>
+.parent {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    text-align: center;
+    font-size: 21px;
+}
+
+img_card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+</style>
+
+
+<div class="parent">
+     <img id="img_card" style="margin: auto" src="https://avatars.githubusercontent.com/u/93076030?v=4"> </img>
+          <img id="img_card" style="margin: auto" src="https://avatars.githubusercontent.com/u/93076030?v=4"> </img>
+    <p> 
+    test1
+     </p>
+    <p> 
+    test2
+     </p>
+    <p> 
+    test3
+     </p>
+    <p> 
+    test4
+     </p>
+</div> 

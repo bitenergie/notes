@@ -5,9 +5,6 @@
         <g transform="matrix(2,0,0,2,6696.86,0)">
             <rect id="Page-6" serif:id="Page 6" x="0" y="0" width="595.276" height="841.89" style="fill:none;"/>
             <g id="Page-61" serif:id="Page 6">
-                <g transform="matrix(1,0,0,1,0,-76.581)">
-                    <rect x="25.512" y="404.261" width="297.071" height="109.949" style="fill:rgb(230,231,232);"/>
-                </g>
                 <g>
                     <clipPath id="_clip1">
                         <rect x="135.638" y="329.417" width="186.944" height="103.411" clip-rule="nonzero"/>
@@ -51,9 +48,9 @@
                         </g>
                     </g>
                 </g>
-                <text x="143.912px" y="339.58px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:8px;fill:rgb(35,31,32);">U-<tspan x="152.192px 154.336px 158.704px 161.288px 167.872px 169.568px 174.376px 178.744px 182.664px 184.808px 190.952px 195.32px 200.128px 204.496px 208.864px " y="339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px ">förmiges Gebäud</tspan>e</text>
-                <text x="265.461px" y="339.58px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:8px;fill:rgb(35,31,32);">Innenhof</text>
-                <text x="235.843px" y="429.226px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:8px;fill:rgb(35,31,32);">Verschattung «Horizont»</text>
+                <text x="143.912px" y="339.58px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:8px;fill:rgb(255,0,57);">U-<tspan x="152.192px 154.336px 158.704px 161.288px 167.872px 169.568px 174.376px 178.744px 182.664px 184.808px 190.952px 195.32px 200.128px 204.496px 208.864px " y="339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px 339.58px ">förmiges Gebäud</tspan>e</text>
+                <text x="265.461px" y="339.58px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:8px;fill:rgb(255,0,57);">Innenhof</text>
+                <text x="235.843px" y="429.226px" style="font-family:'Helvetica-Light', 'Helvetica', sans-serif;font-weight:300;font-size:8px;fill:rgb(255,0,57);">Verschattung «Horizont»</text>
                 <g transform="matrix(1,0,0,1,218.664,426.775)">
                     <path d="M0,0L13.117,0" style="fill:none;fill-rule:nonzero;stroke:rgb(238,48,53);stroke-width:0.5px;"/>
                 </g>
