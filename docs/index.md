@@ -5,7 +5,10 @@ hide:
 ---
 # Notes
 
-![logo](https://avatars.githubusercontent.com/u/93076030?v=4)
+!!! danger 
+  Die Werte sind nicht auf Richtigkeit geprüft!
+
+<!-- ![logo](https://avatars.githubusercontent.com/u/93076030?v=4)
 
 <style>
 .parent {
@@ -43,4 +46,4 @@ img_card {
     <p> 
     test4
      </p>
-</div> 
+</div>  -->

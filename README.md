@@ -1,30 +1,9 @@
 # Notes by Bitenergie
 
-## Quick start
+## Quick info
 
-1. Create a **new github repository using this template**. Click the green button at the top or use [this link](https://github.com/jobindjohn/obsidian-publish-mkdocs/generate). 
+Personal notes about building energy and MEP. 
 
-![](2021-11-22-22-54-02.png)
+## Credits
 
-2.  **Give a name** to your repository. By default your notes will be published at `<https://username.github.io/repo-name/>`
-     - Copy only the `main` branch while creating the repo from the template
-3. **Clone** the repository you generated **into your Obsidian folder/vault.**
-4. **Move your notes** that you would like to make public to the `repo-name/docs` folder.
-    - Easiest way to do this would be using drag and drop within Obsidian
-5. Commit and **push** the changes. Github actions will take care of the rest, publishing your notes using [MkDocs](https://www.mkdocs.org/), with the [Material theme](https://squidfunk.github.io/mkdocs-material/). 
-6. Go to `Settings > Pages` and select the select the **Source** as your `gh-pages` branch.
-
-![](2021-11-22-22-52-49.png)
-
-**Not working for you?** Open an [issue](https://github.com/jobindjohn/obsidian-publish-mkdocs/issues/new/choose) and let me know what went wrong.
-
-## Configuring your website
-
-### How do I arrange notes as sections and pages?
-
-By default, the sections and pages will follow the folder structure within `/docs`. The folders and sub-folders will show up as sections. Try not to have white spaces in your folder and file names, as these will be converted to HTML links. The webpage heading will be the same as the first-level heading in the markdown note.
-
-- If you would like to arrange the pages manually, then use the `nav` option in the `mkdocs.yml` [configuration file](https://www.mkdocs.org/#adding-pages) at the root of this repo  to set custom page navigation.
-    - For example, see the setup for [the Blue Book](https://lyz-code.github.io/blue-book/) at [github](https://github.com/lyz-code/blue-book/blob/master/mkdocs.yml). Managing each page using `nav` can become cumbersome as the number of notes increase though!
-- The Materials theme provides multiple options to arrange [sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections), use [navigation tabs](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs), and many other helpful [navigation setups](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/)
-
+[obsidian-publish-mkdocs](https://github.com/jobindjohn/obsidian-publish-mkdocs/)

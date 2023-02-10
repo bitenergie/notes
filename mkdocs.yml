@@ -26,13 +26,11 @@ theme:
       - navigation.footer
       - navigation.instant
       - navigation.tabs
-
+      
 nav:
   - Home: index.md
   - Jupyter: 
     - Gallery: generated/gallery/
-  - Energievollzug:
-    - Energievollzug/Tabellen.md
   - Links:
     - Links/Awesome HLK.md
     - Links/Datenbanken.md
@@ -40,7 +38,7 @@ nav:
     - Links/Normen.md
     - Links/Vereine.md
     - Links/Zertifikate.md
-  - SIA: 
+  - Normen: 
     - sia.md
     - Sia 380-1: 
       - Sia 380-1/Fenster.md
@@ -56,6 +54,11 @@ nav:
     - SIA 2028:
       - sia2028/index.md
       - sia2028/monat.md
+    - Energievollzug:
+      - Energievollzug/Tabellen.md
+  - Cheat Sheet:
+    - cheat_sheet/heizung.md
+
 
 extra_css:
   - ./stylesheets/extra.css
