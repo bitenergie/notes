@@ -33,7 +33,7 @@
     <!--/div-->
 </div>
 
-<div class="mkd-glr-thumbcontainer" tooltip="[Documentation](https://api3.geo.admin.ch/index.html)">
+<div class="mkd-glr-thumbcontainer" tooltip="===================================">
     <!--div class="figure align-default" id="id1"-->
         <img alt="GeoAdmin API" src="images/thumb/mkd_glr_plott_2_GeoAdmin_thumb.png" />
         <p class="caption">

@@ -13,10 +13,10 @@
     to download the full example code
 
 
-PVWatts
+PVWatts 
 ===================================
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 10-24 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 11-25 -->
 
 ## PVWatts
 
@@ -33,7 +33,7 @@ We'll read in weather data, run the irradiance transposition, and model cell tem
     <li><a id='step4'>Calculating the AC Power </a></li>
 </ol>
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 27-135 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 28-136 -->
 
 ```{.python }
 from pvlib import pvsystem
@@ -153,7 +153,7 @@ plt.show()
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 136-148 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 137-149 -->
 
 ```{.python }
 print(
@@ -191,7 +191,7 @@ Out:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 149-202 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 150-203 -->
 
 ```{.python }
 from pvlib import solarposition
@@ -256,7 +256,7 @@ plt.show()
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 203-246 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 204-247 -->
 
 ```{.python }
 
@@ -311,17 +311,17 @@ plt.show()
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 247-249 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 248-250 -->
 
 <a href='#step1'>
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 251-253 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 252-254 -->
 
 ## 1. Define system
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 255-262 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 256-263 -->
 
 ```{.python }
 import pvlib
@@ -348,7 +348,7 @@ Out:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 263-272 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 264-273 -->
 
 ```{.python }
 class Photovoltaik:
@@ -369,12 +369,12 @@ class Photovoltaik:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 273-275 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 274-276 -->
 
 ## System
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 275-351 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 276-352 -->
 
 ```{.python }
 
@@ -474,7 +474,7 @@ dtype: float64
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 352-356 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 353-357 -->
 
 ```{.python }
 loses
@@ -498,7 +498,7 @@ Out:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 362-373 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 363-374 -->
 
 ```{.python }
 
@@ -534,7 +534,7 @@ dtype: float64
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 374-383 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 375-384 -->
 
 ```{.python }
 
@@ -563,7 +563,7 @@ Text(0.5, 1.0, 'By Hours')
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 384-395 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 385-396 -->
 
 ```{.python }
 
@@ -598,7 +598,7 @@ Out:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 396-407 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 397-408 -->
 
 ```{.python }
 day = df_tmy.loc['2013-06-15':'2013-06-18']
@@ -621,7 +621,7 @@ plt.show()
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 408-419 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 409-420 -->
 
 ```{.python }
 day = df_tmy.loc['2013-09-15':'2013-09-18']
@@ -644,7 +644,7 @@ plt.show()
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 420-430 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 421-431 -->
 
 ```{.python }
 day = df_tmy.loc['2013-12-15':'2013-12-18']
@@ -666,7 +666,7 @@ plt.show()
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 431-434 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 432-435 -->
 
 ```{.python }
 meta["latitude"], meta["longitude"]
@@ -689,7 +689,7 @@ Out:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 438-444 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 439-445 -->
 
 ```{.python }
 
@@ -717,7 +717,7 @@ AC: 1/kW 9772
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 445-455 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 446-456 -->
 
 ```{.python }
 
@@ -747,7 +747,7 @@ Text(148.56944444444443, 0.5, 'Energy [kWh]')
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 456-461 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 457-462 -->
 
 ```{.python }
 from IPython.core.display import HTML
@@ -850,7 +850,7 @@ HTML(table.to_html())
 </div>
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 462-479 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 463-480 -->
 
 Total nominal power: 10 kWp	Meteodata: Meteoswiss 2020
 
@@ -870,7 +870,7 @@ Total nominal power: 10 kWp	Meteodata: Meteoswiss 2020
 | Dez     2020|	18	          |  214	0       	|
 | Year	       | 1263	        |11253	        |
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 481-488 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 482-489 -->
 
 ```{.python }
 
@@ -899,7 +899,7 @@ AC: 1/kW 9772
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 489-505 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 490-506 -->
 
 ```{.python }
 
@@ -927,7 +927,7 @@ plt.show()
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 506-530 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 507-531 -->
 
 ```{.python }
 
@@ -983,7 +983,7 @@ Out:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 531-544 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 532-545 -->
 
 ```{.python }
 plt.rcParams["font.size"] = 14
@@ -1008,7 +1008,7 @@ plt.show()
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 545-563 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 546-564 -->
 
 ```{.python }
 plt.rcParams["font.size"] = 14
@@ -1039,14 +1039,14 @@ Out:
 
 ```{.shell .mkd-glr-script-out-disp }
 
-<matplotlib.legend.Legend object at 0x28a3d2500>
+<matplotlib.legend.Legend object at 0x12ee1d690>
 ```
 
 
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 564-575 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 565-576 -->
 
 ```{.python }
 plt.rcParams["font.size"] = 14
@@ -1070,14 +1070,14 @@ Out:
 
 ```{.shell .mkd-glr-script-out-disp }
 
-<matplotlib.legend.Legend object at 0x28a4aa530>
+<matplotlib.legend.Legend object at 0x29c886560>
 ```
 
 
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 576-586 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 577-587 -->
 
 ```{.python }
 
@@ -1107,12 +1107,12 @@ Text(0.5, 1.0, 'Power vs POA, colored by amb. temp.')
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 587-588 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 588-589 -->
 
 <a href='#step2'>
 
 
-**Total running time of the script:** ( 0 minutes  8.270 seconds)
+**Total running time of the script:** ( 0 minutes  7.638 seconds)
 
 <div id="download_links"></div>
 

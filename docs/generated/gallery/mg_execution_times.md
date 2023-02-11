@@ -2,12 +2,12 @@
 
 # Computation times
 
-**00:01.091** total execution time for **generated_gallery** files:
+**00:07.638** total execution time for **generated_gallery** files:
 
 +-------------------------------------------------------------------------------+-----------+--------+
-| [plott_2_GeoAdmin](./plott_2_GeoAdmin.md) (docs/examples/plott_2_GeoAdmin.py) | 00:01.091 | 0.0 MB |
+| [plot_1_pvwatt](./plot_1_pvwatt.md) (docs/examples/plot_1_pvwatt.py)          | 00:07.638 | 0.0 MB |
 +-------------------------------------------------------------------------------+-----------+--------+
 | [model](./model.md) (docs/examples/model.py)                                  | 00:00.000 | 0.0 MB |
 +-------------------------------------------------------------------------------+-----------+--------+
-| [plot_1_pvwatt](./plot_1_pvwatt.md) (docs/examples/plot_1_pvwatt.py)          | 00:00.000 | 0.0 MB |
+| [plott_2_GeoAdmin](./plott_2_GeoAdmin.md) (docs/examples/plott_2_GeoAdmin.py) | 00:00.000 | 0.0 MB |
 +-------------------------------------------------------------------------------+-----------+--------+

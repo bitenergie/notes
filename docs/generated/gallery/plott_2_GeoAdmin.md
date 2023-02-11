@@ -14,6 +14,7 @@
 
 
 GeoAdmin API
+
 ===================================
 
 [Documentation](https://api3.geo.admin.ch/index.html)
@@ -24,7 +25,7 @@ Layers Metadata[¶](https://api3.geo.admin.ch/services/sdiservices.html#layers-m
 
 This service provides metadata for all the available layers in the GeoAdmin API.
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 17-27 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 18-28 -->
 
 ```{.python }
 import requests
@@ -55,15 +56,15 @@ dict_keys(['mapName', 'description', 'copyrightUnicode', 'layers', 'spatialRefer
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 28-29 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 29-30 -->
 
 ## Search Layer by name
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 31-32 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 32-33 -->
 
 search for layer url with text
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 32-45 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 33-46 -->
 
 ```{.python }
 
@@ -98,11 +99,11 @@ Name: Solarenergie: Eignung Dächer,
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 46-47 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 47-48 -->
 
 Get the egid  of building from address
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 47-76 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 48-77 -->
 
 ```{.python }
 street = 'Stadthausquai'
@@ -171,7 +172,7 @@ stadthausquai 17 8001 zuerich 261 zuerich ch zh
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 77-82 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 78-83 -->
 
 ## Height from coordinates
 
@@ -179,7 +180,7 @@ stadthausquai 17 8001 zuerich 261 zuerich ch zh
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 84-96 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 85-97 -->
 
 ```{.python }
 
@@ -211,13 +212,13 @@ Out:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 97-100 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 98-101 -->
 
 ## gebaeude_wohnungs_register
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 102-120 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 103-121 -->
 
 ```{.python }
 
@@ -343,17 +344,17 @@ dkodn =        1247082.669
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 121-124 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 122-125 -->
 
 ## Solardach energie
 
 solarenergie-eignung-daecher
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 126-127 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 127-128 -->
 
 # Solardach energie
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 127-155 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 128-156 -->
 
 ```{.python }
 
@@ -484,7 +485,7 @@ How many: 2
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 156-168 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 157-169 -->
 
 ```{.python }
 from IPython.display import display, HTML, IFrame
@@ -516,7 +517,7 @@ Out:
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 169-191 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 170-192 -->
 
 ```{.python }
 import matplotlib.pyplot as plt
@@ -561,7 +562,7 @@ klasse = 'Gering##Faible##Bassa##Low##Gering'
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 192-197 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 193-198 -->
 
 ## Heizgradtage
 
@@ -569,7 +570,7 @@ klasse = 'Gering##Faible##Bassa##Low##Gering'
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 199-216 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 200-217 -->
 
 ```{.python }
 
@@ -607,7 +608,7 @@ Out:
 
 
 
-**Total running time of the script:** ( 0 minutes  1.091 seconds)
+**Total running time of the script:** ( 0 minutes  0.844 seconds)
 
 <div id="download_links"></div>
 

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 GeoAdmin API
+
 ===================================
 
 [Documentation](https://api3.geo.admin.ch/index.html)

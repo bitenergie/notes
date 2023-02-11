@@ -61,6 +61,7 @@ nav:
 
 extra_css:
   - ./stylesheets/extra.css
+  - ./sg_gallery.css
   
 extra:
   generator: false
@@ -118,11 +119,9 @@ plugins:
 
       #  org: bitenergie
       #  repo: notes
-      #   branch: gh-pages  # Use a branch that hosts your docs.
-      #   #binderhub_url: https://mybinder.org
-      #   dependencies: docs/binder_cfg/requirements.txt  # binder configuration files
-      #   # see https://mybinder.readthedocs.io/en/latest/using/config_files.html#config-files
-      #   # these will be copied to the .binder/ directory of the site.
+      #  dependencies: docs/binder_cfg/requirements.txt  # binder configuration files
+      #  see https://mybinder.readthedocs.io/en/latest/using/config_files.html#config-files
+      #  these will be copied to the .binder/ directory of the site.
 
       #   #notebooks_dir: notebooks  # Notebooks for Binder will be copied to this dir (relative to built doc root).
       #   #use_jupyter_lab: True     # Binder links will start Jupyter Lab instead of the Jupyter Notebook interface.
