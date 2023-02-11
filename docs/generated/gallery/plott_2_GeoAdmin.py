@@ -12,15 +12,17 @@ Layers Metadata[¶](https://api3.geo.admin.ch/services/sdiservices.html#layers-m
 This service provides metadata for all the available layers in the GeoAdmin API.
 """
 
+
 # %%
 import requests
-import pprint
+from pprint import pprint
 
 api_url = "https://api3.geo.admin.ch/rest/services/api/MapServer"
 response = requests.get(api_url)
-response.json()
+layers = response.json()
 
- 
+pprint(layers.keys())
+print(len(layers["layers"]))
 
 # %% [markdown]
 # ## Search Layer by name
@@ -28,8 +30,8 @@ response.json()
 # %%
 # search for layer url with text
 
-param = {"searchText": "solar"}
 
+param = {"searchText": "solar"}
 response = requests.get("https://api3.geo.admin.ch/rest/services/api/MapServer?", param)
 json = response.json()
 
@@ -55,7 +57,7 @@ def feature_id(search_text):
     }
     r = requests.get(search_url, params=search_value)
     results = r.json()
-    pprint.pprint(results)
+    pprint(results)
 
 search_txt = f"{street} {num} {place} {plz}"
 param = {"searchText": search_txt}
@@ -69,7 +71,7 @@ featureid = json["results"][0]["attrs"]["featureId"]
 
 print(f"{detail} \n {featureid}")
 
-pprint.pprint(json)
+pprint(json)
 
 # %% [markdown]
 # ## Height from coordinates
@@ -79,6 +81,9 @@ pprint.pprint(json)
 # 
 
 # %%
+
+
+
 url = "https://api3.geo.admin.ch/rest/services/height"
 params = {
     "easting": 2600000,
@@ -108,7 +113,7 @@ dkodn = atr["dkodn"]
 
 print(f"{dkode =        }")
 print(f"{dkodn =        }")
-pprint.pprint(json)
+pprint(json)
 
 
 
@@ -124,6 +129,7 @@ cordiantes = str(dkode) + "," + str(dkodn)
 
 print(cordiantes)
 link = "https://api3.geo.admin.ch/rest/services/all/MapServer/identify"
+
 query = {
 	"geometry": cordiantes,
 	"geometryFormat": "geojson",
@@ -140,23 +146,70 @@ query = {
 
 response = requests.get(link, query)
 pv_json = response.json()
-pprint.pprint(pv_json)
+
+print(f'How many: {len(pv_json["results"])}')
+
+pprint(pv_json['results'][0]["properties"])
+
+
+# %%
+from IPython.display import display, HTML, IFrame
+
+feature_ids=[]
+for i in pv_json["results"]:
+	feature_ids.append(i["featureId"])
+print(feature_ids)
+	
+
+
+
 
 
 # %%
 import matplotlib.pyplot as plt
 
-fig, ax = plt.subplots()
+klasse = pv_json["results"][0]["properties"]['klasse_text']
+finanzertrag = pv_json["results"][0]["properties"]["finanzertrag"]
+mstrahlung = pv_json["results"][0]["properties"]["mstrahlung"]
+neigung = pv_json["results"][0]["properties"]["neigung"]
 
+fig, ax = plt.subplots()
 x = pv_json["results"][0]["properties"]["monate"]
 y = pv_json["results"][0]["properties"]["monats_ertrag"]
 ax.bar(x, y, )
+ax.set_ylabel('fruit supply')
+ax.set_title('Fruit supply by kind and color')
 
-ax.set_ylabel('kWh')
-ax.set_title('Monatsertrag Solaranlage')
-ax.legend(title='kWh')
+print(f"{finanzertrag = }")
+print(f"{mstrahlung = }")
+print(f"{neigung = }")
+print(f"{klasse = }")
 
 plt.show()
+
+
+# %% [markdown]
+# ## Heizgradtage
+# 
+# > Heizgradtage werden verwendet, um den jährlichen Heizwärmebedarf auf die Kalendermonate zu verteilen. Die Heizgradtage für einen Monat berechnen sich aus der Differenz zwischen der Raumtemperatur (20°C) und der Tagesmitteltemperatur an Tagen mit einer Tagesmitteltemperatur tiefer als die Heizgrenze (< 12°C).
+# 
+# 
+
+# %%
+
+fig, ax = plt.subplots()
+
+x = pv_json["results"][0]["properties"]["monate"]
+y = pv_json["results"][0]["properties"]["heizgradtage"]
+ax.bar(x, y, color="red")
+
+ax.set_ylabel('Hours')
+ax.set_xlabel('Months')
+ax.set_title('heizgradtage')
+
+
+plt.show()
+print(y)
 
 
 
