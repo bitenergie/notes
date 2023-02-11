@@ -23,14 +23,14 @@
 
 ## U-Wert
 
-| Neubauten und neue Bauteile                                      |             |                             | Umbauten und Umnutzungen    |              |
-| ---------------------------------------------------------------- | ----------- | --------------------------- | --------------------------- | --------------------------- |
-|                                                                  | Aussenklima | unbeheizt <br> 2m im Erdreich | Aussenklima                 | unbeheizt <br> 2m im Erdreich |
-| opake (lichtundurchlässige) Bauteile,  Dach, Decke / Wand, Boden | 0.17        | 0.25                        | 0.25                        | 0.25                        |
-| Fenster, Fenstertüren                                            | 1.0         | 1.3                         | 1.0                         | 1.0                         |
-| Türen                                                            | 1.2         | 1.5                         | 1.2                         | 1.2                         |
-| Tore (Türen grösser als 6 m2)                                    | 1.7         | 2.0                         | 1.7                         | 1.7                         |
-| Storenkasten                                                     | 0.5         | 0.5                         | 0.5                         | 0.5                         |
+|                                                                  | Neubauten und neue Bauteile |                                | Umbauten und Umnutzungen |                                |
+| ---------------------------------------------------------------- | --------------------------- | ------------------------------ | ------------------------ | ------------------------------ |
+| Bauteil                                                          | Aussenklima                 | unbeheizt, <br> 2m im Erdreich | Aussenklima              | unbeheizt, <br> 2m im Erdreich |
+| opake (lichtundurchlässige) Bauteile,  Dach, Decke / Wand, Boden | 0.17                        | 0.25                           | 0.25                     | 0.25                           |
+| Fenster, Fenstertüren                                            | 1.0                         | 1.3                            | 1.0                      | 1.0                            |
+| Türen                                                            | 1.2                         | 1.5                            | 1.2                      | 1.2                            |
+| Tore (Türen grösser als 6 m2)                                    | 1.7                         | 2.0                            | 1.7                      | 1.7                            |
+| Storenkasten                                                     | 0.5                         | 0.5                            | 0.5                      | 0.5                            |
 
 ## Grenzwert Neubau
 
@@ -57,8 +57,8 @@
 |     |                                                                                                                                                                | Elektr. Wärmepumpe Erdsonde oder Wasser | Automatische Holzfeuerung | Erdwärme aus KVA, ARA o. ern. Energien | Elektr. Wärmepumpe Aussenluft | Stückholzfeuerung | GasbetriebeneWärmepumpe | Fossiler Wärmeerzeuge |
 | 1   | - Opake Bauteile gegen aussen 0,17 W/m2K <br>- Fenster 1,00 W/m2K   <br>- Kontrollierte Wohnungslüftung (KWL)                                                  | :material-check:                        | :material-check:          | :material-check:                       | :material-check:              |                   |                         |                       |
 | 2   | - Opake Bauteile gegen aussen 0,17 W/m2K <br>-  Fenster 1,00 W/m2K <br>- Th. Solaranlage für WW, mind. 2% der EBF                                              | :material-check:                        | :material-check:          | :material-check:                       | :material-check:              | :material-check:  |                         |                       |
-| 3   | - Opake Bauteile gegen aussen 0,15 W/m2K <br>-  Fenster 1,00 W/m2K                                                                                            | :material-check:                        | :material-check:          | :material-check:                       |                               |                   |                         |                       |
-| 4   | - Opake Bauteile gegen aussen 0,15 W/m2K <br>- Fenster 0,80 W/m2K <br>                                                                                        | :material-check:                        | :material-check:          | :material-check:                       | :material-check:              |                   |                         |                       |
+| 3   | - Opake Bauteile gegen aussen 0,15 W/m2K <br>-  Fenster 1,00 W/m2K                                                                                             | :material-check:                        | :material-check:          | :material-check:                       |                               |                   |                         |                       |
+| 4   | - Opake Bauteile gegen aussen 0,15 W/m2K <br>- Fenster 0,80 W/m2K <br>                                                                                         | :material-check:                        | :material-check:          | :material-check:                       | :material-check:              |                   |                         |                       |
 | 5   | - Opake Bauteile gegen aussen 0,15 W/m2K <br>- Fenster 1,00 W/m2K  <br>- Kontrollierte Wohnungslüftung (KWL) <br> Th. Solaranlage für WW mit mind. 2% der EBF  | :material-check:                        | :material-check:          | :material-check:                       | :material-check:              | :material-check:  | :material-check:        |                       |
 | 6   | - Opake Bauteile gegen aussen 0,15 W/m2K <br>-  Fenster 0,80 W/m2K   <br>- Kontrollierte Wohnungslüftung (KWL) <br> Th. Solaranlage für H+WW, mind. 7% der EBF | :material-check:                        | :material-check:          | :material-check:                       | :material-check:              | :material-check:  | :material-check:        | :material-check:      |
 

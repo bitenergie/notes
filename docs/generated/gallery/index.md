@@ -33,6 +33,20 @@
     <!--/div-->
 </div>
 
+<div class="mkd-glr-thumbcontainer" tooltip="[Documentation](https://api3.geo.admin.ch/index.html)">
+    <!--div class="figure align-default" id="id1"-->
+        <img alt="GeoAdmin API" src="images/thumb/mkd_glr_plott_2_GeoAdmin_thumb.png" />
+        <p class="caption">
+            <span class="caption-text">
+                <a class="reference internal" href="plott_2_GeoAdmin">
+                    <span class="std std-ref">GeoAdmin API</span>
+                </a>
+            </span>
+            <!--a class="headerlink" href="#id1" title="Permalink to this image"></a-->
+        </p>
+    <!--/div-->
+</div>
+
 <div class="mkd-glr-clear"></div>
 
 
