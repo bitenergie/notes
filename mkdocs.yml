@@ -33,18 +33,18 @@ nav:
     - Gallery: generated/gallery/
   - Links:
     - Links/Awesome HLK.md
-    - Links/Datenbanken.md
-    - Links/Dokumente.md
-    - Links/Normen.md
-    - Links/Vereine.md
+    #- Links/Datenbanken.md
+    #- Links/Dokumente.md
+    #- Links/Normen.md
+    #- Links/Vereine.md
     - Links/Zertifikate.md
   - Normen: 
     - Sia 380-1: 
       - Sia 380-1/Fenster.md
       - Sia 380-1/Grundlagen.md
       - Sia 380-1/wärmebrücken.md
-    - Sia 384-7:
-      - Sia 384-7/Tabelle.md
+    #- Sia 384-7:
+    #  - Sia 384-7/Tabelle.md
     - SIA 2024:
       - Sia2024/index.md
       - Sia2024/Dokumentation.md
