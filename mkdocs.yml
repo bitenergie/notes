@@ -53,6 +53,7 @@ nav:
     - SIA 2028:
       - sia2028/monat.md
       - sia2028/Bins.md
+      - sia2028/Swissmeteo.md
     - Energievollzug:
       - Energievollzug/Tabellen.md
   - Cheat Sheet:
