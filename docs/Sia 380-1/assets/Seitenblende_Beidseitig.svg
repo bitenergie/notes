@@ -5,14 +5,11 @@
         <g transform="matrix(2,0,0,2,0,1894.25)">
             <rect id="Page-7" serif:id="Page 7" x="0" y="0" width="595.276" height="841.89" style="fill:none;"/>
             <g id="Page-71" serif:id="Page 7">
-                <g transform="matrix(1,0,0,1,0,-510.108)">
-                    <rect x="272.71" y="667.495" width="192.756" height="17.008" style="fill:rgb(147,149,152);"/>
-                </g>
                 <g transform="matrix(1,0,0,1,0,-362.706)">
                     <rect x="295.386" y="593.794" width="144.571" height="17.008" style="fill:rgb(147,149,152);"/>
                 </g>
-                <g transform="matrix(1,0,0,1,0,-505.364)">
-                    <rect x="312.393" y="662.751" width="110.554" height="21.752" style="fill:white;"/>
+                <g transform="matrix(0.5,0,0,0.5,0,-947.126)">
+                    <path d="M624.786,2209.03L624.786,2243.04L545.42,2243.04L545.42,2209.03L624.786,2209.03ZM845.894,2243.04L845.894,2209.03L930.932,2209.03L930.932,2243.04L845.894,2243.04Z" style="fill:rgb(147,149,152);"/>
                 </g>
                 <g transform="matrix(1,0,0,1,0,-419.4)">
                     <rect x="295.387" y="593.796" width="17.008" height="73.698" style="fill:rgb(147,149,152);"/>

@@ -5,16 +5,13 @@
         <g transform="matrix(2,0,0,2,6696.86,0)">
             <rect id="Page-6" serif:id="Page 6" x="0" y="0" width="595.276" height="841.89" style="fill:none;"/>
             <g id="Page-61" serif:id="Page 6">
-                <g transform="matrix(1,0,0,1,0,586.771)">
-                    <rect x="129.728" y="119.055" width="192.756" height="17.009" style="fill:rgb(146,150,153);"/>
-                </g>
                 <g>
                     <clipPath id="_clip1">
                         <rect x="129.26" y="680.115" width="193.223" height="56.893" clip-rule="nonzero"/>
                     </clipPath>
                     <g clip-path="url(#_clip1)">
-                        <g transform="matrix(1,0,0,1,0,586.771)">
-                            <rect x="189.253" y="119.055" width="70.865" height="17.009" style="fill:white;"/>
+                        <g transform="matrix(0.5,0,0,0.5,-3348.43,0)">
+                            <path d="M7075.36,1411.65L7075.36,1445.67L6956.31,1445.67L6956.31,1411.65L7075.36,1411.65ZM7217.09,1445.67L7217.09,1411.65L7341.82,1411.65L7341.82,1445.67L7217.09,1445.67Z" style="fill:rgb(146,150,153);"/>
                         </g>
                         <g transform="matrix(1,0,0,1,0,598.908)">
                             <rect x="189.253" y="119.365" width="2.834" height="4.252" style="fill:rgb(218,177,118);"/>

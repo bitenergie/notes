@@ -13,11 +13,8 @@
                         <g transform="matrix(1,0,0,1,104.879,698.202)">
                             <path d="M0,-0.006L55.184,-0.006M208.042,0.003L263.226,0.003M263.267,-0.009L318.646,-0.009" style="fill:none;fill-rule:nonzero;stroke:rgb(237,72,53);stroke-width:0.5px;"/>
                         </g>
-                        <g transform="matrix(1,0,0,1,0,480.797)">
-                            <rect x="273.292" y="172.042" width="192.757" height="17.009" style="fill:rgb(147,149,152);"/>
-                        </g>
-                        <g transform="matrix(1,0,0,1,0,481.752)">
-                            <rect x="312.974" y="169.019" width="110.553" height="22.1" style="fill:white;"/>
+                        <g transform="matrix(0.5,0,0,0.5,0,-947.126)">
+                            <path d="M625.948,3199.93L625.948,3233.95L546.584,3233.95L546.584,3199.93L625.948,3199.93ZM847.054,3233.95L847.054,3199.93L932.098,3199.93L932.098,3233.95L847.054,3233.95Z" style="fill:rgb(147,149,152);"/>
                         </g>
                         <g transform="matrix(1,0,0,1,0,526.149)">
                             <rect x="295.97" y="126.689" width="17.008" height="62.363" style="fill:rgb(147,149,152);"/>

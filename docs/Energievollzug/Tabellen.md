@@ -5,6 +5,14 @@
 
 ## Umsetzung Kantone
 
+<style>
+
+    .admonition.info.inline.end {
+        width: 400px;
+    }
+
+</style>
+
 === "Muken 2014"
     !!! info inline end "Legende"
         ![Muken2014](assets/Legende.svg)
