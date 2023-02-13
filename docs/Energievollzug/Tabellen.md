@@ -1,16 +1,14 @@
 
 # Zusammenfassung
 
-> **Quelle: [Energie-zentralschweiz Zusammenfassung](https://www.energie-zentralschweiz.ch/media/459/download?attachment)**
+> **Quelle: [Energie-zentralschweiz Zusammenfassung (23. August 2022)](https://www.energie-zentralschweiz.ch/media/459/download?attachment)**
 
 ## Umsetzung Kantone
 
 <style>
-
     .admonition.info.inline.end {
         width: 400px;
     }
-
 </style>
 
 === "Muken 2014"

@@ -2,13 +2,16 @@ site_name: Notes by Bitenergie
 
 theme:
     name: 'material'
+    icon:
+      logo: octicons/book-24
+    favicon: favicon.png
     palette:
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: pink
-      accent: blue
+      accent: indigo
       toggle:
         icon: material/lightbulb
         name: Switch to light mode
