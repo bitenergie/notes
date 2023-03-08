@@ -69,6 +69,7 @@ nav:
       - Energievollzug/Tabellen.md
   - Cheat Sheet:
     - cheat_sheet/heizung.md
+    - cheat_sheet/bauphysik.md
 
 
 extra_css:
