@@ -1,5 +1,9 @@
 # Grundlagen
 
+## Typ von Flächen
+
+![svg](sia380_Face_Types.svg)
+
 ## 1
 
 $$
