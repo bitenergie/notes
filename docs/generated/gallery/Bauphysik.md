@@ -18,12 +18,7 @@ Bauphysik
 
 Formeln für Bauphysikalische Berechnungen
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 11-13 -->
-
-# Bauphysik
-
-
-<!-- GENERATED FROM PYTHON SOURCE LINES 15-38 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 11-34 -->
 
 ## 1 Randbedingungen (Klima)
 
@@ -49,11 +44,11 @@ $V_{max} = k *  \sqrt{\Delta \theta * H}$
 - Höhe der vertikalen Flache 
 - Regressionskoeffizient I
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 40-41 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 36-37 -->
 
 A1.1
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 41-54 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 37-50 -->
 
 ```{.python }
 
@@ -71,7 +66,7 @@ max_air_flow_speed(10, 20, 1)
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 55-119 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 51-115 -->
 
 ## 2 Wärme
 
@@ -138,7 +133,7 @@ $R_{si} = \frac{1}{\varepsilon * 4 * \sigma * T^{3}_{mi} + c * \sqrt[3]{\Delta \
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 124-147 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 120-143 -->
 
 ## 2.2 Wärmespeicherung
 
@@ -164,7 +159,7 @@ $d_{T,max} = \sqrt{\frac{a*T}{2*\pi}} = \sqrt{\frac{\lambda * T}{\rho*c*2*\pi}}$
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 152-193 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 148-189 -->
 
 ## 2.3 Wärmebrücken
 
@@ -208,7 +203,7 @@ $U_m = \frac{L_{}i,j}{A_{tot}}$
 - $A_{tot}$ Gesamtfliche der betrachteten Gebiudehiillenbereiche (Projektionsflaiche) $m^{2}$
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 201-214 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 197-210 -->
 
 ## 3 Feuchte
 
@@ -224,7 +219,7 @@ $\theta_{si} = \theta_i - (R_{si} * U) * (\theta_i - \theta_e)$
 - $U$ Warmedurchgangskoeffizient der Wand $W*(m^{2}*K)^{-1}$
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 216-245 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 212-241 -->
 
 ```{.python }
 """
@@ -258,7 +253,7 @@ def surface_temperature_unheated(g1, temp_1, g2, temp_2, g3, temp_3):
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 246-252 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 242-248 -->
 
 ### Oberflächentemperaturfaktor
 
@@ -267,7 +262,7 @@ Oberflächentemperaturfaktor fRsi. Er ist als Verhältnis zwischen der Differenz
 Für flächige Bauteile (eindimensionale Wärmestromsituation) gilt: fRsi = 1 – (Rsi . U)
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 254-267 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 250-263 -->
 
 ```{.python }
 def surface_temperature_factor(surface_temperature, temp_out, temp_in):
@@ -285,7 +280,7 @@ def simple_surface_temperature_factor(thermal_res_in, heat_transfer_coeff):
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 268-286 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 264-282 -->
 
 ### Feuchtebelastung
 
@@ -306,11 +301,11 @@ Der raumseitige Wasserdampfüberdruck _∆p_ im Raum lässt sich somit nach Form
 (A3.7)
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 292-293 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 288-289 -->
 
 A3.5
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 293-322 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 289-318 -->
 
 ```{.python }
 
@@ -344,7 +339,7 @@ def water_vapour_pressure_in(water_vapour_overpressure, water_vapour_pressure_ou
 
 ```
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 323-335 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 319-331 -->
 
 Für **maritime Klimate** wird im Anhang A.2 die Luftfeuchtelast in fünf Luftfeuchteklassen gemäss Tabelle A3.3 eingeteilt und jeder Klasse in Abbildung A3.4 ein Wert für den raumseitigen Feuchteüberschuss _∆ν_ bzw. den raumseitigen Wasserdampfüberdruck _∆p_ in Abhängigkeit des monatlichen Mittelwerts der Aussenlufttemperatur zugeordnet.
 
@@ -359,13 +354,13 @@ Bei abweichenden Nutzungsbedingungen (Raumlufttemperaturen ≠ 20 °C) und in R
 ### (A3.8) TODO
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 341-344 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 337-340 -->
 
 ## Lichttechnik
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 346-359 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 342-355 -->
 
 ## 4 Luftströmungen
 
@@ -381,7 +376,7 @@ Die empirische Grösse cd ist insbesondere von der Fensterposition und -geometri
 
 $q_{v,Kippflügel}(\alpha) = c_k(\alpha) * q_{v,Rechtecköffnung} $
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 367-405 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 363-401 -->
 
 ## 6 Energie/Leistung
 
@@ -422,7 +417,7 @@ $C_r = \sum A_i*k_i$
 
 
 
-<!-- GENERATED FROM PYTHON SOURCE LINES 407-418 -->
+<!-- GENERATED FROM PYTHON SOURCE LINES 403-414 -->
 
 ## Anhang
 

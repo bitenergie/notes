@@ -8,10 +8,6 @@ Formeln für Bauphysikalische Berechnungen
 """
 
 # %% [markdown]
-# # Bauphysik
-# 
-
-# %% [markdown]
 # ## 1 Randbedingungen (Klima)
 # 
 # [Link enbau](https://enbau-online.ch/bauphysik/1-randbedingungen-klima/)
