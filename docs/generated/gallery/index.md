@@ -5,20 +5,6 @@
 ## Beispiele
 
 
-<div class="mkd-glr-thumbcontainer" tooltip="Formeln für Bauphysikalische Berechnungen">
-    <!--div class="figure align-default" id="id1"-->
-        <img alt="Bauphysik" src="images/thumb/mkd_glr_Bauphysik_thumb.png" />
-        <p class="caption">
-            <span class="caption-text">
-                <a class="reference internal" href="Bauphysik">
-                    <span class="std std-ref">Bauphysik</span>
-                </a>
-            </span>
-            <!--a class="headerlink" href="#id1" title="Permalink to this image"></a-->
-        </p>
-    <!--/div-->
-</div>
-
 <div class="mkd-glr-thumbcontainer" tooltip="Base test with the sia 2024 model...">
     <!--div class="figure align-default" id="id1"-->
         <img alt="SIA2024 - Model" src="images/thumb/mkd_glr_model_thumb.png" />
@@ -40,6 +26,20 @@
             <span class="caption-text">
                 <a class="reference internal" href="plot_1_pvwatt">
                     <span class="std std-ref">PVWatts</span>
+                </a>
+            </span>
+            <!--a class="headerlink" href="#id1" title="Permalink to this image"></a-->
+        </p>
+    <!--/div-->
+</div>
+
+<div class="mkd-glr-thumbcontainer" tooltip="Formeln für Bauphysikalische Berechnungen">
+    <!--div class="figure align-default" id="id1"-->
+        <img alt="Bauphysik" src="images/thumb/mkd_glr_plot_3_Bauphysik_thumb.png" />
+        <p class="caption">
+            <span class="caption-text">
+                <a class="reference internal" href="plot_3_Bauphysik">
+                    <span class="std std-ref">Bauphysik</span>
                 </a>
             </span>
             <!--a class="headerlink" href="#id1" title="Permalink to this image"></a-->

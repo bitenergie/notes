@@ -418,13 +418,17 @@ def water_vapour_pressure_in(water_vapour_overpressure, water_vapour_pressure_ou
 # 
 # ### A4.2  Kippfenstern
 # 
-# $q_{v,Kippflügel}(\alpha) = c_k(\alpha) * q_{v,Rechtecköffnung} $
+# $q_{v,Kippflügel}(\alpha) = c_k(\alpha) * q_{v,Rechtecköffnung}$
+#
 
 # %%
 
 
 # %% [markdown]
 # ## 5 Lichttechnik
+# 
+# ![](/generated/gallery/images/licht_uebersicht_no_background.excalidraw.png)
+# 
 # 
 # ### 5.1 Lichtstrom Tagsehen
 # 
