@@ -22,6 +22,12 @@ Formeln für Bauphysikalische Berechnungen
 # - Aussenlufttemperatur der Stunde t-j
 # - N Anzahl in den Mittelwert einbezogener Stunden N=48
 # 
+
+# %%
+
+
+# %% [markdown]
+# 
 # ### A1.2 maximale Luftgeschwindigkeit
 # 
 # $V_{max} = 0.54 * (\frac{g* \Delta T}{T_i})^{0.5} * H^{0.5}$
@@ -44,7 +50,7 @@ def max_air_flow_speed(delta_temp, air_temperature, height):
     return 0.54 * (GRAV * delta_temp / air_temperature) ** 0.5 * height**0.5
 
 print(max_air_flow_speed.__doc__)
-max_air_flow_speed(10, 20, 1)
+print(max_air_flow_speed(10, 20, 1))
 
 
 # %% [markdown]
@@ -128,6 +134,12 @@ max_air_flow_speed(10, 20, 1)
 # - $\rho_j$ Rohdichte der Schicht j
 # - $c_j$ spezifische Warmekapazitat der Schicht j
 # 
+
+# %%
+
+
+# %% [markdown]
+# 
 # ### A2.9 speicherwirksame Dicke $d_{T,max}$
 # 
 # $d_{T,max} = \sqrt{\frac{a*T}{2*\pi}} = \sqrt{\frac{\lambda * T}{\rho*c*2*\pi}}$
@@ -162,6 +174,12 @@ max_air_flow_speed(10, 20, 1)
 # - $N_m$             Anzahl der langenbezogenen Warmedurchgangskoeffizienten $-$
 # - $N_n$             Anzahl der punktbezogenen Warmedurchgangskoeffizienten $-$
 # 
+
+# %%
+
+
+# %% [markdown]
+# 
 # ### A2.11 Wärmebrückenzuschläge 2D
 # 
 # $\psi = L_{2D} - \sum^{N_k}_{k=1}U_k*l_k$
@@ -169,6 +187,12 @@ max_air_flow_speed(10, 20, 1)
 # - $L_{2D}$ thermischer Leitwert aus einer 2D-Berechnung $W*(m*K)^{-1}$
 # - $U_k$ Warmedurchgangskoeffizient des 1D-Bauteils $W*(m^{2}*K)^{-1}$
 # - $l_k$ Lange, über die der $U_k$-Wert gilt $m$
+# 
+
+# %%
+
+
+# %% [markdown]
 # 
 # ### A2.12 Wärmebrückenzuschläge 3D
 # 
@@ -179,6 +203,12 @@ max_air_flow_speed(10, 20, 1)
 # - $A_k$ Flache, über die der $U_k$-Wert gilt $m^{2}$
 # - $\psi_m$ langenbezogener Warme- durchgangskoeffizient $W*(m*K)^{-1}$
 # - $l_m$ L$nge, über die der $U_k$-Wert gilt $m$
+# 
+
+# %%
+
+
+# %% [markdown]
 # 
 # ### A2.13 Mittlerer U-Wert
 # 
@@ -197,6 +227,8 @@ max_air_flow_speed(10, 20, 1)
 # ## 3 Feuchte
 # 
 # [Enbau Formelbuch](https://enbau-online.ch/bauphysik/3-feuchte/)
+# 
+# ### 3.1 Oberflächentemperatur
 # 
 # Die innere Oberflächentemperatur $\theta_{si}$ einer Wand wird nach Formel A3.1 berechnet:
 # 
@@ -269,32 +301,28 @@ def simple_surface_temperature_factor(thermal_res_in, heat_transfer_coeff):
 # 
 # (A3.5)
 # 
-# ![](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/08/A3.5.png)
+# $\Delta v = v_i - v_e = \frac{G}{q_v}$
 # 
-# Der raumseitige Wasserdampfüberdruck _∆p_ im Raum lässt sich somit nach Formel A3.6, der raumseitige Wasserdampfdruck _p_<sub>v,i</sub> nach Formel A3.7 ermitteln:
+# - $\Delta v$ raumseitiger Feuchtetiberschuss $g*m^{-3}$
+# - $v_i$ volumenbezogene Raumluftfeuchte $g*m^{-3}$
+# - $v_e$ volumenbezogene Aussenluftfeuchte $g*m^{-3}$
+# - $G$ Feuchteproduktion im Raum $g*h^{-1}$
+# - $q_v$ Aussenluft- Volumenstrom $m^{3}/h$
 # 
-# (A3.6)
+# | Tatigkeit                                                 | Feuchteproduktion G in $g/h$ |
+# | --------------------------------------------------------- | ---------------------------- |
+# | ruhig liegend, schlafend                                  | 45                           |
+# | ruhig sitzend                                             | 60                           |
+# | sitzende Tatigkeit (Biro, Schule, Labor), ruhig stehend   | 70                           |
+# | leichte Tatigkeit, stehend (Laden, Werkbankarbeit, Labor) | 95                           |
+# | mittelschwere Tatigkeit, stehend (Haushalt, Werkstatt)    | 115                          |
 # 
-# ![](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/08/A3.6.png)
+# Tabelle: SIA 180:2014[3.2]
 # 
-# (A3.7)
 # 
-
-
-# %%
-
 
 # %%
 # A3.5
-
-"""
-ruhig liegend            =   45      [g*h]
-ruhig sitzend            =   60      [g*h]
-sitzende Tätigkeit       =   70      [g*h]
-leichte Tätigkeit        =   95      [g*h]
-mittelschere Tätigkeit   =   115     [g*h]
-"""
-
 
 def excess_humidity_room(indoor_hum, outdoor_hum):
     return indoor_hum - outdoor_hum
@@ -315,28 +343,67 @@ def water_vapour_overpressure(excess_humidity_room, temp_in):
 def water_vapour_pressure_in(water_vapour_overpressure, water_vapour_pressure_out):
     return water_vapour_overpressure + water_vapour_pressure_out
 
+
+# %% [markdown]
+# ### 3.6 Wasserdampfüberdruck
+# 
+# Der raumseitige Wasserdampfüberdruck _∆p_ im Raum lässt sich somit nach Formel A3.6, der raumseitige Wasserdampfdruck _p_<sub>v,i</sub> nach Formel A3.7 ermitteln:
+# 
+# (A3.6)
+# 
+# $\Delta p = \Delta v * R_v * T_i$
+# 
+# 
+# (A3.7)
+# 
+# 
+# $P_{v,i} = P_{v,e} + \Delta p$
+# 
+# - $p_{v,i}$ Wasserdampfdruck innen  $Pa$
+# - $p_{v,e}$ Wasserdampfdruck aussen  $Pa$
+# - $\Delta_{P}$ raumseitiger Wasserdampfüberdruck  $Pa$
+# - $R_v$ spez. Gaskonstante für Wasserdampf = 462 $Pa * m^{3} * (kg*K)^{-1}$
+# - $T_i$ absolute Temperatur innen $K$
+# 
+# 
+
+# %%
+
+
+
+
 # %% [markdown]
 # Für **maritime Klimate** wird im Anhang A.2 die Luftfeuchtelast in fünf Luftfeuchteklassen gemäss Tabelle A3.3 eingeteilt und jeder Klasse in Abbildung A3.4 ein Wert für den raumseitigen Feuchteüberschuss _∆ν_ bzw. den raumseitigen Wasserdampfüberdruck _∆p_ in Abhängigkeit des monatlichen Mittelwerts der Aussenlufttemperatur zugeordnet.
 # 
+# ![](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/10_Chap_FrameStory257_anchored_autoexport.png)
+# 
+# ![Raumseitige Luftfeuchteklassen in Abhängigkeit der Aussenlufttemperatur](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/Abbildung_03_04.png)
+# 
+# Abbildung A3.4: Raumseitige Luftfeuchteklassen in Abhängigkeit der Aussenlufttemperatur ([EN ISO 13788 \[3.1\]](https://enbau-online.ch/bauphysik/3-10-literatur-feuchte/))
 # 
 # ### **Raumseitige Randbedingungen nach [SIA 180 \[3.2\]](https://enbau-online.ch/bauphysik/3-10-literatur-feuchte/)**
 # 
 # Um Feuchteschäden zu vermeiden, darf die Feuchte in Räumen mit Personenbelegung die in Tabelle A3.4 angegebenen Werte im Tagesmittel in Abhängigkeit zur Aussenlufttemperatur nicht übersteigen. Die Angaben zur relativen Luftfeuchte beziehen sich auf eine Raumlufttemperatur von 20 °C und ein _f_<sub>Rsi</sub> von 0,70. Für abweichende Raum- und Aussenlufttemperaturen ist die maximal zulässige relative Feuchte in Abbildung A3.5 angegeben, berechnet mit Formel A3.8. Die Aussenluft-Volumenströme sind so zu wählen, dass diese Grenzen nicht überschritten werden.
 # 
+# ![](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/10_Chap_FrameStory39_autoexport.png)
+# 
+# ![Maximal zulässige relative Feuchte der Raumluft](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/Abbildung_03_05.png)
+# 
+# Abbildung A3.5: Maximal zulässige relative Feuchte der Raumluft (Tagesmittelwerte) ([Norm SIA 180:2014 \[3.2\]](https://enbau-online.ch/bauphysik/3-10-literatur-feuchte/))
 # 
 # Bei abweichenden Nutzungsbedingungen (Raumlufttemperaturen ≠ 20 °C) und in Räumen mit unvermeidbaren Wärmebrücken mit einem Oberflächentemperaturfaktor unter 0,70 ist eine Berechnung der maximal zulässigen relativen Raumluftfeuchte _φ_<sub>i,max</sub> mit der Gleichung A3.8 notwendig:
 # 
-# ### (A3.8) TODO
+# (A3.8)
 # 
-
+# ![](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/08/A3.8.png)
+# 
+# ![](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/10_Chap_FrameStory234_anchored_autoexport.png)
+# 
+# ![](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/10_Chap_FrameStory235_anchored_autoexport.png)
+# 
 
 # %%
 
-
-# %% [markdown]
-# ## Lichttechnik
-# 
-# 
 
 # %% [markdown]
 # ## 4 Luftströmungen
@@ -356,6 +423,124 @@ def water_vapour_pressure_in(water_vapour_overpressure, water_vapour_pressure_ou
 # %%
 
 
+# %% [markdown]
+# ## 5 Lichttechnik
+# 
+# ### 5.1 Lichtstrom Tagsehen
+# 
+# $\Phi_v = Km * \int_{380nm}^{780nm} \Phi_{e\lambda}(\lambda) * V(\lambda) d\lambda$
+# 
+# ### 5.2 Lichstrom Nachtsehen
+# 
+# $\Phi'_v = K'm * \int_{380nm}^{780nm} \Phi_{e\lambda}(\lambda) * V'(\lambda) d\lambda$
+# 
+# ### 5.3 Skalierungsfaktoren Km
+# 
+# $K_m \approx  683 lm/W$
+# 
+# $K'_m \approx  1700 lm/W$
+# 
+
+# %%
+
+
+# %% [markdown]
+# 
+# ### 5.4 Lichtstärke
+# 
+# $\Phi_v(\varphi_1) = lv(\varphi_1)* \Omega$
+# 
+# ### 5.5 Lichtstärke
+# 
+# $l_v(\varphi_1) = \frac{d\Phi_v(\varphi_1)}{d\Omega}$
+# 
+# Iv (φ1) wird als Lichtstärke bezeichnet. Die physiologische Einheit Candela (cd) der Lichtstärke Iv ist zugleich eine Basiseinheit des SI-Einheitensystems. Der Gesamtlichtstrom Φv, tot berechnet sich aus:
+# 
+# ### 5.6 Gesamtlichtstrom Φv, to
+# 
+# $\Phi_{v,tot} = \int_{4\pi} l_v (\varphi_1) * d\Omega$
+# 
+
+# %%
+
+
+# %% [markdown]
+# 
+# ### 5.7 Leuchtdichte
+# 
+# $L_{v0} = \frac{l_v(\varphi = 0)}{A}$
+# 
+# 
+# $L_{v(\varphi1)} = \frac{l_v (\varphi_1)}{A*\cos \varphi_1} * \frac{1}{\cos \varphi_1}$
+# 
+# $L_{v(\varphi1)} = \frac{dl_v}{dA} * \frac{1}{\cos \varphi_1}$
+# 
+# | Leuchtdiode                         | Lichstrom, lm  |
+# | ----------------------------------- | -------------- |
+# | Leuchdiode                          | 10 $^{-2}$     |
+# | LED-Lampe 220 V, 8 W                | 480            |
+# | Gluhlampe 220 V, 60 W               | 730            |
+# | Gluhlampe 220 V, 100 W              | 1380           |
+# | Leuchtstoffrohre 220 V, 40 W        | 2300           |
+# | Quecksilberdampflampe 220 V, 125W   | 5400           |
+# | Lichtbogen 250 W                    | $\sim$ 10'000  |
+# | Quecksilberdampflampe 220 V, 2000 W | $\sim$ 125'000 |
+# | Xe-Hochstdrucklampe 100 kW          | 3\*10 $^{6}$   |
+# 
+# Tabelle 5.1: Gesamtlichtstrom einiger Lichtquellen
+# 
+
+# %%
+
+
+# %% [markdown]
+# 
+# ### 5.8 Leuchtdichte
+# 
+# | $cd*m^{-2}$ | $cd*m^{-2}$ |
+# | --- | --- |
+# | Nachthimmel 10 $^{-3}$         | Glimmlampe 2*+*10 $^2$ - 1 * 10 $^3$ |
+# | graue Wolken 10 $^{3}$       | Leuchtstofflampe 3*10 $^3$ - 7 * 10 $^3$ |
+# | blauer Himmel 3*10 $^{3}$     | Glühlampe 3*10 $^4$ - 3 * 10 $^5$  |
+# | weisse Wolken 10 $^{4}$       | Bogenlampe 1.8 * 10 $^8$ |
+# | Vollmond 2.5 * 10 $^{3}$        | Hg-Höchstdrucklampe 6 - 10 $^8$|
+# | Sonne 1.5 * 10 $^{9}$            | Xe-Höchstdrucklampe 1 * 10 $^{10}$|
+# 
+# Tabelle 5.2: Leuchdichten ausgewählter Lichtquellen
+# 
+
+# %%
+
+
+# %% [markdown]
+# 
+# ### 5.9 Beleuchtungsstärke
+# 
+# $E_v = \frac{\Phi_v}{A_E}$
+# 
+# $E_v = \frac{d\Phi_v}{dA_E}$
+# 
+# TODO: Bild
+# 
+# ![](https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/05-06.png)
+# 
+# $E_v = l_v(\varphi_1) * \frac{\cos \varphi_2}{r^2} * \Omega_0$
+# 
+# | Beluchtungsstärke | zeitpunkt | lx |
+# | --- | --- | --- |
+# | Sonnenlicht                               | Juni <br>Dezember         | bis 100'000 <br> 9'000    |
+# | Tageslicht bei bedecktem Himmel           | Juni <br>Dezember                       | 4'000 - 20'000 <br> 900 - 2'000        |
+# | Vollmond                                  |                           | 0.25                  |
+# | Sterne ohne Mond, klare Nacht             |                           | 10 $^{-3}$            |
+# | Grenze der Farbwahrnehmung                |                           | 3                     |
+# | Arbeitsplatzbeleuchtung, hohe Ansprüche   |                           | 1'000                 |
+# | Wohnzimmerbeleuchtung                     |                           | 120                   |
+# 
+# Tabelle: Beleuchtungsstärke
+# 
+# ### Gegenüberstellung von physikalischen und photometrischen Strahlungsgrössen
+# 
+
 # %%
 
 
@@ -367,15 +552,14 @@ def water_vapour_pressure_in(water_vapour_overpressure, water_vapour_pressure_ou
 # ### A6.1 Klimakorrektur mit akkumulierten Temperaturdifferenzen (ATD)
 # 
 # 
-# ## 6.2 Heizenergiebedarf
+# ### 6.2 Heizenergiebedarf
 # 
 # $E_{H,an} = \frac{\theta_{\sum,an}}{\theta_{\sum,per}}*E_{H,per}$
 # 
-# ## 6.3 Heizenergiebedarf
+# ### 6.3 Heizenergiebedarf
 # 
 # $E_{H,1} = \frac{\theta_{\sum,per1}}{\theta_{\sum,per2}}*E_{H,2}$
 # 
-# ## 6.4 Speicherverhalten
 # 
 # ### A6.4 Statische Wärmekapazität $C_{stat}$
 # 
@@ -388,7 +572,7 @@ def water_vapour_pressure_in(water_vapour_overpressure, water_vapour_pressure_ou
 # 
 # ### A6.5 Dynamische Wärmekapazität $C_{stat}$
 # 
-# ## 6.5 Kühlungsbedarf
+# ### 6.5 Kühlungsbedarf
 # 
 # ### A6.6 Kühlungsbedarf
 # 
