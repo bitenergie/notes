@@ -58,6 +58,15 @@ print(max_air_flow_speed(10, 20, 1))
 # 
 # [Link Enbau Wärme](https://enbau-online.ch/bauphysik/2-waerme/)
 # 
+# ![wärme_strahlung](/generated/gallery/images/wärme_strahlung.excalidraw.png)
+#
+# ![wärme_leitung](/generated/gallery/images/wärme_leitung.excalidraw.png)
+#
+# ![wärme_konvektion](/generated/gallery/images/wärme_konvektion.excalidraw.png)
+# 
+# docs/generated/gallery/images/wärme_konvektion.excalidraw.png
+# 
+# 
 # ### A2.1 Wärmestromdichte q [$W/m^{2}$]
 # 
 # $q = h_c * (\theta_s - \theta_a) + h_r * (\theta_s - \theta_r)$

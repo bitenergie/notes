@@ -5,11 +5,11 @@
 **00:00.001** total execution time for **generated_gallery** files:
 
 +-------------------------------------------------------------------------------+-----------+--------+
-| [plot_3_Bauphysik](./plot_3_Bauphysik.md) (docs/examples/plot_3_Bauphysik.py) | 00:00.001 | 0.0 MB |
+| [plot_1_Bauphysik](./plot_1_Bauphysik.md) (docs/examples/plot_1_Bauphysik.py) | 00:00.001 | 0.0 MB |
 +-------------------------------------------------------------------------------+-----------+--------+
-| [model](./model.md) (docs/examples/model.py)                                  | 00:00.000 | 0.0 MB |
+| [5_model](./5_model.md) (docs/examples/5_model.py)                            | 00:00.000 | 0.0 MB |
 +-------------------------------------------------------------------------------+-----------+--------+
-| [plot_1_pvwatt](./plot_1_pvwatt.md) (docs/examples/plot_1_pvwatt.py)          | 00:00.000 | 0.0 MB |
+| [plot_2_pvwatt](./plot_2_pvwatt.md) (docs/examples/plot_2_pvwatt.py)          | 00:00.000 | 0.0 MB |
 +-------------------------------------------------------------------------------+-----------+--------+
-| [plott_2_GeoAdmin](./plott_2_GeoAdmin.md) (docs/examples/plott_2_GeoAdmin.py) | 00:00.000 | 0.0 MB |
+| [plott_4_GeoAdmin](./plott_4_GeoAdmin.md) (docs/examples/plott_4_GeoAdmin.py) | 00:00.000 | 0.0 MB |
 +-------------------------------------------------------------------------------+-----------+--------+
