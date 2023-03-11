@@ -1,0 +1,2133 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../Energievollzug/Tabellen/" rel="prev"/>
+<link href="../bauphysik/" rel="next"/>
+<link href="../../favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.2" name="generator"/>
+<title>Heizung - Notes by Bitenergie</title>
+<link href="../../assets/stylesheets/main.7bf56d0a.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../sg_gallery.css" rel="stylesheet"/>
+<link href="../../sg_gallery-rendered-html.css" rel="stylesheet"/>
+<link href="../../sg_gallery.css" rel="stylesheet"/>
+<link href="../../sg_gallery-binder.css" rel="stylesheet"/>
+<link href="../../sg_gallery-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="slate" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#heizung">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Notes by Bitenergie" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Notes by Bitenergie">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Notes by Bitenergie
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Heizung
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_3" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_3" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2C5.13 2 2 5.13 2 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7M6 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H6v1m13-8h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9L19 13m-2.15 5.65L18 15l1.15 3.65h-2.3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../generated/gallery/">
+        Jupyter
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Links/Awesome%20HLK/">
+        Links
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Sia%20380-1/Fenster/">
+        Normen
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="./">
+        Cheat Sheet
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Notes by Bitenergie" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Notes by Bitenergie">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"></path></svg>
+</a>
+    Notes by Bitenergie
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Jupyter
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Jupyter
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../generated/gallery/">Gallery</a>
+<label for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Gallery
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../generated/gallery/5_model/">
+        SIA2024 - Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../generated/gallery/plot_1_Bauphysik/">
+        Bauphysik
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../generated/gallery/plot_2_pvwatt/">
+        PVWatts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../generated/gallery/plott_4_GeoAdmin/">
+        GeoAdmin API
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Links
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Links
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Links/Awesome%20HLK/">
+        Software
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Links/Zertifikate/">
+        Zertifikate
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Normen
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Normen
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          Sia 380-1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Sia 380-1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sia%20380-1/Fenster/">
+        Fenster / Verschattung
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sia%20380-1/Grundlagen/">
+        Grundlagen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sia%20380-1/w%C3%A4rmebr%C3%BCcken/">
+        Wärmebrücken
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../Sia2024/">SIA 2024</a>
+<label for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+          SIA 2024
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sia2024/Dokumentation/">
+        Dokumentation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sia2024/Resultate/">
+        Resultate
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sia2024/generated/">
+        MFH
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          SIA 2028
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          SIA 2028
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sia2028/monat/">
+        Wetter
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sia2028/Bins/">
+        Bins
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sia2028/Swissmeteo/">
+        Swissmeteo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          Energievollzug
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Energievollzug
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Energievollzug/Tabellen/">
+        Zusammenfassung
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Cheat Sheet
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Cheat Sheet
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Heizung
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Heizung
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rohre">
+    Rohre
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#zahler">
+    Zähler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ventile">
+    Ventile
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../bauphysik/">
+        Bauphysik
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rohre">
+    Rohre
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#zahler">
+    Zähler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ventile">
+    Ventile
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="heizung">Heizung<a class="headerlink" href="#heizung" title="Permanent link">¶</a></h1>
+<h2 id="rohre">Rohre<a class="headerlink" href="#rohre" title="Permanent link">¶</a></h2>
+<ul>
+<li>3/8" bis 3/4" mittelschwere Gewinderohre (Nach DIN 2440)                                                              </li>
+<li>DN 25 bis DN 400 geschweisste Siederohre schwarz, normale Wanddicke, (VSM 1626 - DIN 2458) mit glatten Enden                                                              </li>
+</ul>
+<details class="info">
+<summary>Heizung</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="arithmatex">\(\lambda &gt; 0.03\)</span> <br/> <span class="arithmatex">\(\lambda \leq 0.05\)</span> </label><label for="__tabbed_1_2"><span class="arithmatex">\(\lambda \geq 0.03\)</span></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>DN</th>
+<th>Zoll</th>
+<th>50 Pa/m bei 10°C</th>
+<th>50 Pa/m bei 40°C</th>
+<th>100 Pa/m bei 10°C</th>
+<th>100 Pa/m bei 40°C</th>
+<th>øAussen</th>
+<th>øInnen</th>
+<th>Stärke</th>
+<th>Gewicht</th>
+<th>Wasserinhalt</th>
+<th>Rohroberfläche</th>
+<th>Heizung (Mineralwolle / Armaflex)</th>
+<th>Aussendurchmesser mit Isolation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>mm</td>
+<td>mm</td>
+<td>mm</td>
+<td>kg/m</td>
+<td>dm²/m</td>
+<td>m²/       m</td>
+<td>mm</td>
+<td>mm</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3/8"</td>
+<td>65</td>
+<td>73</td>
+<td>97</td>
+<td>108</td>
+<td>17.2</td>
+<td>12.5</td>
+<td>2.35</td>
+<td>0.85</td>
+<td>0.122718463</td>
+<td>0.        054035394</td>
+<td>40</td>
+<td>107.2</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1/2"</td>
+<td>129</td>
+<td>143</td>
+<td>193</td>
+<td>212</td>
+<td>21.3</td>
+<td>16</td>
+<td>2.65</td>
+<td>1.22</td>
+<td>0.20106193</td>
+<td>0.        066915924</td>
+<td>40</td>
+<td>111.3</td>
+</tr>
+<tr>
+<td>20</td>
+<td>3/4"</td>
+<td>296</td>
+<td>325</td>
+<td>441</td>
+<td>480</td>
+<td>26.9</td>
+<td>21.6</td>
+<td>2.65</td>
+<td>1.58</td>
+<td>0.366435367</td>
+<td>0.        084508842</td>
+<td>50</td>
+<td>136.9</td>
+</tr>
+<tr>
+<td>25</td>
+<td>1"</td>
+<td>558</td>
+<td>607</td>
+<td>827</td>
+<td>894</td>
+<td>33.7</td>
+<td>29.1</td>
+<td>2.3</td>
+<td>1.78</td>
+<td>0.665083019</td>
+<td>0.        105871672</td>
+<td>50</td>
+<td>143.7</td>
+</tr>
+<tr>
+<td>32</td>
+<td>1 1/4"</td>
+<td>1371</td>
+<td>1478</td>
+<td>2023</td>
+<td>2167</td>
+<td>42.4</td>
+<td>37.8</td>
+<td>2.3</td>
+<td>2.27</td>
+<td>1.122208312</td>
+<td>0.        133203529</td>
+<td>50</td>
+<td>152.4</td>
+</tr>
+<tr>
+<td>40</td>
+<td>1 1/2"</td>
+<td>2034</td>
+<td>2185</td>
+<td>2994</td>
+<td>3197</td>
+<td>48.3</td>
+<td>43.7</td>
+<td>2.3</td>
+<td>2.61</td>
+<td>1.499867019</td>
+<td>0.        151738925</td>
+<td>60</td>
+<td>178.3</td>
+</tr>
+<tr>
+<td>50</td>
+<td>2"</td>
+<td>3923</td>
+<td>4189</td>
+<td>5758</td>
+<td>6116</td>
+<td>60.3</td>
+<td>54.5</td>
+<td>2.9</td>
+<td>4.11</td>
+<td>2.332828895</td>
+<td>0.        189438037</td>
+<td>60</td>
+<td>190.3</td>
+</tr>
+<tr>
+<td>65</td>
+<td>2 1/2"</td>
+<td>7519</td>
+<td>7987</td>
+<td>11006</td>
+<td>11631</td>
+<td>76.1</td>
+<td>70.3</td>
+<td>2.9</td>
+<td>5.24</td>
+<td>3.881508409</td>
+<td>0.        239075201</td>
+<td>80</td>
+<td>246.1</td>
+</tr>
+<tr>
+<td>80</td>
+<td>3"</td>
+<td>11521</td>
+<td>12197</td>
+<td>16834</td>
+<td>17735</td>
+<td>88.9</td>
+<td>82.5</td>
+<td>3.2</td>
+<td>6.76</td>
+<td>5.34561625</td>
+<td>0.        279287587</td>
+<td>80</td>
+<td>258.9</td>
+</tr>
+<tr>
+<td>100</td>
+<td>4"</td>
+<td>23200</td>
+<td>24400</td>
+<td>33800</td>
+<td>35400</td>
+<td>114.3</td>
+<td>107.1</td>
+<td>3.6</td>
+<td>9.83</td>
+<td>9.008838947</td>
+<td>0.        35908404</td>
+<td>100</td>
+<td>324.3</td>
+</tr>
+<tr>
+<td>125</td>
+<td>5"</td>
+<td>40100</td>
+<td>42100</td>
+<td>58400</td>
+<td>61000</td>
+<td>139.7</td>
+<td>131.7</td>
+<td>4</td>
+<td>13.4</td>
+<td>13.62264475</td>
+<td>0.        438880494</td>
+<td>100</td>
+<td>349.7</td>
+</tr>
+<tr>
+<td>150</td>
+<td>6"</td>
+<td>66700</td>
+<td>69700</td>
+<td>96800</td>
+<td>100800</td>
+<td>168.3</td>
+<td>159.3</td>
+<td>4.5</td>
+<td>18.2</td>
+<td>19.93064864</td>
+<td>0.        528730044</td>
+<td>100</td>
+<td>378.3</td>
+</tr>
+<tr>
+<td>200</td>
+<td></td>
+<td>137000</td>
+<td>142000</td>
+<td>198000</td>
+<td>208000</td>
+<td>219.1</td>
+<td>210.1</td>
+<td>4.5</td>
+<td>23.8</td>
+<td>34.66905358</td>
+<td>0.        68832295</td>
+<td>120</td>
+<td>469.1</td>
+</tr>
+<tr>
+<td>250</td>
+<td></td>
+<td>248000</td>
+<td>257000</td>
+<td>359000</td>
+<td>371000</td>
+<td>273</td>
+<td>263</td>
+<td>5</td>
+<td>33</td>
+<td>54.32520556</td>
+<td>0.        857654794</td>
+<td>120</td>
+<td>523</td>
+</tr>
+<tr>
+<td>300</td>
+<td></td>
+<td>392000</td>
+<td>406000</td>
+<td>566000</td>
+<td>566000</td>
+<td>323.9</td>
+<td>312.7</td>
+<td>5.6</td>
+<td>44</td>
+<td>76.79724558</td>
+<td>1.        01756186</td>
+<td>120</td>
+<td>573.9</td>
+</tr>
+<tr>
+<td>350</td>
+<td></td>
+<td></td>
+<td></td>
+<td>716000</td>
+<td>716000</td>
+<td>355.6</td>
+<td>344.4</td>
+<td>5.6</td>
+<td>48.3</td>
+<td>93.1571443</td>
+<td>1.        117150348</td>
+<td>120</td>
+<td>605.6</td>
+</tr>
+<tr>
+<td>400</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1003000</td>
+<td>1003000</td>
+<td>406.4</td>
+<td>395.2</td>
+<td>5.6</td>
+<td>62.2</td>
+<td>122.6658728</td>
+<td>1.        276743254</td>
+<td>120</td>
+<td>656.4</td>
+</tr>
+<tr>
+<td>450</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1289000</td>
+<td>1289000</td>
+<td>457</td>
+<td>444.4</td>
+<td>6.3</td>
+<td>71.36</td>
+<td>155.1093514</td>
+<td>1.        435707843</td>
+<td>120</td>
+<td>707</td>
+</tr>
+<tr>
+<td>500</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1576000</td>
+<td>1576000</td>
+<td>508</td>
+<td>495.4</td>
+<td>6.3</td>
+<td>79.44</td>
+<td>192.7533283</td>
+<td>1.        595929068</td>
+<td>120</td>
+<td>758</td>
+</tr>
+<tr>
+<td>550</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>559</td>
+<td>546.4</td>
+<td>6.3</td>
+<td>87.51</td>
+<td>234.4829465</td>
+<td>1.        756150293</td>
+<td>120</td>
+<td>809</td>
+</tr>
+<tr>
+<td>600</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2150000</td>
+<td>2150000</td>
+<td>610</td>
+<td>597.4</td>
+<td>6.3</td>
+<td>95.59</td>
+<td>280.2982058</td>
+<td>1.        916371519</td>
+<td>120</td>
+<td>860</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>DN</th>
+<th>Zoll</th>
+<th>50 Pa/m bei 10°C</th>
+<th>50 Pa/m bei 40°C</th>
+<th>100 Pa/m bei 10°C</th>
+<th>100 Pa/m bei 40°C</th>
+<th>øAussen</th>
+<th>øInnen</th>
+<th>Stärke</th>
+<th>Gewicht</th>
+<th>Wasserinhalt</th>
+<th>Rohroberfläche</th>
+<th>Heizung PIR</th>
+<th>Aussendurchmesser mit Isolation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>mm</td>
+<td>mm</td>
+<td>mm</td>
+<td>kg/m</td>
+<td>dm²/m</td>
+<td>m²/       m</td>
+<td>mm</td>
+<td>mm</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3/8"</td>
+<td>65</td>
+<td>73</td>
+<td>97</td>
+<td>108</td>
+<td>17.2</td>
+<td>12.5</td>
+<td>2.35</td>
+<td>0.85</td>
+<td>0.122718463</td>
+<td>0.054035394</td>
+<td>13</td>
+<td>36</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1/2"</td>
+<td>129</td>
+<td>143</td>
+<td>193</td>
+<td>212</td>
+<td>21.3</td>
+<td>16</td>
+<td>2.65</td>
+<td>1.22</td>
+<td>0.20106193</td>
+<td>0.066915924</td>
+<td>13</td>
+<td>41</td>
+</tr>
+<tr>
+<td>20</td>
+<td>3/4"</td>
+<td>296</td>
+<td>325</td>
+<td>441</td>
+<td>480</td>
+<td>26.9</td>
+<td>21.6</td>
+<td>2.65</td>
+<td>1.58</td>
+<td>0.366435367</td>
+<td>0.084508842</td>
+<td>13</td>
+<td>46</td>
+</tr>
+<tr>
+<td>25</td>
+<td>1"</td>
+<td>558</td>
+<td>607</td>
+<td>827</td>
+<td>894</td>
+<td>33.7</td>
+<td>29.1</td>
+<td>2.3</td>
+<td>1.78</td>
+<td>0.665083019</td>
+<td>0.105871672</td>
+<td>13</td>
+<td>51</td>
+</tr>
+<tr>
+<td>32</td>
+<td>1 1/4"</td>
+<td>1371</td>
+<td>1478</td>
+<td>2023</td>
+<td>2167</td>
+<td>42.4</td>
+<td>37.8</td>
+<td>2.3</td>
+<td>2.27</td>
+<td>1.122208312</td>
+<td>0.133203529</td>
+<td>13</td>
+<td>58</td>
+</tr>
+<tr>
+<td>40</td>
+<td>1 1/2"</td>
+<td>2034</td>
+<td>2185</td>
+<td>2994</td>
+<td>3197</td>
+<td>48.3</td>
+<td>43.7</td>
+<td>2.3</td>
+<td>2.61</td>
+<td>1.499867019</td>
+<td>0.151738925</td>
+<td>13</td>
+<td>66</td>
+</tr>
+<tr>
+<td>50</td>
+<td>2"</td>
+<td>3923</td>
+<td>4189</td>
+<td>5758</td>
+<td>6116</td>
+<td>60.3</td>
+<td>54.5</td>
+<td>2.9</td>
+<td>4.11</td>
+<td>2.332828895</td>
+<td>0.189438037</td>
+<td>13</td>
+<td>76</td>
+</tr>
+<tr>
+<td>65</td>
+<td>2 1/2"</td>
+<td>7519</td>
+<td>7987</td>
+<td>11006</td>
+<td>11631</td>
+<td>76.1</td>
+<td>70.3</td>
+<td>2.9</td>
+<td>5.24</td>
+<td>3.881508409</td>
+<td>0.239075201</td>
+<td>19</td>
+<td>103</td>
+</tr>
+<tr>
+<td>80</td>
+<td>3"</td>
+<td>11521</td>
+<td>12197</td>
+<td>16834</td>
+<td>17735</td>
+<td>88.9</td>
+<td>82.5</td>
+<td>3.2</td>
+<td>6.76</td>
+<td>5.34561625</td>
+<td>0.279287587</td>
+<td>19</td>
+<td>118</td>
+</tr>
+<tr>
+<td>100</td>
+<td>4"</td>
+<td>23200</td>
+<td>24400</td>
+<td>33800</td>
+<td>35400</td>
+<td>114.3</td>
+<td>107.1</td>
+<td>3.6</td>
+<td>9.83</td>
+<td>9.008838947</td>
+<td>0.35908404</td>
+<td>19</td>
+<td>138</td>
+</tr>
+<tr>
+<td>125</td>
+<td>5"</td>
+<td>40100</td>
+<td>42100</td>
+<td>58400</td>
+<td>61000</td>
+<td>139.7</td>
+<td>131.7</td>
+<td>4</td>
+<td>13.4</td>
+<td>13.62264475</td>
+<td>0.438880494</td>
+<td>19</td>
+<td>163</td>
+</tr>
+<tr>
+<td>150</td>
+<td>6"</td>
+<td>66700</td>
+<td>69700</td>
+<td>96800</td>
+<td>100800</td>
+<td>168.3</td>
+<td>159.3</td>
+<td>4.5</td>
+<td>18.2</td>
+<td>19.93064864</td>
+<td>0.528730044</td>
+<td>32</td>
+<td>214</td>
+</tr>
+<tr>
+<td>200</td>
+<td></td>
+<td>137000</td>
+<td>142000</td>
+<td>198000</td>
+<td>208000</td>
+<td>219.1</td>
+<td>210.1</td>
+<td>4.5</td>
+<td>23.8</td>
+<td>34.66905358</td>
+<td>0.68832295</td>
+<td>32</td>
+<td>264</td>
+</tr>
+<tr>
+<td>250</td>
+<td></td>
+<td>248000</td>
+<td>257000</td>
+<td>359000</td>
+<td>371000</td>
+<td>273</td>
+<td>263</td>
+<td>5</td>
+<td>33</td>
+<td>54.32520556</td>
+<td>0.857654794</td>
+<td>32</td>
+<td>314</td>
+</tr>
+<tr>
+<td>300</td>
+<td></td>
+<td>392000</td>
+<td>406000</td>
+<td>566000</td>
+<td>566000</td>
+<td>323.9</td>
+<td>312.7</td>
+<td>5.6</td>
+<td>44</td>
+<td>76.79724558</td>
+<td>1.01756186</td>
+<td>32</td>
+<td>364</td>
+</tr>
+<tr>
+<td>350</td>
+<td></td>
+<td></td>
+<td></td>
+<td>716000</td>
+<td>716000</td>
+<td>355.6</td>
+<td>344.4</td>
+<td>5.6</td>
+<td>48.3</td>
+<td>93.1571443</td>
+<td>1.117150348</td>
+<td>32</td>
+<td>414</td>
+</tr>
+<tr>
+<td>400</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1003000</td>
+<td>1003000</td>
+<td>406.4</td>
+<td>395.2</td>
+<td>5.6</td>
+<td>62.2</td>
+<td>122.6658728</td>
+<td>1.276743254</td>
+<td>32</td>
+<td>464</td>
+</tr>
+<tr>
+<td>450</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1289000</td>
+<td>1289000</td>
+<td>457</td>
+<td>444.4</td>
+<td>6.3</td>
+<td>71.36</td>
+<td>155.1093514</td>
+<td>1.435707843</td>
+<td>32</td>
+<td>514</td>
+</tr>
+<tr>
+<td>500</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1576000</td>
+<td>1576000</td>
+<td>508</td>
+<td>495.4</td>
+<td>6.3</td>
+<td>79.44</td>
+<td>192.7533283</td>
+<td>1.595929068</td>
+<td>32</td>
+<td>564</td>
+</tr>
+<tr>
+<td>550</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>559</td>
+<td>546.4</td>
+<td>6.3</td>
+<td>87.51</td>
+<td>234.4829465</td>
+<td>1.756150293</td>
+<td>32</td>
+<td>614</td>
+</tr>
+<tr>
+<td>600</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2150000</td>
+<td>2150000</td>
+<td>610</td>
+<td>597.4</td>
+<td>6.3</td>
+<td>95.59</td>
+<td>280.2982058</td>
+<td>1.916371519</td>
+<td>32</td>
+<td>664</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</input></input></div>
+</details>
+<details class="info">
+<summary>Kälte</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="arithmatex">\(\lambda &gt; 0.03\)</span> <br/> <span class="arithmatex">\(\lambda &lt;= 0.05\)</span> </label><label for="__tabbed_2_2"><span class="arithmatex">\(\lambda \leq 0.03\)</span></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>DN</th>
+<th>Zoll</th>
+<th>50 Pa/m bei 10°C</th>
+<th>50 Pa/m bei 40°C</th>
+<th>100 Pa/m bei 10°C</th>
+<th>100 Pa/m bei 40°C</th>
+<th>øAussen</th>
+<th>øInnen</th>
+<th>Stärke</th>
+<th>Gewicht</th>
+<th>Wasserinhalt</th>
+<th>Rohroberfläche</th>
+<th>Heizung (Mineralwolle / Armaflex)</th>
+<th>Aussendurchmesser mit Isolation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>mm</td>
+<td>mm</td>
+<td>mm</td>
+<td>kg/m</td>
+<td>dm²/m</td>
+<td>m²/       m</td>
+<td>mm</td>
+<td>mm</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3/8"</td>
+<td>65</td>
+<td>73</td>
+<td>97</td>
+<td>108</td>
+<td>17.2</td>
+<td>12.5</td>
+<td>2.35</td>
+<td>0.85</td>
+<td>0.122718463</td>
+<td>0.054035394</td>
+<td>30</td>
+<td>87.2</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1/2"</td>
+<td>129</td>
+<td>143</td>
+<td>193</td>
+<td>212</td>
+<td>21.3</td>
+<td>16</td>
+<td>2.65</td>
+<td>1.22</td>
+<td>0.20106193</td>
+<td>0.066915924</td>
+<td>30</td>
+<td>91.3</td>
+</tr>
+<tr>
+<td>20</td>
+<td>3/4"</td>
+<td>296</td>
+<td>325</td>
+<td>441</td>
+<td>480</td>
+<td>26.9</td>
+<td>21.6</td>
+<td>2.65</td>
+<td>1.58</td>
+<td>0.366435367</td>
+<td>0.084508842</td>
+<td>40</td>
+<td>116.9</td>
+</tr>
+<tr>
+<td>25</td>
+<td>1"</td>
+<td>558</td>
+<td>607</td>
+<td>827</td>
+<td>894</td>
+<td>33.7</td>
+<td>29.1</td>
+<td>2.3</td>
+<td>1.78</td>
+<td>0.665083019</td>
+<td>0.105871672</td>
+<td>40</td>
+<td>123.7</td>
+</tr>
+<tr>
+<td>32</td>
+<td>1 1/4"</td>
+<td>1371</td>
+<td>1478</td>
+<td>2023</td>
+<td>2167</td>
+<td>42.4</td>
+<td>37.8</td>
+<td>2.3</td>
+<td>2.27</td>
+<td>1.122208312</td>
+<td>0.133203529</td>
+<td>40</td>
+<td>132.4</td>
+</tr>
+<tr>
+<td>40</td>
+<td>1 1/2"</td>
+<td>2034</td>
+<td>2185</td>
+<td>2994</td>
+<td>3197</td>
+<td>48.3</td>
+<td>43.7</td>
+<td>2.3</td>
+<td>2.61</td>
+<td>1.499867019</td>
+<td>0.151738925</td>
+<td>50</td>
+<td>158.3</td>
+</tr>
+<tr>
+<td>50</td>
+<td>2"</td>
+<td>3923</td>
+<td>4189</td>
+<td>5758</td>
+<td>6116</td>
+<td>60.3</td>
+<td>54.5</td>
+<td>2.9</td>
+<td>4.11</td>
+<td>2.332828895</td>
+<td>0.189438037</td>
+<td>50</td>
+<td>170.3</td>
+</tr>
+<tr>
+<td>65</td>
+<td>2 1/2"</td>
+<td>7519</td>
+<td>7987</td>
+<td>11006</td>
+<td>11631</td>
+<td>76.1</td>
+<td>70.3</td>
+<td>2.9</td>
+<td>5.24</td>
+<td>3.881508409</td>
+<td>0.239075201</td>
+<td>60</td>
+<td>206.1</td>
+</tr>
+<tr>
+<td>80</td>
+<td>3"</td>
+<td>11521</td>
+<td>12197</td>
+<td>16834</td>
+<td>17735</td>
+<td>88.9</td>
+<td>82.5</td>
+<td>3.2</td>
+<td>6.76</td>
+<td>5.34561625</td>
+<td>0.279287587</td>
+<td>60</td>
+<td>218.9</td>
+</tr>
+<tr>
+<td>100</td>
+<td>4"</td>
+<td>23200</td>
+<td>24400</td>
+<td>33800</td>
+<td>35400</td>
+<td>114.3</td>
+<td>107.1</td>
+<td>3.6</td>
+<td>9.83</td>
+<td>9.008838947</td>
+<td>0.35908404</td>
+<td>80</td>
+<td>284.3</td>
+</tr>
+<tr>
+<td>125</td>
+<td>5"</td>
+<td>40100</td>
+<td>42100</td>
+<td>58400</td>
+<td>61000</td>
+<td>139.7</td>
+<td>131.7</td>
+<td>4</td>
+<td>13.4</td>
+<td>13.62264475</td>
+<td>0.438880494</td>
+<td>80</td>
+<td>309.7</td>
+</tr>
+<tr>
+<td>150</td>
+<td>6"</td>
+<td>66700</td>
+<td>69700</td>
+<td>96800</td>
+<td>100800</td>
+<td>168.3</td>
+<td>159.3</td>
+<td>4.5</td>
+<td>18.2</td>
+<td>19.93064864</td>
+<td>0.528730044</td>
+<td>80</td>
+<td>338.3</td>
+</tr>
+<tr>
+<td>200</td>
+<td></td>
+<td>137000</td>
+<td>142000</td>
+<td>198000</td>
+<td>208000</td>
+<td>219.1</td>
+<td>210.1</td>
+<td>4.5</td>
+<td>23.8</td>
+<td>34.66905358</td>
+<td>0.68832295</td>
+<td>80</td>
+<td>389.1</td>
+</tr>
+<tr>
+<td>250</td>
+<td></td>
+<td>248000</td>
+<td>257000</td>
+<td>359000</td>
+<td>371000</td>
+<td>273</td>
+<td>263</td>
+<td>5</td>
+<td>33</td>
+<td>54.32520556</td>
+<td>0.857654794</td>
+<td>80</td>
+<td>443</td>
+</tr>
+<tr>
+<td>300</td>
+<td></td>
+<td>392000</td>
+<td>406000</td>
+<td>566000</td>
+<td>566000</td>
+<td>323.9</td>
+<td>312.7</td>
+<td>5.6</td>
+<td>44</td>
+<td>76.79724558</td>
+<td>1.01756186</td>
+<td>80</td>
+<td>493.9</td>
+</tr>
+<tr>
+<td>350</td>
+<td></td>
+<td></td>
+<td></td>
+<td>716000</td>
+<td>716000</td>
+<td>355.6</td>
+<td>344.4</td>
+<td>5.6</td>
+<td>48.3</td>
+<td>93.1571443</td>
+<td>1.117150348</td>
+<td>80</td>
+<td>525.6</td>
+</tr>
+<tr>
+<td>400</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1003000</td>
+<td>1003000</td>
+<td>406.4</td>
+<td>395.2</td>
+<td>5.6</td>
+<td>62.2</td>
+<td>122.6658728</td>
+<td>1.276743254</td>
+<td>80</td>
+<td>576.4</td>
+</tr>
+<tr>
+<td>450</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1289000</td>
+<td>1289000</td>
+<td>457</td>
+<td>444.4</td>
+<td>6.3</td>
+<td>71.36</td>
+<td>155.1093514</td>
+<td>1.435707843</td>
+<td>80</td>
+<td>627</td>
+</tr>
+<tr>
+<td>500</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1576000</td>
+<td>1576000</td>
+<td>508</td>
+<td>495.4</td>
+<td>6.3</td>
+<td>79.44</td>
+<td>192.7533283</td>
+<td>1.595929068</td>
+<td>80</td>
+<td>678</td>
+</tr>
+<tr>
+<td>550</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>559</td>
+<td>546.4</td>
+<td>6.3</td>
+<td>87.51</td>
+<td>234.4829465</td>
+<td>1.756150293</td>
+<td>80</td>
+<td>729</td>
+</tr>
+<tr>
+<td>600</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2150000</td>
+<td>2150000</td>
+<td>610</td>
+<td>597.4</td>
+<td>6.3</td>
+<td>95.59</td>
+<td>280.2982058</td>
+<td>1.916371519</td>
+<td>80</td>
+<td>780</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>DN</th>
+<th>Zoll</th>
+<th>bei 10°C</th>
+<th>bei 40°C</th>
+<th>100 Pa/m bei 10°C</th>
+<th>100 Pa/m bei 40°C</th>
+<th>øAussen</th>
+<th>øInnen</th>
+<th>Stärke</th>
+<th>Gewicht</th>
+<th>Wasserinhalt</th>
+<th>ohroberfläche</th>
+<th>Heizung (Mineralwolle / Armaflex)</th>
+<th>Aussendurchmesser mit Isolation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>kg/h</td>
+<td>mm</td>
+<td>mm</td>
+<td>mm</td>
+<td>kg/m</td>
+<td>dm²/m</td>
+<td>m²/</td>
+<td>mm</td>
+<td>mm</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3/8"</td>
+<td>65</td>
+<td>73</td>
+<td>97</td>
+<td>108</td>
+<td>17.2</td>
+<td>12.5</td>
+<td>2.35</td>
+<td>0.85</td>
+<td>0.122718463</td>
+<td>0.054035394</td>
+<td>30</td>
+<td>67</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1/2"</td>
+<td>129</td>
+<td>143</td>
+<td>193</td>
+<td>212</td>
+<td>21.3</td>
+<td>16</td>
+<td>2.65</td>
+<td>1.22</td>
+<td>0.20106193</td>
+<td>0.066915924</td>
+<td>30</td>
+<td>63</td>
+</tr>
+<tr>
+<td>20</td>
+<td>3/4"</td>
+<td>296</td>
+<td>325</td>
+<td>441</td>
+<td>480</td>
+<td>26.9</td>
+<td>21.6</td>
+<td>2.65</td>
+<td>1.58</td>
+<td>0.366435367</td>
+<td>0.084508842</td>
+<td>30</td>
+<td>11</td>
+</tr>
+<tr>
+<td>25</td>
+<td>1"</td>
+<td>558</td>
+<td>607</td>
+<td>827</td>
+<td>894</td>
+<td>33.7</td>
+<td>29.1</td>
+<td>2.3</td>
+<td>1.78</td>
+<td>0.665083019</td>
+<td>0.105871672</td>
+<td>30</td>
+<td>97</td>
+</tr>
+<tr>
+<td>32</td>
+<td>1 1/4"</td>
+<td>1371</td>
+<td>1478</td>
+<td>2023</td>
+<td>2167</td>
+<td>42.4</td>
+<td>37.8</td>
+<td>2.3</td>
+<td>2.27</td>
+<td>1.122208312</td>
+<td>0.133203529</td>
+<td>30</td>
+<td>093</td>
+</tr>
+<tr>
+<td>40</td>
+<td>1 1/2"</td>
+<td>2034</td>
+<td>2185</td>
+<td>2994</td>
+<td>3197</td>
+<td>48.3</td>
+<td>43.7</td>
+<td>2.3</td>
+<td>2.61</td>
+<td>1.499867019</td>
+<td>0.151738925</td>
+<td>30</td>
+<td>064</td>
+</tr>
+<tr>
+<td>50</td>
+<td>2"</td>
+<td>3923</td>
+<td>4189</td>
+<td>5758</td>
+<td>6116</td>
+<td>60.3</td>
+<td>54.5</td>
+<td>2.9</td>
+<td>4.11</td>
+<td>2.332828895</td>
+<td>0.189438037</td>
+<td>30</td>
+<td>828</td>
+</tr>
+<tr>
+<td>65</td>
+<td>2 1/2"</td>
+<td>7519</td>
+<td>7987</td>
+<td>11006</td>
+<td>11631</td>
+<td>76.1</td>
+<td>70.3</td>
+<td>2.9</td>
+<td>5.24</td>
+<td>3.881508409</td>
+<td>0.239075201</td>
+<td>30</td>
+<td>1076</td>
+</tr>
+<tr>
+<td>80</td>
+<td>3"</td>
+<td>11521</td>
+<td>12197</td>
+<td>16834</td>
+<td>17735</td>
+<td>88.9</td>
+<td>82.5</td>
+<td>3.2</td>
+<td>6.76</td>
+<td>5.34561625</td>
+<td>0.279287587</td>
+<td>30</td>
+<td>6904</td>
+</tr>
+<tr>
+<td>100</td>
+<td>4"</td>
+<td>23200</td>
+<td>24400</td>
+<td>33800</td>
+<td>35400</td>
+<td>114.3</td>
+<td>107.1</td>
+<td>3.6</td>
+<td>9.83</td>
+<td>9.008838947</td>
+<td>0.35908404</td>
+<td>40</td>
+<td>3890</td>
+</tr>
+<tr>
+<td>125</td>
+<td>5"</td>
+<td>40100</td>
+<td>42100</td>
+<td>58400</td>
+<td>61000</td>
+<td>139.7</td>
+<td>131.7</td>
+<td>4</td>
+<td>13.4</td>
+<td>13.62264475</td>
+<td>0.438880494</td>
+<td>40</td>
+<td>8490</td>
+</tr>
+<tr>
+<td>150</td>
+<td>6"</td>
+<td>66700</td>
+<td>69700</td>
+<td>96800</td>
+<td>100800</td>
+<td>168.3</td>
+<td>159.3</td>
+<td>4.5</td>
+<td>18.2</td>
+<td>19.93064864</td>
+<td>0.528730044</td>
+<td>40</td>
+<td>6890</td>
+</tr>
+<tr>
+<td>200</td>
+<td></td>
+<td>137000</td>
+<td>142000</td>
+<td>198000</td>
+<td>208000</td>
+<td>219.1</td>
+<td>210.1</td>
+<td>4.5</td>
+<td>23.8</td>
+<td>34.66905358</td>
+<td>0.68832295</td>
+<td>60</td>
+<td>98130</td>
+</tr>
+<tr>
+<td>250</td>
+<td></td>
+<td>248000</td>
+<td>257000</td>
+<td>359000</td>
+<td>371000</td>
+<td>273</td>
+<td>263</td>
+<td>5</td>
+<td>33</td>
+<td>54.32520556</td>
+<td>0.857654794</td>
+<td>60</td>
+<td>59130</td>
+</tr>
+<tr>
+<td>300</td>
+<td></td>
+<td>392000</td>
+<td>406000</td>
+<td>566000</td>
+<td>566000</td>
+<td>323.9</td>
+<td>312.7</td>
+<td>5.6</td>
+<td>44</td>
+<td>76.79724558</td>
+<td>1.01756186</td>
+<td>60</td>
+<td>66130</td>
+</tr>
+<tr>
+<td>350</td>
+<td></td>
+<td></td>
+<td></td>
+<td>716000</td>
+<td>716000</td>
+<td>355.6</td>
+<td>344.4</td>
+<td>5.6</td>
+<td>48.3</td>
+<td>93.1571443</td>
+<td>1.117150348</td>
+<td>60</td>
+<td>16130</td>
+</tr>
+<tr>
+<td>400</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1003000</td>
+<td>1003000</td>
+<td>406.4</td>
+<td>395.2</td>
+<td>5.6</td>
+<td>62.2</td>
+<td>122.6658728</td>
+<td>1.276743254</td>
+<td>60</td>
+<td>003130</td>
+</tr>
+<tr>
+<td>450</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1289000</td>
+<td>1289000</td>
+<td>457</td>
+<td>444.4</td>
+<td>6.3</td>
+<td>71.36</td>
+<td>155.1093514</td>
+<td>1.435707843</td>
+<td>60</td>
+<td>289130</td>
+</tr>
+<tr>
+<td>500</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1576000</td>
+<td>1576000</td>
+<td>508</td>
+<td>495.4</td>
+<td>6.3</td>
+<td>79.44</td>
+<td>192.7533283</td>
+<td>1.595929068</td>
+<td>60</td>
+<td>576130</td>
+</tr>
+<tr>
+<td>550</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>559</td>
+<td>546.4</td>
+<td>6.3</td>
+<td>87.51</td>
+<td>234.4829465</td>
+<td>1.756150293</td>
+<td>60</td>
+<td>89</td>
+</tr>
+<tr>
+<td>600</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2150000</td>
+<td>2150000</td>
+<td>610</td>
+<td>597.4</td>
+<td>6.3</td>
+<td>95.59</td>
+<td>280.2982058</td>
+<td>1.916371519</td>
+<td>60</td>
+<td>150130</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</input></input></div>
+</details>
+<h2 id="zahler">Zähler<a class="headerlink" href="#zahler" title="Permanent link">¶</a></h2>
+<ul>
+<li>EN 1434</li>
+<li>EN 1434-3 (Protokoll)</li>
+<li>DIN IEC1107 (hardware)</li>
+<li>MID 2014/32/EU</li>
+</ul>
+<details class="info">
+<summary>Dimensionen Bsp. Sontex Supercal 739</summary>
+<table>
+<thead>
+<tr>
+<th>Qp</th>
+<th>Gewindeanschluss</th>
+<th></th>
+<th>Einbau- länge</th>
+<th>Material</th>
+<th>PN</th>
+<th>Maximal  Durch-  fluss  qs</th>
+<th>Minimal Durch- fluss qi</th>
+<th>Ansprechs-  Grenze   (50°C)</th>
+<th>Fühler  Einbau- platz</th>
+<th>Gewicht</th>
+<th>Kvs  Werte  (20°C)</th>
+<th>Druck- abfall bei  qp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>m3/h</td>
+<td>G''  (EN ISO 228-1)</td>
+<td>DN</td>
+<td>mm</td>
+<td></td>
+<td>bar</td>
+<td>m3/h</td>
+<td>l/h * (h / v)</td>
+<td>l/h</td>
+<td></td>
+<td>Kg</td>
+<td>m3/h</td>
+<td>bar</td>
+</tr>
+<tr>
+<td>0.6</td>
+<td>3/4 ''</td>
+<td>(15)</td>
+<td>110</td>
+<td>Messing</td>
+<td>16</td>
+<td>1.2</td>
+<td>12 / 24</td>
+<td>3</td>
+<td>ja</td>
+<td>0.8</td>
+<td>1.3</td>
+<td>0.22</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>3/4''</td>
+<td>(15)</td>
+<td>110</td>
+<td>Messing</td>
+<td>16</td>
+<td>3.0</td>
+<td>30 / 60</td>
+<td>3</td>
+<td>ja</td>
+<td>0.9</td>
+<td>3.2</td>
+<td>0.22</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>1''</td>
+<td>(20)</td>
+<td>130</td>
+<td>Messing</td>
+<td>16</td>
+<td>3.0</td>
+<td>30 / 60</td>
+<td>3</td>
+<td>ja</td>
+<td>1.0</td>
+<td>3.2</td>
+<td>0.22</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>1''</td>
+<td>(20)</td>
+<td>130</td>
+<td>Messing</td>
+<td>16</td>
+<td>5.0</td>
+<td>50 /100</td>
+<td>3</td>
+<td>ja</td>
+<td>1.1</td>
+<td>5.1</td>
+<td>0.24</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="ventile">Ventile<a class="headerlink" href="#ventile" title="Permanent link">¶</a></h2>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Zusammenfassung" class="md-footer__link md-footer__link--prev" href="../../Energievollzug/Tabellen/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                  Previous
+                </span>
+                Zusammenfassung
+              </div>
+</div>
+</a>
+<a aria-label="Next: Bauphysik" class="md-footer__link md-footer__link--next" href="../bauphysik/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                  Next
+                </span>
+                Bauphysik
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.instant", "navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

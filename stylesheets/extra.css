@@ -1,0 +1,82 @@
+.md-typeset__table {
+    min-width: 100%;
+}
+
+.md-grid {
+    max-width: 100%;
+    /* or 100%, if you want to stretch to full-width */
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
+
+@media print {
+    h3 {
+        page-break-before: always
+    }
+}
+
+code {
+    max-height: 30em;
+    background-color: transparent;
+  }
+
+.mkd-glr-script-out-disp code {
+    max-height: 30em;
+    background-color: transparent;
+  }
+
+:root {
+  --md-admonition-icon--table: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 256V160H224v96H64zm0 64H224v96H64V320zm224 96V320H448v96H288zM448 256H288V160H448v96zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>')
+}
+.md-typeset .admonition.table,
+.md-typeset details.table {
+  border-color: rgb(43, 155, 95);
+}
+.md-typeset .table > .admonition-title,
+.md-typeset .table > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .table > .admonition-title::before,
+.md-typeset .table > summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--table);
+          mask-image: var(--md-admonition-icon--table);
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  /*grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); see notes below */
+  gap: 1em;
+
+}
+
+#grid > div {
+  border-color: white;
+  border: solid;
+  text-align: center;
+  min-width: 40%;
+  max-width: 40%;
+  flex-grow: 4; /* default 0 */
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

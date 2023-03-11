@@ -1,0 +1,1773 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../" rel="prev"/>
+<link href="../plot_1_Bauphysik/" rel="next"/>
+<link href="../../../favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.2" name="generator"/>
+<title>SIA2024 - Model - Notes by Bitenergie</title>
+<link href="../../../assets/stylesheets/main.7bf56d0a.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../sg_gallery.css" rel="stylesheet"/>
+<link href="../../../sg_gallery-rendered-html.css" rel="stylesheet"/>
+<link href="../../../sg_gallery.css" rel="stylesheet"/>
+<link href="../../../sg_gallery-binder.css" rel="stylesheet"/>
+<link href="../../../sg_gallery-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="slate" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#sia2024-model">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Notes by Bitenergie" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Notes by Bitenergie">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Notes by Bitenergie
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              SIA2024 - Model
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_3" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_3" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2C5.13 2 2 5.13 2 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7M6 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H6v1m13-8h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9L19 13m-2.15 5.65L18 15l1.15 3.65h-2.3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../">
+        Jupyter
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../Links/Awesome%20HLK/">
+        Links
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../Sia%20380-1/Fenster/">
+        Normen
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../cheat_sheet/heizung/">
+        Cheat Sheet
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Notes by Bitenergie" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Notes by Bitenergie">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"></path></svg>
+</a>
+    Notes by Bitenergie
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Jupyter
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Jupyter
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../">Gallery</a>
+<label for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Gallery
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          SIA2024 - Model
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        SIA2024 - Model
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule-day">
+    Schedule Day
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule-annual">
+    schedule annual
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule-week">
+    schedule week
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#climate">
+    Climate
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dimension">
+    Dimension
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#material">
+    material
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#person">
+    Person
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#electric">
+    Electric
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#light">
+    Light
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ventilation">
+    Ventilation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#heating">
+    Heating
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sia-380">
+    SIA 380
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#design-day-august">
+    design day august
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model">
+    Model
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plot_1_Bauphysik/">
+        Bauphysik
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plot_2_pvwatt/">
+        PVWatts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plott_4_GeoAdmin/">
+        GeoAdmin API
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Links
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Links
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Links/Awesome%20HLK/">
+        Software
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Links/Zertifikate/">
+        Zertifikate
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Normen
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Normen
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          Sia 380-1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Sia 380-1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia%20380-1/Fenster/">
+        Fenster / Verschattung
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia%20380-1/Grundlagen/">
+        Grundlagen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia%20380-1/w%C3%A4rmebr%C3%BCcken/">
+        Wärmebrücken
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../Sia2024/">SIA 2024</a>
+<label for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+          SIA 2024
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia2024/Dokumentation/">
+        Dokumentation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia2024/Resultate/">
+        Resultate
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia2024/generated/">
+        MFH
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          SIA 2028
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          SIA 2028
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sia2028/monat/">
+        Wetter
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sia2028/Bins/">
+        Bins
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sia2028/Swissmeteo/">
+        Swissmeteo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          Energievollzug
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Energievollzug
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Energievollzug/Tabellen/">
+        Zusammenfassung
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Cheat Sheet
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Cheat Sheet
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../cheat_sheet/heizung/">
+        Heizung
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../cheat_sheet/bauphysik/">
+        Bauphysik
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule-day">
+    Schedule Day
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule-annual">
+    schedule annual
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schedule-week">
+    schedule week
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#climate">
+    Climate
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dimension">
+    Dimension
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#material">
+    material
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#person">
+    Person
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#electric">
+    Electric
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#light">
+    Light
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ventilation">
+    Ventilation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#heating">
+    Heating
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sia-380">
+    SIA 380
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#design-day-august">
+    design day august
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model">
+    Model
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<!--
+ DO NOT EDIT.
+ THIS FILE WAS AUTOMATICALLY GENERATED BY mkdocs-gallery.
+ TO MAKE CHANGES, EDIT THE SOURCE PYTHON FILE:
+ "docs/examples/5_model.py"
+ LINE NUMBERS ARE GIVEN BELOW.
+-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a href="#download_links">here</a>
+to download the full example code</p>
+</div>
+<h1 id="sia2024-model">SIA2024 - Model<a class="headerlink" href="#sia2024-model" title="Permanent link">¶</a></h1>
+<p>Base test with the sia 2024 model...</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 14-16 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 17-19 -->
+<h2 id="schedule-day">Schedule Day<a class="headerlink" href="#schedule-day" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 21-56 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">schedule_day</span> <span class="kn">import</span> <span class="n">ScheduleDay</span>
+
+
+<span class="n">hours</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mf">0.6</span><span class="p">,</span>
+    <span class="mf">0.4</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mf">0.8</span><span class="p">,</span>
+    <span class="mf">0.4</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mf">0.4</span><span class="p">,</span>
+    <span class="mf">0.8</span><span class="p">,</span>
+    <span class="mf">0.8</span><span class="p">,</span>
+    <span class="mf">0.8</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="n">schedule</span> <span class="o">=</span> <span class="n">ScheduleDay</span><span class="p">(</span><span class="n">hours</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">schedule</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">schedule</span><span class="o">.</span><span class="n">to_str</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">schedule</span><span class="o">.</span><span class="n">get_sum</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">schedule</span><span class="o">.</span><span class="n">get_len</span><span class="p">())</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 57-59 -->
+<h2 id="schedule-annual">schedule annual<a class="headerlink" href="#schedule-annual" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 61-84 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">schedule_rule_annual</span> <span class="kn">import</span> <span class="n">ScheduleRuleAnnual</span>
+
+<span class="n">schedule_annual_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"januar"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"february"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"march"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"april"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"may"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"june"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"july"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"august"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"september"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"october"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"november"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"december"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># test</span>
+<span class="n">schedule_annual</span> <span class="o">=</span> <span class="n">ScheduleRuleAnnual</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">schedule_annual_dict</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">schedule_annual</span><span class="o">.</span><span class="n">get_annual_simultaneity</span><span class="p">(),</span> <span class="mf">0.8</span>
+
+<span class="n">schedule_annual</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 85-87 -->
+<h2 id="schedule-week">schedule week<a class="headerlink" href="#schedule-week" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 89-107 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">schedule_rule_week</span> <span class="kn">import</span> <span class="n">ScheduleRuleWeek</span>
+
+<span class="n">schedule_week_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"sunday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"monday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"tuesday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"wednesday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"thursday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"friday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"saturday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">schedule_week</span> <span class="o">=</span> <span class="n">ScheduleRuleWeek</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">schedule_week_dict</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">schedule_week</span><span class="p">)</span>
+<span class="n">schedule_week</span><span class="o">.</span><span class="n">get_annual_active_days</span><span class="p">()</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 108-110 -->
+<h2 id="climate">Climate<a class="headerlink" href="#climate" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 112-126 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">climate</span> <span class="kn">import</span> <span class="n">Climate</span>
+
+<span class="n">cilmate_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"design_day_cooling"</span><span class="p">:</span> <span class="mi">26</span><span class="p">,</span>
+    <span class="s2">"design_day_heating"</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span>
+    <span class="s2">"average_cooling"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+    <span class="s2">"average_heating"</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
+    <span class="s2">"rel_humidity_cooling"</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+    <span class="s2">"rel_humidity_heating"</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">climate</span> <span class="o">=</span> <span class="n">Climate</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">cilmate_dict</span><span class="p">)</span>
+<span class="n">climate</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 127-129 -->
+<h2 id="dimension">Dimension<a class="headerlink" href="#dimension" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 131-149 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">dimension</span> <span class="kn">import</span> <span class="n">Dimension</span>
+
+
+<span class="n">dimension_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"window_frames_factor"</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">,</span>
+    <span class="s2">"net_to_gross"</span><span class="p">:</span> <span class="mf">0.85</span><span class="p">,</span>
+    <span class="s2">"reduction_factor_solar_heat_gain"</span><span class="p">:</span> <span class="mf">0.9</span><span class="p">,</span>
+    <span class="s2">"set_solar_shading_on"</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+    <span class="s2">"length"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s2">"depth"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="s2">"height"</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span>
+    <span class="s2">"thermal_active_area"</span><span class="p">:</span> <span class="mf">26.5</span><span class="p">,</span>
+    <span class="s2">"glass_percentage"</span><span class="p">:</span> <span class="mf">0.30</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">dimension</span> <span class="o">=</span> <span class="n">Dimension</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">dimension_dict</span><span class="p">)</span>
+<span class="n">dimension</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 150-152 -->
+<h2 id="material">material<a class="headerlink" href="#material" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 154-169 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">materials</span> <span class="kn">import</span> <span class="n">Material</span>
+
+<span class="n">material_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"heat_storage_capacity"</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+    <span class="s2">"transmittance_glazing"</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+    <span class="s2">"transmittance_glazing_shading"</span><span class="p">:</span> <span class="mf">0.14</span><span class="p">,</span>
+    <span class="s2">"light_transmittance"</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+    <span class="s2">"u_value_window"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"u_value_opaque"</span><span class="p">:</span> <span class="mf">0.17</span><span class="p">,</span>
+    <span class="s2">"solar_reduction_factor"</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">material</span> <span class="o">=</span> <span class="n">Material</span><span class="p">(</span><span class="o">**</span><span class="n">material_dict</span><span class="p">)</span>
+<span class="n">material_dict</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 170-172 -->
+<h2 id="person">Person<a class="headerlink" href="#person" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 174-195 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">person</span> <span class="kn">import</span> <span class="n">Person</span>
+
+
+<span class="n">person_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"area_per_person"</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span>
+    <span class="s2">"activity_level"</span><span class="p">:</span> <span class="mf">1.2</span><span class="p">,</span>
+    <span class="s2">"thermal_insulation_cladding_heating"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"thermal_insulation_cladding_cooling"</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+    <span class="s2">"humidity_production_without_person"</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+    <span class="s2">"sensible_heat_output_cooling"</span><span class="p">:</span> <span class="mi">84</span><span class="p">,</span>
+    <span class="s2">"sensible_heat_output_heating"</span><span class="p">:</span> <span class="mi">94</span><span class="p">,</span>
+    <span class="s2">"humidity_production_heating"</span><span class="p">:</span> <span class="mi">51</span><span class="p">,</span>
+    <span class="s2">"humidity_production_cooling"</span><span class="p">:</span> <span class="mi">66</span><span class="p">,</span>
+    <span class="s2">"schedule_day"</span><span class="p">:</span> <span class="n">schedule</span><span class="p">,</span>
+    <span class="s2">"schedule_week"</span><span class="p">:</span> <span class="n">schedule_week</span><span class="p">,</span>
+    <span class="s2">"schedule_annual"</span><span class="p">:</span> <span class="n">schedule_annual</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">person</span> <span class="o">=</span> <span class="n">Person</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">person_dict</span><span class="p">)</span>
+<span class="n">person</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 196-198 -->
+<h2 id="electric">Electric<a class="headerlink" href="#electric" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 200-243 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">electric_equipment</span> <span class="kn">import</span> <span class="n">ElectricEquipment</span>
+
+<span class="n">el_schedule</span> <span class="o">=</span> <span class="n">ScheduleDay</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.8</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.8</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.8</span><span class="p">,</span>
+        <span class="mf">1.0</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+        <span class="mf">0.2</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">electric_equipment_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"electrical_power_equipment"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s2">"electrical_power_process"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s2">"power_factor_outside_of_use"</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
+    <span class="s2">"schedule_day"</span><span class="p">:</span> <span class="n">el_schedule</span><span class="p">,</span>
+    <span class="s2">"schedule_week"</span><span class="p">:</span> <span class="n">schedule_week</span><span class="p">,</span>
+    <span class="s2">"schedule_annual"</span><span class="p">:</span> <span class="n">schedule_annual</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">electric_equipment</span> <span class="o">=</span> <span class="n">ElectricEquipment</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">electric_equipment_dict</span><span class="p">)</span>
+<span class="n">electric_equipment</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 244-258 -->
+<h2 id="light">Light<a class="headerlink" href="#light" title="Permanent link">¶</a></h2>
+<ul>
+<li>space_in = 1.27</li>
+<li>space_eff = 0.70</li>
+<li>pwr_area = 7.66</li>
+<li>min_ = 7.60</li>
+<li>hr_ht_day = 0.74</li>
+<li>cor_lintel = 1.20</li>
+<li>zg_max = 0.26</li>
+<li>zg = 0.18</li>
+<li>hr = 550.0</li>
+<li>q_ilighting = 5.65 wh/m<span class="arithmatex">\(^2\)</span></li>
+<li>lighting_energy = 4.21</li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 260-289 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">lighting</span> <span class="kn">import</span> <span class="n">Lighting</span>
+
+<span class="n">lighting_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"reference_illuminance"</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
+    <span class="s2">"cor_k0"</span><span class="p">:</span> <span class="mf">6.0</span><span class="p">,</span>
+    <span class="s2">"presence_type"</span><span class="p">:</span> <span class="s2">"permanent"</span><span class="p">,</span>
+    <span class="s2">"cor_factor_simultaneity"</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">,</span>
+    <span class="s2">"evaluation_level"</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">,</span>
+    <span class="s2">"light_output_per_load"</span><span class="p">:</span> <span class="mi">70</span><span class="p">,</span>
+    <span class="s2">"cor_dayligth_control"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">"cor_reflexion"</span><span class="p">:</span> <span class="mf">1.1</span><span class="p">,</span>
+    <span class="s2">"cor_transmission"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"cor_balcony"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"cor_sun_protection"</span><span class="p">:</span> <span class="mf">1.44</span><span class="p">,</span>
+    <span class="s2">"cor_horizontal_shadow"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"maintenance_value_lighting"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"cor_factor_presence_control"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"schedule_day"</span><span class="p">:</span> <span class="n">schedule</span><span class="p">,</span>
+    <span class="s2">"schedule_week"</span><span class="p">:</span> <span class="n">schedule_week</span><span class="p">,</span>
+    <span class="s2">"schedule_annual"</span><span class="p">:</span> <span class="n">schedule_annual</span><span class="p">,</span>
+    <span class="s2">"dimension"</span><span class="p">:</span> <span class="n">dimension</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">light</span> <span class="o">=</span> <span class="n">Lighting</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">lighting_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">light</span><span class="o">.</span><span class="n">full_load_hours_annual</span><span class="w"> </span><span class="si">= }</span><span class="se">\n</span><span class="si">{</span><span class="n">light</span><span class="o">.</span><span class="n">load_per_year</span><span class="w"> </span><span class="si">= }</span><span class="se">\n</span><span class="si">{</span><span class="n">light</span><span class="o">.</span><span class="n">light_hours_min</span><span class="w"> </span><span class="si">= }</span><span class="se">\n</span><span class="si">{</span><span class="n">light</span><span class="o">.</span><span class="n">full_load_hours</span><span class="w"> </span><span class="si">= }</span><span class="s2">"</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">light</span><span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 290-292 -->
+<h2 id="ventilation">Ventilation<a class="headerlink" href="#ventilation" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 294-319 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">ventilation</span> <span class="kn">import</span> <span class="n">Ventilation</span>
+
+
+<span class="n">ventilation_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"schedule_day"</span><span class="p">:</span> <span class="n">schedule</span><span class="p">,</span>
+    <span class="s2">"schedule_annual"</span><span class="p">:</span> <span class="n">schedule_annual</span><span class="p">,</span>
+    <span class="s2">"is_mechanical"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"indoor_air_category"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">"outside_air_volume_flow_per_person_day"</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span>
+    <span class="s2">"outside_air_volume_flow_per_person_night"</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+    <span class="s2">"outside_air_volume_flow_hygienic"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="s2">"process_air_flow"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s2">"infiltration"</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span>
+    <span class="s2">"controler_air_volume_flow"</span><span class="p">:</span> <span class="s2">"single_stage"</span><span class="p">,</span>
+    <span class="s2">"temperature_heat_recovery"</span><span class="p">:</span> <span class="mf">0.73</span><span class="p">,</span>
+    <span class="s2">"system_efficiency_heat_recovery"</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+    <span class="s2">"specific_fan_power"</span><span class="p">:</span> <span class="mf">0.56</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">ventilation</span> <span class="o">=</span> <span class="n">Ventilation</span><span class="p">(</span><span class="o">**</span><span class="n">ventilation_dict</span><span class="p">)</span>
+
+<span class="n">ventilation</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 320-322 -->
+<h2 id="heating">Heating<a class="headerlink" href="#heating" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 324-337 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">heating</span> <span class="kn">import</span> <span class="n">Heating</span>
+
+<span class="n">heating_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"thermal_active_min_air_flow_natural"</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+    <span class="s2">"thermal_active_min_air_exchange_rate"</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span>
+    <span class="s2">"ventilation"</span><span class="p">:</span> <span class="n">ventilation</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">heating</span> <span class="o">=</span> <span class="n">Heating</span><span class="p">(</span><span class="o">**</span><span class="n">heating_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">heating</span><span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 338-344 -->
+<h2 id="sia-380">SIA 380<a class="headerlink" href="#sia-380" title="Permanent link">¶</a></h2>
+<p>TO-DO:</p>
+<p>-</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 346-382 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">energy</span> <span class="kn">import</span> <span class="n">Sia380</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">sia</span> <span class="o">=</span> <span class="n">Sia380</span><span class="p">(</span><span class="n">dimension</span><span class="p">,</span> <span class="n">climate</span><span class="p">,</span> <span class="n">electric_equipment</span><span class="p">,</span> <span class="n">heating</span><span class="p">,</span> <span class="n">person</span><span class="p">,</span> <span class="n">material</span><span class="p">,</span> <span class="n">light</span><span class="p">)</span>
+
+<span class="n">days_per_month</span> <span class="o">=</span> <span class="p">[</span><span class="mi">31</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">]</span>
+<span class="n">temps</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="mf">8.4</span><span class="p">,</span> <span class="mf">13.4</span><span class="p">,</span> <span class="mf">16.2</span><span class="p">,</span> <span class="mf">18.4</span><span class="p">,</span> <span class="mf">18.4</span><span class="p">,</span> <span class="mf">14.0</span><span class="p">,</span> <span class="mf">9.9</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">]</span>
+<span class="n">gains_west</span> <span class="o">=</span> <span class="p">[</span><span class="mf">22.22</span><span class="p">,</span><span class="mf">34.17</span><span class="p">,</span><span class="mf">55.0</span><span class="p">,</span><span class="mf">64.17</span><span class="p">,</span><span class="mf">79.72</span><span class="p">,</span><span class="mf">84.17</span><span class="p">,</span><span class="mf">90.83</span><span class="p">,</span><span class="mf">81.94</span><span class="p">,</span><span class="mf">60.56</span><span class="p">,</span><span class="mf">39.44</span><span class="p">,</span><span class="mf">20.83</span><span class="p">,</span><span class="mf">16.39</span><span class="p">]</span>
+<span class="n">heat_bridge_factor</span> <span class="o">=</span> <span class="mf">1.1</span>
+<span class="n">elevation</span> <span class="o">=</span> <span class="mi">556</span>
+
+<span class="n">delta</span> <span class="o">=</span> <span class="p">[</span><span class="mi">22</span> <span class="o">-</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">temps</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">temps</span><span class="w"> </span><span class="si">= }</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">delta</span><span class="w"> </span><span class="si">= }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sia</span><span class="o">.</span><span class="n">a</span><span class="p">()</span><span class="si">= :</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sia</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="si">= :</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sia</span><span class="o">.</span><span class="n">transmission_coef_total</span><span class="p">()</span><span class="si">= :</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sia</span><span class="o">.</span><span class="n">transmission_coef</span><span class="p">()</span><span class="si">= :</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sia</span><span class="o">.</span><span class="n">transmission_coef_air</span><span class="p">()</span><span class="si">= :</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sia</span><span class="o">.</span><span class="n">load_per_hour</span><span class="p">()</span><span class="si">= :</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sia</span><span class="o">.</span><span class="n">load_per_hour_air</span><span class="p">()</span><span class="si">= :</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sia</span><span class="o">.</span><span class="n">load_per_hour_transmission</span><span class="p">()</span><span class="si">= :</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">energy</span> <span class="o">=</span> <span class="n">sia</span><span class="o">.</span><span class="n">energy_table</span><span class="p">(</span><span class="n">delta</span><span class="p">,</span> <span class="n">days_per_month</span><span class="p">,</span> <span class="n">gains_west</span><span class="p">,</span> <span class="n">mechanical</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="n">df_energy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">energy</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_energy</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+
+<span class="n">df_energy</span> <span class="o">=</span> <span class="n">df_energy</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">df_energy</span><span class="o">.</span><span class="n">to_clipboard</span><span class="p">()</span>
+<span class="n">df_energy</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 383-389 -->
+<div class="highlight"><pre><span></span><code><span class="n">delta</span> <span class="o">=</span> <span class="p">[</span><span class="nb">round</span><span class="p">(</span><span class="mi">25</span> <span class="o">-</span> <span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">temps</span><span class="p">]</span>
+<span class="n">energy_cooling</span> <span class="o">=</span> <span class="n">sia</span><span class="o">.</span><span class="n">energy_table_cooling</span><span class="p">(</span><span class="n">delta</span><span class="p">,</span> <span class="n">days_per_month</span><span class="p">,</span> <span class="n">gains_west</span><span class="p">)</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">energy_cooling</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 390-393 -->
+<div class="highlight"><pre><span></span><code><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">energy_cooling</span><span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 394-472 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="n">templates</span><span class="o">=</span> <span class="p">[</span><span class="s2">"plotly"</span><span class="p">,</span> <span class="s2">"plotly_white"</span><span class="p">,</span> <span class="s2">"plotly_dark"</span><span class="p">,</span> <span class="s2">"ggplot2"</span><span class="p">,</span> <span class="s2">"seaborn"</span><span class="p">,</span> <span class="s2">"simple_white"</span><span class="p">,</span> <span class="s2">"none"</span><span class="p">]</span>
+<span class="n">template</span><span class="o">=</span><span class="n">templates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">index</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"month"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">"Januar"</span><span class="p">,</span>
+        <span class="s2">"February"</span><span class="p">,</span>
+        <span class="s2">"March"</span><span class="p">,</span>
+        <span class="s2">"April"</span><span class="p">,</span>
+        <span class="s2">"May"</span><span class="p">,</span>
+        <span class="s2">"June"</span><span class="p">,</span>
+        <span class="s2">"July"</span><span class="p">,</span>
+        <span class="s2">"August"</span><span class="p">,</span>
+        <span class="s2">"September"</span><span class="p">,</span>
+        <span class="s2">"October"</span><span class="p">,</span>
+        <span class="s2">"November"</span><span class="p">,</span>
+        <span class="s2">"December"</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">bar_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"tab:red"</span><span class="p">,</span> <span class="s2">"tab:cyan"</span><span class="p">,</span> <span class="s2">"tab:blue"</span><span class="p">,</span> <span class="s2">"y"</span><span class="p">,</span> <span class="s2">"tab:orange"</span><span class="p">,</span> <span class="s2">"tab:pink"</span><span class="p">]</span>
+<span class="n">df_index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">energy</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">index</span><span class="p">[</span><span class="s2">"month"</span><span class="p">])</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"ng"</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"displaylogo"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"modeBarButtonsToAdd"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">],</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">get_month_bar</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+
+    <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"displaylogo"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">"modeBarButtonsToAdd"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="p">{</span>
+        <span class="s2">"plot_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+        <span class="s2">"paper_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="n">xaxis_title</span><span class="o">=</span><span class="s2">"Monat"</span><span class="p">,</span>
+        <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">"kWh/m2"</span><span class="p">,</span>
+        <span class="n">legend_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="n">font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="n">title_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="c1">#fig.write_html(f"../static/plotts/{name}.html", config=config, full_html=False)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">conf</span> <span class="o">=</span> <span class="n">get_month_bar</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="s1">'Heating'</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/heating.html"</span><span class="p">,</span>  <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">conf</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">template</span><span class="o">=</span><span class="s2">"plotly_white"</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../static/plotts/heating.svg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"svg"</span><span class="p">,</span> <span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/heating.svg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"svg"</span><span class="p">,</span> <span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../mkdocs_frontend/docs/plots/heating.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 473-493 -->
+<div class="highlight"><pre><span></span><code><span class="n">df_c</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">energy_cooling</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">index</span><span class="p">[</span><span class="s2">"month"</span><span class="p">])</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">conf</span> <span class="o">=</span> <span class="n">get_month_bar</span><span class="p">(</span><span class="n">df_c</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"Cooling"</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/cooling.html"</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">conf</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">template</span><span class="o">=</span><span class="s2">"plotly_white"</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../static/plotts/cooling.svg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"svg"</span><span class="p">,</span> <span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/cooling.svg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"svg"</span><span class="p">,</span> <span class="p">)</span>
+
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../mkdocs_frontend/docs/plots/cooling.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df_c</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+<span class="n">df_energy</span> <span class="o">=</span> <span class="n">df_c</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">df_energy</span><span class="o">.</span><span class="n">to_clipboard</span><span class="p">()</span>
+<span class="n">df_energy</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mf">3.6</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 494-552 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">moisture</span> <span class="kn">import</span> <span class="n">CO2</span><span class="p">,</span> <span class="n">MaxRelativeMoisture</span><span class="p">,</span> <span class="n">RelativeMoisture</span>
+
+
+<span class="n">rel_moisture</span> <span class="o">=</span> <span class="mf">0.74</span>  <span class="c1"># %</span>
+<span class="n">moisture_total</span> <span class="o">=</span> <span class="mi">45</span>
+<span class="n">air_temperature</span> <span class="o">=</span> <span class="mf">5.5</span>
+<span class="n">mean_air_pressure</span> <span class="o">=</span> <span class="mi">948</span>  <span class="c1"># hpa</span>
+<span class="n">temperature</span> <span class="o">=</span> <span class="mi">21</span>
+<span class="n">rho</span> <span class="o">=</span> <span class="mf">1.1</span>  <span class="c1"># kg/m3</span>
+<span class="n">air_volume_flow</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">space_volume</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="n">moisture_emission</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">48</span><span class="p">,</span>
+    <span class="mi">48</span><span class="p">,</span>
+    <span class="mi">48</span><span class="p">,</span>
+    <span class="mi">48</span><span class="p">,</span>
+    <span class="mi">48</span><span class="p">,</span>
+    <span class="mi">48</span><span class="p">,</span>
+    <span class="mi">33</span><span class="p">,</span>
+    <span class="mi">25</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">,</span>
+    <span class="mi">40</span><span class="p">,</span>
+    <span class="mi">25</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">,</span>
+    <span class="mi">10</span><span class="p">,</span>
+    <span class="mi">25</span><span class="p">,</span>
+    <span class="mi">40</span><span class="p">,</span>
+    <span class="mi">40</span><span class="p">,</span>
+    <span class="mi">40</span><span class="p">,</span>
+    <span class="mi">48</span><span class="p">,</span>
+    <span class="mi">48</span><span class="p">,</span>
+    <span class="mi">48</span><span class="p">,</span>
+<span class="p">]</span>
+
+
+<span class="n">rel_mois</span> <span class="o">=</span> <span class="n">RelativeMoisture</span><span class="p">(</span>
+    <span class="n">rel_moisture</span><span class="p">,</span>
+    <span class="n">moisture_emission</span><span class="p">,</span>
+    <span class="n">air_temperature</span><span class="p">,</span>
+    <span class="n">mean_air_pressure</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="p">,</span>
+    <span class="n">air_volume_flow</span><span class="p">,</span>
+    <span class="n">space_volume</span><span class="p">,</span>
+    <span class="n">rho</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">rel_mois</span><span class="o">.</span><span class="n">relaitve_moisture</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rel_mois</span><span class="o">.</span><span class="n">day_one</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rel_mois</span><span class="o">.</span><span class="n">day_two</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rel_mois</span><span class="o">.</span><span class="n">day_three</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rel_mois</span><span class="o">.</span><span class="n">rel_humidity</span><span class="p">())</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 553-557 -->
+<div class="highlight"><pre><span></span><code><span class="n">max_rel</span> <span class="o">=</span> <span class="n">MaxRelativeMoisture</span><span class="p">(</span><span class="n">rel_moisture</span><span class="p">,</span> <span class="n">air_temperature</span><span class="p">,</span> <span class="n">temperature</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">max_rel</span><span class="o">.</span><span class="n">pv_sat_teat_si</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">max_rel</span><span class="o">.</span><span class="n">max_relative_humidity</span><span class="p">())</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 558-621 -->
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">plotly.subplots</span> <span class="kn">import</span> <span class="n">make_subplots</span>
+
+
+<span class="n">df_rel</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"rel_hum"</span><span class="p">:</span> <span class="n">rel_mois</span><span class="o">.</span><span class="n">rel_humidity</span><span class="p">(),</span>
+    <span class="s2">"max"</span><span class="p">:</span> <span class="n">max_rel</span><span class="o">.</span><span class="n">max_relative_humidity</span><span class="p">(),</span>
+    <span class="s2">"Person"</span><span class="p">:</span> <span class="n">schedule</span><span class="o">.</span><span class="n">to_list</span><span class="p">(),</span>
+<span class="p">}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_rel</span><span class="p">)</span>
+<span class="c1"># df["Airflow"] = (df['Airflow'] / df['Airflow']) * 100</span>
+
+<span class="k">def</span> <span class="nf">get_rel_hum_plot</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">specs</span><span class="o">=</span><span class="p">[[{</span><span class="s2">"secondary_y"</span><span class="p">:</span> <span class="kc">True</span><span class="p">}]])</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"rel_hum"</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Rel. Feuchte"</span><span class="p">,</span>     <span class="n">marker_color</span><span class="o">=</span><span class="s1">'lightsalmon'</span><span class="p">),</span>
+        <span class="n">secondary_y</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"max"</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Max. Feuchte"</span><span class="p">,</span>  <span class="n">marker_color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">),</span>
+        <span class="n">secondary_y</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+        <span class="p">)</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"Person"</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Person"</span><span class="p">),</span> 
+        <span class="n">secondary_y</span><span class="o">=</span><span class="kc">True</span><span class="p">,)</span>
+
+    <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"displaylogo"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">"modeBarButtonsToAdd"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="p">{</span>
+        <span class="s2">"plot_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+        <span class="s2">"paper_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s2">"Personen Profil [%]"</span><span class="p">,</span> <span class="n">secondary_y</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="n">yaxis_range</span><span class="o">=</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">70</span><span class="p">],</span>
+        <span class="n">xaxis_title</span><span class="o">=</span><span class="s2">"Stunden"</span><span class="p">,</span>
+        <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">"Rel. Feuchte"</span><span class="p">,</span>
+        <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">,</span>
+        <span class="n">legend_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="n">font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="n">title_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,)</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/rel_hum.svg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"svg"</span><span class="p">,</span> <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/rel_hum.html"</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../mkdocs_frontend/docs/plots/rel_hum.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+
+<span class="n">get_rel_hum_plot</span><span class="p">(</span><span class="s2">"rel_hum"</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 622-663 -->
+<div class="highlight"><pre><span></span><code><span class="n">schedule_day</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+    <span class="mf">0.6</span><span class="p">,</span>
+    <span class="mf">0.4</span><span class="p">,</span>
+    <span class="mf">0.0</span><span class="p">,</span>
+    <span class="mf">0.0</span><span class="p">,</span>
+    <span class="mf">0.0</span><span class="p">,</span>
+    <span class="mf">0.0</span><span class="p">,</span>
+    <span class="mf">0.8</span><span class="p">,</span>
+    <span class="mf">0.4</span><span class="p">,</span>
+    <span class="mf">0.0</span><span class="p">,</span>
+    <span class="mf">0.0</span><span class="p">,</span>
+    <span class="mf">0.0</span><span class="p">,</span>
+    <span class="mf">0.4</span><span class="p">,</span>
+    <span class="mf">0.8</span><span class="p">,</span>
+    <span class="mf">0.8</span><span class="p">,</span>
+    <span class="mf">0.8</span><span class="p">,</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+    <span class="mf">1.0</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">co2</span> <span class="o">=</span> <span class="n">CO2</span><span class="p">(</span>
+    <span class="n">schedule_day</span><span class="p">,</span>
+    <span class="n">net_floor_area</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">space_volume</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+    <span class="n">air_volume_flow</span><span class="o">=</span><span class="mf">0.98</span><span class="p">,</span>
+    <span class="n">person_per_area</span><span class="o">=</span><span class="mi">35</span><span class="p">,</span>
+    <span class="n">person_activity</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">co2</span><span class="o">.</span><span class="n">co2_per_hour</span><span class="p">()</span><span class="w"> </span><span class="si">=   }</span><span class="s2"> l/Person*h"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">co2</span><span class="o">.</span><span class="n">volume_flow</span><span class="p">()</span><span class="w">  </span><span class="si">=   }</span><span class="s2"> m3"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">co2</span><span class="o">.</span><span class="n">day_one</span><span class="p">()</span><span class="w">      </span><span class="si">=   }</span><span class="s2"> ppm"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">co2</span><span class="o">.</span><span class="n">day_two</span><span class="p">()</span><span class="w">      </span><span class="si">=   }</span><span class="s2"> ppm"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">co2</span><span class="o">.</span><span class="n">day_three</span><span class="p">()</span><span class="w">    </span><span class="si">=   }</span><span class="s2"> ppm"</span><span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 664-723 -->
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">plotly.subplots</span> <span class="kn">import</span> <span class="n">make_subplots</span>
+<span class="n">df_co2</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Person profile"</span><span class="p">:</span> <span class="n">co2</span><span class="o">.</span><span class="n">schedule_day</span><span class="p">,</span>
+    <span class="s2">"Airflow"</span><span class="p">:</span> <span class="n">co2</span><span class="o">.</span><span class="n">volume_flow</span><span class="p">(),</span>
+    <span class="s2">"co2"</span><span class="p">:</span> <span class="n">co2</span><span class="o">.</span><span class="n">day_three</span><span class="p">(),</span>
+<span class="p">}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_co2</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">"Airflow"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Airflow'</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Airflow'</span><span class="p">])</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="k">def</span> <span class="nf">get_co2_plot</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">specs</span><span class="o">=</span><span class="p">[[{</span><span class="s2">"secondary_y"</span><span class="p">:</span> <span class="kc">True</span><span class="p">}]])</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"Person profile"</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Person"</span><span class="p">,</span>     <span class="n">marker_color</span><span class="o">=</span><span class="s1">'lightsalmon'</span><span class="p">),</span>
+        <span class="n">secondary_y</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">"Airflow"</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">"Airflow"</span><span class="p">,</span>  <span class="n">marker_color</span><span class="o">=</span><span class="s1">'LightSkyBlue'</span><span class="p">),</span>
+        <span class="n">secondary_y</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+        <span class="p">)</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">co2</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"CO2"</span><span class="p">),</span> 
+        <span class="n">secondary_y</span><span class="o">=</span><span class="kc">True</span><span class="p">,)</span>
+
+    <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"displaylogo"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">"modeBarButtonsToAdd"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="p">{</span>
+        <span class="s2">"plot_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+        <span class="s2">"paper_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="s2">"ppm"</span><span class="p">,</span> <span class="n">secondary_y</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="n">xaxis_title</span><span class="o">=</span><span class="s2">"Stunden"</span><span class="p">,</span>
+        <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">"%"</span><span class="p">,</span>
+        <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">,</span>
+        <span class="n">legend_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="n">font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="n">title_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,)</span>
+
+    <span class="c1">#fig.write_html(file="../mkdocs_frontend/docs/plots/{name}.html", config=config)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/co_2.svg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"svg"</span><span class="p">,</span> <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/co_2.html"</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../mkdocs_frontend/docs/plots/co_2.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+
+<span class="n">get_co2_plot</span><span class="p">(</span><span class="s2">"co_2"</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 724-726 -->
+<h2 id="design-day-august">design day august<a class="headerlink" href="#design-day-august" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 728-836 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">design_day</span> <span class="kn">import</span> <span class="n">DesignDay</span>
+
+<span class="n">solar</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">,</span>
+    <span class="mi">32</span><span class="p">,</span>
+    <span class="mi">65</span><span class="p">,</span>
+    <span class="mi">77</span><span class="p">,</span>
+    <span class="mi">97</span><span class="p">,</span>
+    <span class="mi">112</span><span class="p">,</span>
+    <span class="mi">117</span><span class="p">,</span>
+    <span class="mi">128</span><span class="p">,</span>
+    <span class="mi">267</span><span class="p">,</span>
+    <span class="mi">456</span><span class="p">,</span>
+    <span class="mi">602</span><span class="p">,</span>
+    <span class="mi">680</span><span class="p">,</span>
+    <span class="mi">670</span><span class="p">,</span>
+    <span class="mi">551</span><span class="p">,</span>
+    <span class="mi">238</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mf">19.9</span><span class="p">,</span>
+    <span class="mf">19.3</span><span class="p">,</span>
+    <span class="mf">18.8</span><span class="p">,</span>
+    <span class="mf">18.4</span><span class="p">,</span>
+    <span class="mf">18.3</span><span class="p">,</span>
+    <span class="mf">18.9</span><span class="p">,</span>
+    <span class="mf">20.3</span><span class="p">,</span>
+    <span class="mf">21.9</span><span class="p">,</span>
+    <span class="mf">24.0</span><span class="p">,</span>
+    <span class="mf">25.0</span><span class="p">,</span>
+    <span class="mf">26.7</span><span class="p">,</span>
+    <span class="mf">28.2</span><span class="p">,</span>
+    <span class="mf">29.6</span><span class="p">,</span>
+    <span class="mf">30.5</span><span class="p">,</span>
+    <span class="mf">31.4</span><span class="p">,</span>
+    <span class="mf">31.9</span><span class="p">,</span>
+    <span class="mf">32.0</span><span class="p">,</span>
+    <span class="mf">30.6</span><span class="p">,</span>
+    <span class="mf">27.4</span><span class="p">,</span>
+    <span class="mf">26.4</span><span class="p">,</span>
+    <span class="mf">26.9</span><span class="p">,</span>
+    <span class="mf">24.9</span><span class="p">,</span>
+    <span class="mf">22.9</span><span class="p">,</span>
+    <span class="mf">21.8</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="n">rel</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">84</span><span class="p">,</span>
+    <span class="mi">85</span><span class="p">,</span>
+    <span class="mi">85</span><span class="p">,</span>
+    <span class="mi">88</span><span class="p">,</span>
+    <span class="mi">87</span><span class="p">,</span>
+    <span class="mi">87</span><span class="p">,</span>
+    <span class="mi">81</span><span class="p">,</span>
+    <span class="mi">75</span><span class="p">,</span>
+    <span class="mi">66</span><span class="p">,</span>
+    <span class="mi">63</span><span class="p">,</span>
+    <span class="mi">57</span><span class="p">,</span>
+    <span class="mi">54</span><span class="p">,</span>
+    <span class="mi">50</span><span class="p">,</span>
+    <span class="mi">47</span><span class="p">,</span>
+    <span class="mi">42</span><span class="p">,</span>
+    <span class="mi">34</span><span class="p">,</span>
+    <span class="mi">34</span><span class="p">,</span>
+    <span class="mi">42</span><span class="p">,</span>
+    <span class="mi">58</span><span class="p">,</span>
+    <span class="mi">47</span><span class="p">,</span>
+    <span class="mi">39</span><span class="p">,</span>
+    <span class="mi">45</span><span class="p">,</span>
+    <span class="mi">52</span><span class="p">,</span>
+    <span class="mi">61</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">dd</span> <span class="o">=</span> <span class="n">DesignDay</span><span class="p">(</span>
+    <span class="n">solar</span><span class="p">,</span>
+    <span class="n">temp</span><span class="p">,</span>
+    <span class="n">rel</span><span class="p">,</span>
+    <span class="n">dimension</span><span class="p">,</span>
+    <span class="n">electric_equipment</span><span class="p">,</span>
+    <span class="n">person</span><span class="p">,</span>
+    <span class="n">material</span><span class="p">,</span>
+    <span class="n">heating</span><span class="p">,</span>
+    <span class="n">light</span><span class="p">,</span>
+    <span class="n">climate</span><span class="p">,</span>
+    <span class="n">ventilation</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">beleuchtung_sommer</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">solar</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">day_light_without_shading</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">day_light_with_shading</span><span class="p">())</span>
+<span class="n">dd</span><span class="o">.</span><span class="n">lightning_load</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dd</span><span class="o">.</span><span class="n">delta_temperature</span><span class="p">()</span><span class="w">    </span><span class="si">=   }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dd</span><span class="o">.</span><span class="n">solar_load</span><span class="p">()</span><span class="w">            </span><span class="si">=   }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dd</span><span class="o">.</span><span class="n">lightning_load</span><span class="p">()</span><span class="w">            </span><span class="si">=   }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dd</span><span class="o">.</span><span class="n">person_load</span><span class="p">()</span><span class="w">            </span><span class="si">=   }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dd</span><span class="o">.</span><span class="n">equipment_load</span><span class="p">()</span><span class="w">            </span><span class="si">=   }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dd</span><span class="o">.</span><span class="n">transmission_load</span><span class="p">()</span><span class="w">    </span><span class="si">=   }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dd</span><span class="o">.</span><span class="n">ventilation_load</span><span class="p">()</span><span class="w">     </span><span class="si">=   }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dd</span><span class="o">.</span><span class="n">cooling_load</span><span class="p">()</span><span class="w">          </span><span class="si">=   }</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 837-876 -->
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">get_load_table</span><span class="p">())</span>
+
+
+<span class="k">def</span> <span class="nf">get_month_bar</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>  <span class="n">text_auto</span><span class="o">=</span><span class="n">text</span><span class="p">,)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="p">{</span>
+        <span class="s2">"plot_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+        <span class="s2">"paper_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">,</span>
+        <span class="n">xaxis_title</span><span class="o">=</span><span class="s2">"Stunden"</span><span class="p">,</span>
+        <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">"kW/m2"</span><span class="p">,</span>
+        <span class="n">legend_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="n">font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+        <span class="n">title_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,)</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"displaylogo"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">"modeBarButtonsToAdd"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="sa">f</span><span class="s2">"../static/plotts/</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">.html"</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="n">full_html</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../static/plotts/ddy_august.svg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"svg"</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">write_image</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/ddy_august.svg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"svg"</span><span class="p">,</span> <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/ddy_august.html"</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="p">)</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../mkdocs_frontend/docs/plots/ddy_august.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
+
+
+<span class="n">get_month_bar</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">"Design Day August"</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+<span class="n">df</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 877-910 -->
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="n">animals</span><span class="o">=</span><span class="p">[</span><span class="s1">'Fenster Tag / Nacht'</span><span class="p">,</span> <span class="s1">'Fenster nur bei benutzung'</span><span class="p">,</span> <span class="s1">'keine Fenster'</span><span class="p">]</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'nicht Notwendig'</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">animals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">140</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">80</span><span class="p">]),</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Erwünscht'</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">animals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">60</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">]),</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Notwendig'</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">animals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">90</span><span class="p">]),</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Wattstunden pro Tag"</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="n">animals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">117</span><span class="p">,</span><span class="mi">117</span><span class="p">,</span><span class="mi">117</span><span class="p">],</span> <span class="n">marker_color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">)</span>
+<span class="p">])</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="p">{</span>
+    <span class="s2">"plot_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+    <span class="s2">"paper_bgcolor"</span><span class="p">:</span> <span class="s2">"rgba(0, 0, 0, 0)"</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">,</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s2">"Art der Belüftung"</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">"Wh/m2*day"</span><span class="p">,</span>
+    <span class="n">legend_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+    <span class="n">font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+    <span class="n">title_font_color</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,)</span>
+<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"displaylogo"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"modeBarButtonsToAdd"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">],</span>
+<span class="p">}</span>
+<span class="c1"># Change the bar mode</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">barmode</span><span class="o">=</span><span class="s1">'stack'</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"../mkdocs_frontend/docs/plots/is_cooling.html"</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 911-913 -->
+<h2 id="model">Model<a class="headerlink" href="#model" title="Permanent link">¶</a></h2>
+<!-- GENERATED FROM PYTHON SOURCE LINES 915-1102 -->
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sia_base_model</span> <span class="kn">import</span> <span class="n">Model</span>
+
+<span class="n">model_lite</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"identifier"</span><span class="p">:</span> <span class="s2">"test_lite"</span><span class="p">,</span>
+    <span class="s2">"dimension"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"window_frames_factor"</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">,</span>
+        <span class="s2">"net_to_gross"</span><span class="p">:</span> <span class="mf">0.85</span><span class="p">,</span>
+        <span class="s2">"reduction_factor_solar_heat_gain"</span><span class="p">:</span> <span class="mf">0.9</span><span class="p">,</span>
+        <span class="s2">"set_solar_shading_on"</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+        <span class="s2">"length"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+        <span class="s2">"depth"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+        <span class="s2">"height"</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span>
+        <span class="s2">"thermal_active_area"</span><span class="p">:</span> <span class="mf">26.5</span><span class="p">,</span>
+        <span class="s2">"glass_percentage"</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"material"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"heat_storage_capacity"</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+        <span class="s2">"transmittance_glazing"</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="s2">"transmittance_glazing_shading"</span><span class="p">:</span> <span class="mf">0.14</span><span class="p">,</span>
+        <span class="s2">"light_transmittance"</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+        <span class="s2">"u_value_window"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"u_value_opaque"</span><span class="p">:</span> <span class="mf">0.17</span><span class="p">,</span>
+        <span class="s2">"solar_reduction_factor"</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"climate"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"design_day_cooling"</span><span class="p">:</span> <span class="mi">26</span><span class="p">,</span>
+        <span class="s2">"design_day_heating"</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span>
+        <span class="s2">"average_cooling"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+        <span class="s2">"average_heating"</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
+        <span class="s2">"rel_humidity_cooling"</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+        <span class="s2">"rel_humidity_heating"</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+        <span class="s2">"average_air_speed_cooling"</span><span class="p">:</span> <span class="mf">0.18</span><span class="p">,</span>
+        <span class="s2">"average_air_speed_heating"</span><span class="p">:</span> <span class="mf">0.13</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"person"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"area_per_person"</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span>
+        <span class="s2">"activity_level"</span><span class="p">:</span> <span class="mf">1.2</span><span class="p">,</span>
+        <span class="s2">"thermal_insulation_cladding_heating"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"thermal_insulation_cladding_cooling"</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="s2">"humidity_production_without_person"</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="s2">"sensible_heat_output_cooling"</span><span class="p">:</span> <span class="mi">84</span><span class="p">,</span>
+        <span class="s2">"sensible_heat_output_heating"</span><span class="p">:</span> <span class="mi">94</span><span class="p">,</span>
+        <span class="s2">"humidity_production_heating"</span><span class="p">:</span> <span class="mi">51</span><span class="p">,</span>
+        <span class="s2">"humidity_production_cooling"</span><span class="p">:</span> <span class="mi">66</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"electric_equipment"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"electrical_power_equipment"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="s2">"electrical_power_process"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"power_factor_outside_of_use"</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"lighting"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"reference_illuminance"</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
+        <span class="s2">"cor_k0"</span><span class="p">:</span> <span class="mf">6.0</span><span class="p">,</span>
+        <span class="s2">"presence_type"</span><span class="p">:</span> <span class="s2">"permanent"</span><span class="p">,</span>
+        <span class="s2">"cor_factor_simultaneity"</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">,</span>
+        <span class="s2">"evaluation_level"</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">,</span>
+        <span class="s2">"light_output_per_load"</span><span class="p">:</span> <span class="mi">70</span><span class="p">,</span>
+        <span class="s2">"cor_dayligth_control"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">"cor_reflexion"</span><span class="p">:</span> <span class="mf">1.1</span><span class="p">,</span>
+        <span class="s2">"cor_transmission"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"cor_balcony"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"cor_sun_protection"</span><span class="p">:</span> <span class="mf">1.44</span><span class="p">,</span>
+        <span class="s2">"cor_horizontal_shadow"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"maintenance_value_lighting"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"cor_factor_presence_control"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"ventilation"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"is_mechanical"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">"indoor_air_category"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">"outside_air_volume_flow_per_person_day"</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span>
+        <span class="s2">"outside_air_volume_flow_per_person_night"</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+        <span class="s2">"outside_air_volume_flow_hygienic"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"process_air_flow"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"infiltration"</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span>
+        <span class="s2">"controler_air_volume_flow"</span><span class="p">:</span> <span class="s2">"single_stage"</span><span class="p">,</span>
+        <span class="s2">"temperature_heat_recovery"</span><span class="p">:</span> <span class="mf">0.73</span><span class="p">,</span>
+        <span class="s2">"system_efficiency_heat_recovery"</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+        <span class="s2">"specific_fan_power"</span><span class="p">:</span> <span class="mf">0.56</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"water"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"reference_unit"</span><span class="p">:</span> <span class="s2">"person"</span><span class="p">,</span>
+        <span class="s2">"hot_per_unit"</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span>
+        <span class="s2">"person_per_unit"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"hot_to_cold_factor"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"schedule_rule_annual"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"januar"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"february"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"march"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"april"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"may"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"june"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"july"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"august"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"september"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"october"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"november"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+        <span class="s2">"december"</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"schedule_rule_week"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"monday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"tuesday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"wednesday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"thursday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"friday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"saturday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"sunday"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"schedule_day"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"hours"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
+            <span class="mf">0.6</span><span class="p">,</span>
+            <span class="mf">0.4</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mf">0.8</span><span class="p">,</span>
+            <span class="mf">0.4</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mf">0.4</span><span class="p">,</span>
+            <span class="mf">0.8</span><span class="p">,</span>
+            <span class="mf">0.8</span><span class="p">,</span>
+            <span class="mf">0.8</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">"schedule_day_electric"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"hours"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.8</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.8</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.8</span><span class="p">,</span>
+            <span class="mf">1.0</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+            <span class="mf">0.2</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">"heating"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"thermal_active_min_air_flow_natural"</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+        <span class="s2">"thermal_active_min_air_exchange_rate"</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"acoustics"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"noise_sensitivity"</span><span class="p">:</span> <span class="s2">"normal"</span><span class="p">,</span>
+        <span class="s2">"single_functional_noises"</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+        <span class="s2">"single_user_noises"</span><span class="p">:</span> <span class="mi">38</span><span class="p">,</span>
+        <span class="s2">"continues_hvac_equipment_noise"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"cooling"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"external_heat_input_performance"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"internal_heat_inputs"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"internal_heat_inputs_per_day"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"climate_power_requirements"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"annual_full_load_hours"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">"annual_air_conditioning_refrigeration_requirement"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="n">base_model_lite</span> <span class="o">=</span> <span class="n">Model</span><span class="o">.</span><span class="n">from_small_dict</span><span class="p">(</span><span class="n">model_lite</span><span class="p">)</span>
+<span class="n">base_model_lite</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 1103-1155 -->
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">sia_base_model</span> <span class="kn">import</span> <span class="n">Model</span>
+
+<span class="n">acoustics</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"noise_sensitivity"</span><span class="p">:</span> <span class="s2">"normal"</span><span class="p">,</span>
+        <span class="s2">"single_functional_noises"</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+        <span class="s2">"single_user_noises"</span><span class="p">:</span> <span class="mi">38</span><span class="p">,</span>
+        <span class="s2">"continues_hvac_equipment_noise"</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">water_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"reference_unit"</span><span class="p">:</span> <span class="s2">"person"</span><span class="p">,</span>
+    <span class="s2">"hot_per_unit"</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span>
+    <span class="s2">"person_per_unit"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"hot_to_cold_factor"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="s2">"person"</span><span class="p">:</span> <span class="n">person</span><span class="p">,</span>
+    <span class="s2">"schedule_week"</span><span class="p">:</span> <span class="n">schedule_week</span><span class="p">,</span>
+    <span class="s2">"schedule_annual"</span><span class="p">:</span> <span class="n">schedule_annual</span><span class="p">,</span>
+  <span class="p">}</span>
+
+<span class="n">cooling_dict</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">"external_heat_input_performance"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="s2">"internal_heat_inputs"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="s2">"internal_heat_inputs_per_day"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="s2">"climate_power_requirements"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="s2">"annual_full_load_hours"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="s2">"annual_air_conditioning_refrigeration_requirement"</span><span class="p">:</span> <span class="mi">0</span>
+<span class="p">}</span>
+
+<span class="n">model_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"identifier"</span><span class="p">:</span> <span class="s2">"default"</span><span class="p">,</span> 
+    <span class="s2">"schedule_day"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"hours"</span><span class="p">:</span> <span class="n">hours</span><span class="p">},</span>
+    <span class="s2">"schedule_rule_annual"</span><span class="p">:</span> <span class="n">schedule_annual_dict</span><span class="p">,</span>
+    <span class="s2">"schedule_rule_week"</span><span class="p">:</span> <span class="n">schedule_week_dict</span><span class="p">,</span>
+    <span class="s2">"climate"</span><span class="p">:</span> <span class="n">cilmate_dict</span><span class="p">,</span>
+    <span class="s2">"dimension"</span><span class="p">:</span> <span class="n">dimension_dict</span><span class="p">,</span>
+    <span class="s2">"acoustics"</span><span class="p">:</span> <span class="n">acoustics</span><span class="p">,</span>
+    <span class="s2">"material"</span><span class="p">:</span> <span class="n">material_dict</span><span class="p">,</span>
+    <span class="s2">"person"</span><span class="p">:</span> <span class="n">person_dict</span><span class="p">,</span>
+    <span class="s2">"electric_equipment"</span><span class="p">:</span> <span class="n">electric_equipment_dict</span><span class="p">,</span>
+    <span class="s2">"lighting"</span><span class="p">:</span> <span class="n">lighting_dict</span><span class="p">,</span>
+    <span class="s2">"ventilation"</span><span class="p">:</span> <span class="n">ventilation_dict</span><span class="p">,</span>
+    <span class="s2">"heating"</span><span class="p">:</span> <span class="n">heating_dict</span><span class="p">,</span>
+    <span class="s2">"water"</span><span class="p">:</span> <span class="n">water_dict</span><span class="p">,</span>
+    <span class="s2">"cooling"</span><span class="p">:</span> <span class="n">cooling_dict</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">base_model</span> <span class="o">=</span> <span class="n">Model</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">model_dict</span><span class="p">)</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">base_model</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="n">model_dict</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 1156-1174 -->
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../mkdocs_frontend/docs/data.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">obj</span><span class="o">=</span><span class="n">m</span><span class="p">,</span> <span class="n">fp</span><span class="o">=</span><span class="n">file</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>  <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+
+<span class="kn">import</span> <span class="nn">chevron</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../mkdocs_frontend/docs/template.md'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">generated_md</span> <span class="o">=</span> <span class="n">chevron</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../mkdocs_frontend/docs/generated.md'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">generated_md</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">generated_md</span><span class="p">)</span>
+
+<span class="c1">#json.dumps(m, sort_keys=True,  indent=2, ensure_ascii=False)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 1175-1176 -->
+<p>pprint(model_dict)</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 1176-1180 -->
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>  <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 1181-1190 -->
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">urllib</span><span class="o">,</span> <span class="nn">requests</span>
+
+<span class="n">openapi_json</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="s2">"http://localhost:8000/openapi.json"</span><span class="p">,</span> <span class="s2">"../tmp/openapi.json"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">openapi_json</span><span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 1191-1195 -->
+<div class="highlight"><pre><span></span><code><span class="n">pprint</span><span class="p">(</span><span class="n">model_dict</span><span class="p">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 1196-1217 -->
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../tmp/openapi.json"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">openapi</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">inputs</span><span class="o">=</span><span class="p">{}</span>
+<span class="n">req_obj</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Acoustics'</span><span class="p">,</span> <span class="s1">'Climate'</span><span class="p">,</span> <span class="s1">'Cooling'</span><span class="p">,</span> <span class="s1">'Dimension'</span><span class="p">,</span> <span class="s1">'ElectricEquipment'</span><span class="p">,</span> <span class="s1">'HTTPValidationError'</span><span class="p">,</span> <span class="s1">'Heating'</span><span class="p">,</span> <span class="s1">'Lighting'</span><span class="p">,</span> <span class="s1">'Material'</span><span class="p">,</span> <span class="s1">'ModelName'</span><span class="p">,</span> <span class="s1">'Person'</span><span class="p">,</span> <span class="s1">'ScheduleDay'</span><span class="p">,</span> <span class="s1">'ScheduleRuleAnnual'</span><span class="p">,</span> <span class="s1">'ScheduleRuleWeek'</span><span class="p">,</span> <span class="s1">'Model'</span><span class="p">,</span> <span class="s1">'SpaceType'</span><span class="p">,</span> <span class="s1">'Ventilation'</span><span class="p">,</span> <span class="s1">'Water'</span><span class="p">]</span>
+<span class="n">comp_keys</span> <span class="o">=</span> <span class="n">openapi</span><span class="p">[</span><span class="s2">"components"</span><span class="p">][</span><span class="s2">"schemas"</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">comp_keys</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">req_obj</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="n">openapi</span><span class="p">[</span><span class="s2">"components"</span><span class="p">][</span><span class="s2">"schemas"</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s2">"required"</span><span class="p">:</span>
+                <span class="c1">#print(i, "=", j)</span>
+                <span class="c1">#print(f'&lt;option value="{i}"&gt;{i}&lt;/option&gt;')</span>
+                <span class="n">inputs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">j</span>
+<span class="n">inputs</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>  <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<div id="download_links"></div>
+<p><a class="md-button center" href="../5_model.py"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> Download Python source code: 5_model.py</a></p>
+<p><a class="md-button center" href="../5_model.ipynb"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> Download Jupyter notebook: 5_model.ipynb</a></p>
+<p><a class="mkd-glr-signature" href="https://mkdocs-gallery.github.io">Gallery generated by mkdocs-gallery</a></p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Gallery" class="md-footer__link md-footer__link--prev" href="../" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                  Previous
+                </span>
+                Gallery
+              </div>
+</div>
+</a>
+<a aria-label="Next: Bauphysik" class="md-footer__link md-footer__link--next" href="../plot_1_Bauphysik/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                  Next
+                </span>
+                Bauphysik
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.footer", "navigation.instant", "navigation.tabs", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.fc8c2696.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

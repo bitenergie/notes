@@ -1,0 +1,997 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.2" name="generator"/>
+<title>plot 3 Bauphysik - Notes by Bitenergie</title>
+<link href="../../../assets/stylesheets/main.7bf56d0a.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../sg_gallery.css" rel="stylesheet"/>
+<link href="../../../sg_gallery-rendered-html.css" rel="stylesheet"/>
+<link href="../../../sg_gallery.css" rel="stylesheet"/>
+<link href="../../../sg_gallery-binder.css" rel="stylesheet"/>
+<link href="../../../sg_gallery-dataframe.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="slate" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#bauphysik">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Notes by Bitenergie" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Notes by Bitenergie">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Notes by Bitenergie
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              plot 3 Bauphysik
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_3" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_3" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2C5.13 2 2 5.13 2 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7M6 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H6v1m13-8h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9L19 13m-2.15 5.65L18 15l1.15 3.65h-2.3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../">
+        Jupyter
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../Links/Awesome%20HLK/">
+        Links
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../Sia%20380-1/Fenster/">
+        Normen
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../cheat_sheet/heizung/">
+        Cheat Sheet
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Notes by Bitenergie" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Notes by Bitenergie">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"></path></svg>
+</a>
+    Notes by Bitenergie
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Jupyter
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Jupyter
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../">Gallery</a>
+<label for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Gallery
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../5_model/">
+        SIA2024 - Model
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plot_1_Bauphysik/">
+        Bauphysik
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plot_2_pvwatt/">
+        PVWatts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plott_4_GeoAdmin/">
+        GeoAdmin API
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Links
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Links
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Links/Awesome%20HLK/">
+        Software
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Links/Zertifikate/">
+        Zertifikate
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Normen
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Normen
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          Sia 380-1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Sia 380-1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia%20380-1/Fenster/">
+        Fenster / Verschattung
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia%20380-1/Grundlagen/">
+        Grundlagen
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia%20380-1/w%C3%A4rmebr%C3%BCcken/">
+        Wärmebrücken
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../Sia2024/">SIA 2024</a>
+<label for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+          SIA 2024
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia2024/Dokumentation/">
+        Dokumentation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia2024/Resultate/">
+        Resultate
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sia2024/generated/">
+        MFH
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          SIA 2028
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          SIA 2028
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sia2028/monat/">
+        Wetter
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sia2028/Bins/">
+        Bins
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sia2028/Swissmeteo/">
+        Swissmeteo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          Energievollzug
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Energievollzug
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Energievollzug/Tabellen/">
+        Zusammenfassung
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Cheat Sheet
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Cheat Sheet
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../cheat_sheet/heizung/">
+        Heizung
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../cheat_sheet/bauphysik/">
+        Bauphysik
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-randbedingungen-klima">
+    1 Randbedingungen (Klima)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-warme">
+    2 Wärme
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-warmespeicherung">
+    2.2 Wärmespeicherung
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23-warmebrucken">
+    2.3 Wärmebrücken
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-feuchte">
+    3 Feuchte
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-luftstromungen">
+    4 Luftströmungen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-lichttechnik">
+    5 Lichttechnik
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-energieleistung">
+    6 Energie/Leistung
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#anhang">
+    Anhang
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<!--
+ DO NOT EDIT.
+ THIS FILE WAS AUTOMATICALLY GENERATED BY mkdocs-gallery.
+ TO MAKE CHANGES, EDIT THE SOURCE PYTHON FILE:
+ "docs/examples/plot_3_Bauphysik.py"
+ LINE NUMBERS ARE GIVEN BELOW.
+-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a href="#download_links">here</a>
+to download the full example code</p>
+</div>
+<h1 id="bauphysik">Bauphysik<a class="headerlink" href="#bauphysik" title="Permanent link">¶</a></h1>
+<p>Formeln für Bauphysikalische Berechnungen</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 11-25 -->
+<h2 id="1-randbedingungen-klima">1 Randbedingungen (Klima)<a class="headerlink" href="#1-randbedingungen-klima" title="Permanent link">¶</a></h2>
+<p><a href="https://enbau-online.ch/bauphysik/1-randbedingungen-klima/">Link enbau</a></p>
+<h3 id="a11-gleitenden-mittelwerts-der-aussentemperatur">A1.1 gleitenden Mittelwerts der Aussentemperatur<a class="headerlink" href="#a11-gleitenden-mittelwerts-der-aussentemperatur" title="Permanent link">¶</a></h3>
+<p>Die Komfort-Anforderungen an die empfundene Temperatur werden in der Norm SIA 180:2014 [1.4] neu in Abhängigkeit des gleitenden Mittelwerts der Aussentemperatur <em>θ</em><sub>rm</sub> über 48 Stunden gemäss folgender Formel festgelegt.</p>
+<p><span class="arithmatex">\(\theta_{rm}(t) = \frac{ 1 }{ N } * \sum_{j=0}^{N-1} \theta_e(t-j)\)</span></p>
+<ul>
+<li>gleitender Mittelwert der Aussentemperatur fiir die Stunde t</li>
+<li>Aussenlufttemperatur der Stunde t-j</li>
+<li>N Anzahl in den Mittelwert einbezogener Stunden N=48</li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 30-39 -->
+<h3 id="a12-maximale-luftgeschwindigkeit">A1.2 maximale Luftgeschwindigkeit<a class="headerlink" href="#a12-maximale-luftgeschwindigkeit" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(V_{max} = 0.54 * (\frac{g* \Delta T}{T_i})^{0.5} * H^{0.5}\)</span></p>
+<p><span class="arithmatex">\(V_{max} = k *  \sqrt{\Delta \theta * H}\)</span></p>
+<ul>
+<li>Temperaturdifferenz zwischen Raumluft und kalter Oberflache</li>
+<li>Höhe der vertikalen Flache </li>
+<li>Regressionskoeffizient I</li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 42-43 -->
+<p>A1.1</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 43-56 -->
+<div class="highlight"><pre><span></span><code><span class="c1"># A1.2</span>
+<span class="k">def</span> <span class="nf">max_air_flow_speed</span><span class="p">(</span><span class="n">delta_temp</span><span class="p">,</span> <span class="n">air_temperature</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Vmax = m*s^-1"""</span>
+    <span class="n">GRAV</span> <span class="o">=</span> <span class="mf">9.81</span>
+    <span class="k">return</span> <span class="mf">0.54</span> <span class="o">*</span> <span class="p">(</span><span class="n">GRAV</span> <span class="o">*</span> <span class="n">delta_temp</span> <span class="o">/</span> <span class="n">air_temperature</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">height</span><span class="o">**</span><span class="mf">0.5</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">max_air_flow_speed</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">max_air_flow_speed</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</code></pre></div>
+<p class="mkd-glr-script-out">Out:</p>
+<div class="mkd-glr-script-out-disp highlight"><pre><span></span><code><span class="nv">Vmax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>m*s^-1
+<span class="m">1</span>.1959506678789056
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 57-121 -->
+<h2 id="2-warme">2 Wärme<a class="headerlink" href="#2-warme" title="Permanent link">¶</a></h2>
+<p><a href="https://enbau-online.ch/bauphysik/2-waerme/">Link Enbau Wärme</a></p>
+<h3 id="a21-warmestromdichte-q-wm2">A2.1 Wärmestromdichte q [<span class="arithmatex">\(W/m^{2}\)</span>]<a class="headerlink" href="#a21-warmestromdichte-q-wm2" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(q = h_c * (\theta_s - \theta_a) + h_r * (\theta_s - \theta_r)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(q\)</span> Warmestromdichte <span class="arithmatex">\(W/m^{2}\)</span></li>
+<li><span class="arithmatex">\(h_c\)</span> Warmeiibergangskoeffizient Konvektion <span class="arithmatex">\(W/(m^{2}*K)\)</span></li>
+<li><span class="arithmatex">\(h_r\)</span> Warmeiibergangskoeffizient Strahlung <span class="arithmatex">\(W/(m^{2}*K)\)</span></li>
+<li><span class="arithmatex">\(\theta_s\)</span> Oberflaichentemperatur <span class="arithmatex">\(°C\)</span></li>
+<li><span class="arithmatex">\(\theta_a\)</span> Lufttemperatur <span class="arithmatex">\(°C\)</span></li>
+<li><span class="arithmatex">\(\theta_r\)</span> Strahlungstemperatur <span class="arithmatex">\(°C\)</span></li>
+</ul>
+<p>Die beiden Wärmeübergangkoeffizienten Konvektion und Strahlung können zu einem kombinierten Wärmeübergangskoeffizienten <span class="arithmatex">\(h = h_c + h_r\)</span> zusammengefasst werden. Die Formel zur Bestimmung der Wärmestromdichte einer Oberfläche zu seiner Umgebung vereinfacht sich durch die Verwendung der Umgebungstemperatur θn zur Formel A2.2:</p>
+<h3 id="a22-warmestromdichte-mittels-umgebungstemperatur">A2.2 Wärmestromdichte mittels Umgebungstemperatur<a class="headerlink" href="#a22-warmestromdichte-mittels-umgebungstemperatur" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(q= h * (\theta_s - \theta_n)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(h\)</span> kombinierter Warmetibergangskoeffizient <span class="arithmatex">\(W/(m^{2}*K)\)</span></li>
+<li><span class="arithmatex">\(\theta_n\)</span> Umgebungstemperatur <span class="arithmatex">\(°C\)</span></li>
+</ul>
+<p>Die Umgebungstemperatur θn wird gemäss Formel A2.3 ermittelt und kann als eine Gewichtung der Luft- und Strahlungstemperatur betrachtet werden.</p>
+<h3 id="a23-umgebungstemperatur-n">A2.3 Umgebungstemperatur θn<a class="headerlink" href="#a23-umgebungstemperatur-n" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\theta_n = \frac{h_c * \theta_a + h_r * \theta_r}{h_c + h_r} = F_c * \theta_a + (1- F_c) * \theta_r\)</span></p>
+<ul>
+<li><span class="arithmatex">\(F_c\)</span> = konvektiver Anteil</li>
+<li><span class="arithmatex">\(F_c\)</span> = <span class="arithmatex">\(h_c/(h_c+h_r)\)</span></li>
+</ul>
+<h3 id="a24-umgebungstemperatur-aussen-der-aussentemperatur-e">A2.4 Umgebungstemperatur aussen, der Aussentemperatur θe:<a class="headerlink" href="#a24-umgebungstemperatur-aussen-der-aussentemperatur-e" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\theta_e = \frac{h_c * \theta_{a,e} + h_{r,e} * \theta_{r,e}}{h_{c,e} + h_{r,e}}\)</span></p>
+<h3 id="a25-umgebungstemperatur-innen-der-raumtemperatur-i">A2.5 Umgebungstemperatur innen, der Raumtemperatur θi:<a class="headerlink" href="#a25-umgebungstemperatur-innen-der-raumtemperatur-i" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\theta_i = \frac{h_{c,i} * \theta_{a,i} + h_{r,i} * \theta_{r,i}}{h_{c,i} + h_{r,i}}\)</span></p>
+<h3 id="a26-warmeubergangswiderstande-r_se">A2.6 Wärmeübergangswiderstände <span class="arithmatex">\(R_{se}\)</span><a class="headerlink" href="#a26-warmeubergangswiderstande-r_se" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(R_{se} = \frac{1}{h_c} = \frac{1}{h_{r,e} + h_{c,e}}\)</span></p>
+<p><span class="arithmatex">\(R_{se} = \frac{1}{\varepsilon * 4 * \sigma * T^{3}_{me} + (a + b * v)}\)</span></p>
+<h3 id="a27-warmeubergangswiderstande-r_si">A2.7 Wärmeübergangswiderstände <span class="arithmatex">\(R_{si}\)</span><a class="headerlink" href="#a27-warmeubergangswiderstande-r_si" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(R_{si} = \frac{1}{h_i} = \frac{1}{h_{r,i} + h_{c,i}}\)</span></p>
+<p><span class="arithmatex">\(R_{si} = \frac{1}{\varepsilon * 4 * \sigma * T^{3}_{mi} + c * \sqrt[3]{\Delta \theta }}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(R_{se}\)</span> Warmeiibergangswiderstand aussen <span class="arithmatex">\((m^{2}*K)/W\)</span></li>
+<li><span class="arithmatex">\(R_{si}\)</span> Warmeiibergangswiderstand innen <span class="arithmatex">\((m^{2}*K)/W\)</span></li>
+<li><span class="arithmatex">\(\Delta \theta\)</span> Temperaturdifferenz <span class="arithmatex">\(\Delta \theta = \theta_{si} - \theta_{a,i}\)</span> <span class="arithmatex">\(K\)</span></li>
+<li><span class="arithmatex">\(T_{me}\)</span> Mitteltemperatur aussen <span class="arithmatex">\((T_{r,e}+T_{se})/2\)</span> <span class="arithmatex">\(K\)</span></li>
+<li><span class="arithmatex">\(T_{mi}\)</span> Mitteltemperatur innen <span class="arithmatex">\((T_{r,e} + T_{si}) /2\)</span> <span class="arithmatex">\(K\)</span></li>
+<li><span class="arithmatex">\(a\)</span> Regressionskoeffizient a = 4.0 <span class="arithmatex">\(W/(m^{2}*K)\)</span></li>
+<li><span class="arithmatex">\(b\)</span> Regressionskoeffizient b = 4.0 <span class="arithmatex">\((W*s)/(m^{3}*K)\)</span></li>
+<li><span class="arithmatex">\(v\)</span> Windgeschwindigkeit <span class="arithmatex">\(m/s\)</span></li>
+<li><span class="arithmatex">\(c\)</span> Regressionskoeffizient c = 1.31 (bei Warmestr6mung horizontal) <span class="arithmatex">\(W/(m^{2}*K^{4/3})\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 126-137 -->
+<h2 id="22-warmespeicherung">2.2 Wärmespeicherung<a class="headerlink" href="#22-warmespeicherung" title="Permanent link">¶</a></h2>
+<h3 id="a28-statische-flachenbezogene-warmespeicherfahigkeit">A2.8 statische, flächenbezogene Wärmespeicherfähigkeit<a class="headerlink" href="#a28-statische-flachenbezogene-warmespeicherfahigkeit" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(k_{stat} = \sum d_j*\rho_j*c_j\)</span></p>
+<ul>
+<li><span class="arithmatex">\(d_j\)</span> Dicke der Schicht j</li>
+<li><span class="arithmatex">\(\rho_j\)</span> Rohdichte der Schicht j</li>
+<li><span class="arithmatex">\(c_j\)</span> spezifische Warmekapazitat der Schicht j</li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 142-154 -->
+<h3 id="a29-speicherwirksame-dicke-d_tmax">A2.9 speicherwirksame Dicke <span class="arithmatex">\(d_{T,max}\)</span><a class="headerlink" href="#a29-speicherwirksame-dicke-d_tmax" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(d_{T,max} = \sqrt{\frac{a*T}{2*\pi}} = \sqrt{\frac{\lambda * T}{\rho*c*2*\pi}}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(a\)</span> Temperaturleitfahigkeit <span class="arithmatex">\(m^{2}*s^{-1}\)</span></li>
+<li><span class="arithmatex">\(T\)</span> Periodenlange <span class="arithmatex">\(s\)</span></li>
+<li><span class="arithmatex">\(\lambda\)</span> Warmeleitfahigkeit <span class="arithmatex">\(W*(m*K)^{-1}\)</span></li>
+<li><span class="arithmatex">\(\rho\)</span> Rohdichte <span class="arithmatex">\(kg*m^{-3}\)</span></li>
+<li><span class="arithmatex">\(c\)</span> spezifische Warmekapazitat <span class="arithmatex">\(kJ*(kg*K)^{-1}\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 160-176 -->
+<h2 id="23-warmebrucken">2.3 Wärmebrücken<a class="headerlink" href="#23-warmebrucken" title="Permanent link">¶</a></h2>
+<h3 id="a210-thermische-gesamtleitwert-l_ij">A2.10  thermische Gesamtleitwert <span class="arithmatex">\(L_{i,j}\)</span><a class="headerlink" href="#a210-thermische-gesamtleitwert-l_ij" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(L_{3D,i,j} = \sum^{N_k}_{k=1}U_{k,(i,j)} * A_k + \sum^{N_m}_{m=1} \psi_{m(i,j)}*l_m + \sum^{N_n}_{n=1} \chi_{n(i,j)}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(L_{3D,i,j}\)</span>      thermischer Leitwert aus einer 3D-Berechnung <span class="arithmatex">\(W*K^{-1}\)</span></li>
+<li><span class="arithmatex">\(U_{k,(i,j)}\)</span>     Warmedurchgangskoeffizient des 1D-Bauteils <span class="arithmatex">\(W*(m^{2}*K)^{-1}\)</span></li>
+<li><span class="arithmatex">\(A_k\)</span>             Flache, über die der <span class="arithmatex">\(U_k\)</span>-Wert gilt <span class="arithmatex">\(m^{2}\)</span></li>
+<li><span class="arithmatex">\(\psi_{m(i,j)}\)</span>   längenbezogener Warmedurchgangskoeffizient <span class="arithmatex">\(W\)</span></li>
+<li><span class="arithmatex">\(l_m\)</span>             Länge, über die der <span class="arithmatex">\(U_k\)</span>-Wert gilt <span class="arithmatex">\(m\)</span></li>
+<li><span class="arithmatex">\(X_{n,(i,j)}\)</span>     punktbezogener Warmedurchgangskoeffizient <span class="arithmatex">\(W*K^{-1}\)</span></li>
+<li><span class="arithmatex">\(N_k\)</span>             Anzahl der Warmedurchgangskoeffizienten <span class="arithmatex">\(-\)</span></li>
+<li><span class="arithmatex">\(N_m\)</span>             Anzahl der langenbezogenen Warmedurchgangskoeffizienten <span class="arithmatex">\(-\)</span></li>
+<li><span class="arithmatex">\(N_n\)</span>             Anzahl der punktbezogenen Warmedurchgangskoeffizienten <span class="arithmatex">\(-\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 182-190 -->
+<h3 id="a211-warmebruckenzuschlage-2d">A2.11 Wärmebrückenzuschläge 2D<a class="headerlink" href="#a211-warmebruckenzuschlage-2d" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\psi = L_{2D} - \sum^{N_k}_{k=1}U_k*l_k\)</span></p>
+<ul>
+<li><span class="arithmatex">\(L_{2D}\)</span> thermischer Leitwert aus einer 2D-Berechnung <span class="arithmatex">\(W*(m*K)^{-1}\)</span></li>
+<li><span class="arithmatex">\(U_k\)</span> Warmedurchgangskoeffizient des 1D-Bauteils <span class="arithmatex">\(W*(m^{2}*K)^{-1}\)</span></li>
+<li><span class="arithmatex">\(l_k\)</span> Lange, über die der <span class="arithmatex">\(U_k\)</span>-Wert gilt <span class="arithmatex">\(m\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 196-206 -->
+<h3 id="a212-warmebruckenzuschlage-3d">A2.12 Wärmebrückenzuschläge 3D<a class="headerlink" href="#a212-warmebruckenzuschlage-3d" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\chi =  L_{3D} - \sum^{N_k}_{k=1}U_k*A_k - \sum^{N_m}_{m=1} \psi_m*l_m\)</span> </p>
+<ul>
+<li><span class="arithmatex">\(L_{3D}\)</span> thermischer Leitwert aus einer 3D-Berechnung <span class="arithmatex">\(W*K^{-1}\)</span></li>
+<li><span class="arithmatex">\(U_k\)</span> Warmedurchgangskoeffizient des 1D-Bauteils <span class="arithmatex">\(W*(m^{2}*K)^{-1}\)</span></li>
+<li><span class="arithmatex">\(A_k\)</span> Flache, über die der <span class="arithmatex">\(U_k\)</span>-Wert gilt <span class="arithmatex">\(m^{2}\)</span></li>
+<li><span class="arithmatex">\(\psi_m\)</span> langenbezogener Warme- durchgangskoeffizient <span class="arithmatex">\(W*(m*K)^{-1}\)</span></li>
+<li><span class="arithmatex">\(l_m\)</span> L$nge, über die der <span class="arithmatex">\(U_k\)</span>-Wert gilt <span class="arithmatex">\(m\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 212-219 -->
+<h3 id="a213-mittlerer-u-wert">A2.13 Mittlerer U-Wert<a class="headerlink" href="#a213-mittlerer-u-wert" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(U_m = \frac{L_{}i,j}{A_{tot}}\)</span> </p>
+<ul>
+<li><span class="arithmatex">\(L_{i,j}\)</span> Gesamtleitwert aller betrachteten Gebaudehiillenbereiche <span class="arithmatex">\(W*K^{-1}\)</span></li>
+<li><span class="arithmatex">\(A_{tot}\)</span> Gesamtfliche der betrachteten Gebiudehiillenbereiche (Projektionsflaiche) <span class="arithmatex">\(m^{2}\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 227-242 -->
+<h2 id="3-feuchte">3 Feuchte<a class="headerlink" href="#3-feuchte" title="Permanent link">¶</a></h2>
+<p><a href="https://enbau-online.ch/bauphysik/3-feuchte/">Enbau Formelbuch</a></p>
+<h3 id="31-oberflachentemperatur">3.1 Oberflächentemperatur<a class="headerlink" href="#31-oberflachentemperatur" title="Permanent link">¶</a></h3>
+<p>Die innere Oberflächentemperatur <span class="arithmatex">\(\theta_{si}\)</span> einer Wand wird nach Formel A3.1 berechnet:</p>
+<p><span class="arithmatex">\(\theta_{si} = \theta_i - (R_{si} * U) * (\theta_i - \theta_e)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\theta_e\)</span> Aussentemperatur <span class="arithmatex">\(°C\)</span></li>
+<li><span class="arithmatex">\(\theta_i\)</span> Innentemperatur <span class="arithmatex">\(°C\)</span></li>
+<li><span class="arithmatex">\(R_{si}\)</span> Warmeiibergangswiderstand innen <span class="arithmatex">\(m^{2}*K*W^{-1}\)</span></li>
+<li><span class="arithmatex">\(U\)</span> Warmedurchgangskoeffizient der Wand <span class="arithmatex">\(W*(m^{2}*K)^{-1}\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 244-273 -->
+<div class="highlight"><pre><span></span><code><span class="sd">"""</span>
+<span class="sd">Rsi:</span>
+<span class="sd">windows, doors  = 0.13 [m^2*K/W]</span>
+<span class="sd">other           = 0.25 [m^2*K/W]</span>
+<span class="sd">"""</span>
+
+
+<span class="k">def</span> <span class="nf">surface_temperature</span><span class="p">(</span><span class="n">temp_out</span><span class="p">,</span> <span class="n">temp_in</span><span class="p">,</span> <span class="n">thermal_res_in</span><span class="p">,</span> <span class="n">heat_transfer_coeff</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">temp_in</span> <span class="o">-</span> <span class="p">(</span><span class="n">thermal_res_in</span> <span class="o">*</span> <span class="n">heat_transfer_coeff</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">temp_in</span> <span class="o">-</span> <span class="n">temp_out</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">surface_temperature_from_factor</span><span class="p">(</span>
+    <span class="n">temp_out</span><span class="p">,</span>
+    <span class="n">temp_in</span><span class="p">,</span>
+    <span class="n">surface_temp_factor</span><span class="p">,</span>
+<span class="p">):</span>
+    <span class="k">return</span> <span class="n">temp_out</span> <span class="o">+</span> <span class="n">surface_temp_factor</span> <span class="o">*</span> <span class="p">(</span><span class="n">temp_in</span> <span class="o">-</span> <span class="n">temp_out</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">surface_temperature_unheated</span><span class="p">(</span><span class="n">g1</span><span class="p">,</span> <span class="n">temp_1</span><span class="p">,</span> <span class="n">g2</span><span class="p">,</span> <span class="n">temp_2</span><span class="p">,</span> <span class="n">g3</span><span class="p">,</span> <span class="n">temp_3</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""g1 + g2 + g3 = 1"""</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">g1</span> <span class="o">*</span> <span class="n">temp_1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">g2</span> <span class="o">*</span> <span class="n">temp_2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">g3</span> <span class="o">*</span> <span class="n">temp_3</span><span class="p">)</span>
+
+
+<span class="p">(</span>
+    <span class="n">surface_temperature</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mf">0.13</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span>
+    <span class="n">surface_temperature_from_factor</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mf">0.974</span><span class="p">),</span>
+<span class="p">)</span>
+</code></pre></div>
+<p class="mkd-glr-script-out">Out:</p>
+<div class="mkd-glr-script-out-disp highlight"><pre><span></span><code><span class="o">(</span><span class="m">20</span>.194,<span class="w"> </span><span class="m">20</span>.194<span class="o">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 274-280 -->
+<h3 id="oberflachentemperaturfaktor">Oberflächentemperaturfaktor<a class="headerlink" href="#oberflachentemperaturfaktor" title="Permanent link">¶</a></h3>
+<p>Oberflächentemperaturfaktor fRsi. Er ist als Verhältnis zwischen der Differenz der inneren Oberflächentemperatur eines Aussenbauteils und der Lufttemperatur aussen sowie der Differenz zwischen den Lufttemperaturen innen und aussen, bei vorgegebenem innerem Wärmeübergangswiderstand Rsi, definiert (siehe Formel A3.2).</p>
+<p>Für flächige Bauteile (eindimensionale Wärmestromsituation) gilt: fRsi = 1 – (Rsi . U)</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 282-295 -->
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">surface_temperature_factor</span><span class="p">(</span><span class="n">surface_temperature</span><span class="p">,</span> <span class="n">temp_out</span><span class="p">,</span> <span class="n">temp_in</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">surface_temperature</span> <span class="o">-</span> <span class="n">temp_out</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">temp_in</span> <span class="o">-</span> <span class="n">temp_out</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">simple_surface_temperature_factor</span><span class="p">(</span><span class="n">thermal_res_in</span><span class="p">,</span> <span class="n">heat_transfer_coeff</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">thermal_res_in</span> <span class="o">*</span> <span class="n">heat_transfer_coeff</span><span class="p">)</span>
+
+
+<span class="p">(</span>
+    <span class="n">surface_temperature_factor</span><span class="p">(</span><span class="mf">20.194</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">21</span><span class="p">),</span>
+    <span class="n">simple_surface_temperature_factor</span><span class="p">(</span><span class="mf">0.13</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span>
+<span class="p">)</span>
+</code></pre></div>
+<p class="mkd-glr-script-out">Out:</p>
+<div class="mkd-glr-script-out-disp highlight"><pre><span></span><code><span class="o">(</span><span class="m">0</span>.974,<span class="w"> </span><span class="m">0</span>.974<span class="o">)</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 296-323 -->
+<h3 id="feuchtebelastung">Feuchtebelastung<a class="headerlink" href="#feuchtebelastung" title="Permanent link">¶</a></h3>
+<p>Die Feuchtebelastung in einem Raum ist abhängig von der Feuchteproduktion <em>G</em>, der Aussenluftfeuchte <em>ν</em><sub>e</sub> und dem Aussenluft-Volumenstrom <em>q</em><sub>v</sub>. Der raumseitige Feuchteüberschuss ∆<em>ν</em> kann gemäss Formel A3.5 bestimmt werden.</p>
+<p>In Tabelle A3.2 ist die Feuchteproduktion <em>G</em> einer Person in Abhängigkeit zu seiner Tätigkeit angegeben.</p>
+<p>(A3.5)</p>
+<p><span class="arithmatex">\(\Delta v = v_i - v_e = \frac{G}{q_v}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\Delta v\)</span> raumseitiger Feuchtetiberschuss <span class="arithmatex">\(g*m^{-3}\)</span></li>
+<li><span class="arithmatex">\(v_i\)</span> volumenbezogene Raumluftfeuchte <span class="arithmatex">\(g*m^{-3}\)</span></li>
+<li><span class="arithmatex">\(v_e\)</span> volumenbezogene Aussenluftfeuchte <span class="arithmatex">\(g*m^{-3}\)</span></li>
+<li><span class="arithmatex">\(G\)</span> Feuchteproduktion im Raum <span class="arithmatex">\(g*h^{-1}\)</span></li>
+<li><span class="arithmatex">\(q_v\)</span> Aussenluft- Volumenstrom <span class="arithmatex">\(m^{3}/h\)</span></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tatigkeit</th>
+<th>Feuchteproduktion G in <span class="arithmatex">\(g/h\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ruhig liegend, schlafend</td>
+<td>45</td>
+</tr>
+<tr>
+<td>ruhig sitzend</td>
+<td>60</td>
+</tr>
+<tr>
+<td>sitzende Tatigkeit (Biro, Schule, Labor), ruhig stehend</td>
+<td>70</td>
+</tr>
+<tr>
+<td>leichte Tatigkeit, stehend (Laden, Werkbankarbeit, Labor)</td>
+<td>95</td>
+</tr>
+<tr>
+<td>mittelschwere Tatigkeit, stehend (Haushalt, Werkstatt)</td>
+<td>115</td>
+</tr>
+</tbody>
+</table>
+<p>Tabelle: SIA 180:2014[3.2]</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 325-326 -->
+<p>A3.5</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 326-347 -->
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">excess_humidity_room</span><span class="p">(</span><span class="n">indoor_hum</span><span class="p">,</span> <span class="n">outdoor_hum</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">indoor_hum</span> <span class="o">-</span> <span class="n">outdoor_hum</span>
+
+
+<span class="k">def</span> <span class="nf">excess_humidity_room_from_flow</span><span class="p">(</span><span class="n">hum_production_person</span><span class="p">,</span> <span class="n">outdoor_air_flow</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">hum_production_person</span> <span class="o">/</span> <span class="n">outdoor_air_flow</span>
+
+
+<span class="c1"># A3.6</span>
+<span class="k">def</span> <span class="nf">water_vapour_overpressure</span><span class="p">(</span><span class="n">excess_humidity_room</span><span class="p">,</span> <span class="n">temp_in</span><span class="p">):</span>
+    <span class="n">RV</span> <span class="o">=</span> <span class="mi">462</span>  <span class="c1"># Pa*m3 * (kg*K)^-1</span>
+    <span class="n">temp_in</span> <span class="o">+=</span> <span class="mf">273.15</span>
+    <span class="k">return</span> <span class="n">excess_humidity_room</span> <span class="o">*</span> <span class="n">RV</span> <span class="o">*</span> <span class="n">temp_in</span>
+
+
+<span class="c1"># A3.7</span>
+<span class="k">def</span> <span class="nf">water_vapour_pressure_in</span><span class="p">(</span><span class="n">water_vapour_overpressure</span><span class="p">,</span> <span class="n">water_vapour_pressure_out</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">water_vapour_overpressure</span> <span class="o">+</span> <span class="n">water_vapour_pressure_out</span>
+</code></pre></div>
+<!-- GENERATED FROM PYTHON SOURCE LINES 348-369 -->
+<h3 id="36-wasserdampfuberdruck">3.6 Wasserdampfüberdruck<a class="headerlink" href="#36-wasserdampfuberdruck" title="Permanent link">¶</a></h3>
+<p>Der raumseitige Wasserdampfüberdruck <em>∆p</em> im Raum lässt sich somit nach Formel A3.6, der raumseitige Wasserdampfdruck <em>p</em><sub>v,i</sub> nach Formel A3.7 ermitteln:</p>
+<p>(A3.6)</p>
+<p><span class="arithmatex">\(\Delta p = \Delta v * R_v * T_i\)</span></p>
+<p>(A3.7)</p>
+<p><span class="arithmatex">\(P_{v,i} = P_{v,e} + \Delta p\)</span></p>
+<ul>
+<li><span class="arithmatex">\(p_{v,i}\)</span> Wasserdampfdruck innen  <span class="arithmatex">\(Pa\)</span></li>
+<li><span class="arithmatex">\(p_{v,e}\)</span> Wasserdampfdruck aussen  <span class="arithmatex">\(Pa\)</span></li>
+<li><span class="arithmatex">\(\Delta_{P}\)</span> raumseitiger Wasserdampfüberdruck  <span class="arithmatex">\(Pa\)</span></li>
+<li><span class="arithmatex">\(R_v\)</span> spez. Gaskonstante für Wasserdampf = 462 <span class="arithmatex">\(Pa * m^{3} * (kg*K)^{-1}\)</span></li>
+<li><span class="arithmatex">\(T_i\)</span> absolute Temperatur innen <span class="arithmatex">\(K\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 376-404 -->
+<p>Für <strong>maritime Klimate</strong> wird im Anhang A.2 die Luftfeuchtelast in fünf Luftfeuchteklassen gemäss Tabelle A3.3 eingeteilt und jeder Klasse in Abbildung A3.4 ein Wert für den raumseitigen Feuchteüberschuss <em>∆ν</em> bzw. den raumseitigen Wasserdampfüberdruck <em>∆p</em> in Abhängigkeit des monatlichen Mittelwerts der Aussenlufttemperatur zugeordnet.</p>
+<p><img alt="" src="https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/10_Chap_FrameStory257_anchored_autoexport.png"/></p>
+<p><img alt="Raumseitige Luftfeuchteklassen in Abhängigkeit der Aussenlufttemperatur" src="https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/Abbildung_03_04.png"/></p>
+<p>Abbildung A3.4: Raumseitige Luftfeuchteklassen in Abhängigkeit der Aussenlufttemperatur (<a href="https://enbau-online.ch/bauphysik/3-10-literatur-feuchte/">EN ISO 13788 [3.1]</a>)</p>
+<h3 id="raumseitige-randbedingungen-nach-sia-180-32"><strong>Raumseitige Randbedingungen nach <a href="https://enbau-online.ch/bauphysik/3-10-literatur-feuchte/">SIA 180 [3.2]</a></strong><a class="headerlink" href="#raumseitige-randbedingungen-nach-sia-180-32" title="Permanent link">¶</a></h3>
+<p>Um Feuchteschäden zu vermeiden, darf die Feuchte in Räumen mit Personenbelegung die in Tabelle A3.4 angegebenen Werte im Tagesmittel in Abhängigkeit zur Aussenlufttemperatur nicht übersteigen. Die Angaben zur relativen Luftfeuchte beziehen sich auf eine Raumlufttemperatur von 20 °C und ein <em>f</em><sub>Rsi</sub> von 0,70. Für abweichende Raum- und Aussenlufttemperaturen ist die maximal zulässige relative Feuchte in Abbildung A3.5 angegeben, berechnet mit Formel A3.8. Die Aussenluft-Volumenströme sind so zu wählen, dass diese Grenzen nicht überschritten werden.</p>
+<p><img alt="" src="https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/10_Chap_FrameStory39_autoexport.png"/></p>
+<p><img alt="Maximal zulässige relative Feuchte der Raumluft" src="https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/Abbildung_03_05.png"/></p>
+<p>Abbildung A3.5: Maximal zulässige relative Feuchte der Raumluft (Tagesmittelwerte) (<a href="https://enbau-online.ch/bauphysik/3-10-literatur-feuchte/">Norm SIA 180:2014 [3.2]</a>)</p>
+<p>Bei abweichenden Nutzungsbedingungen (Raumlufttemperaturen ≠ 20 °C) und in Räumen mit unvermeidbaren Wärmebrücken mit einem Oberflächentemperaturfaktor unter 0,70 ist eine Berechnung der maximal zulässigen relativen Raumluftfeuchte <em>φ</em><sub>i,max</sub> mit der Gleichung A3.8 notwendig:</p>
+<p>(A3.8)</p>
+<p><img alt="" src="https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/08/A3.8.png"/></p>
+<p><img alt="" src="https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/10_Chap_FrameStory234_anchored_autoexport.png"/></p>
+<p><img alt="" src="https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/10_Chap_FrameStory235_anchored_autoexport.png"/></p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 409-423 -->
+<h2 id="4-luftstromungen">4 Luftströmungen<a class="headerlink" href="#4-luftstromungen" title="Permanent link">¶</a></h2>
+<p><a href="https://enbau-online.ch/bauphysik/4-luftstroemungen/">Link Enbau</a></p>
+<h3 id="a41-rechteckoffnung">A4.1 Rechtecköffnung<a class="headerlink" href="#a41-rechteckoffnung" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(q_{v,Rechtecköffnung} = c_d * H * B * \frac{1}{3}*\sqrt{g*H*\frac{(T_i-T_e)}{T_e}}\)</span></p>
+<p>Die empirische Grösse cd ist insbesondere von der Fensterposition und -geometrie abhängig [4.2] und kann – falls keine Resultate aus Experimenten oder CFD-Simulationen vorliegen – in grober Näherung mit etwa 0.6 angenommen werden.</p>
+<h3 id="a42-kippfenstern">A4.2  Kippfenstern<a class="headerlink" href="#a42-kippfenstern" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(q_{v,Kippflügel}(\alpha) = c_k(\alpha) * q_{v,Rechtecköffnung}\)</span></p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 428-447 -->
+<h2 id="5-lichttechnik">5 Lichttechnik<a class="headerlink" href="#5-lichttechnik" title="Permanent link">¶</a></h2>
+<p><img alt="" src="/generated/gallery/images/licht_uebersicht_no_background.excalidraw.png"/></p>
+<h3 id="51-lichtstrom-tagsehen">5.1 Lichtstrom Tagsehen<a class="headerlink" href="#51-lichtstrom-tagsehen" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\Phi_v = Km * \int_{380nm}^{780nm} \Phi_{e\lambda}(\lambda) * V(\lambda) d\lambda\)</span></p>
+<h3 id="52-lichstrom-nachtsehen">5.2 Lichstrom Nachtsehen<a class="headerlink" href="#52-lichstrom-nachtsehen" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\Phi'_v = K'm * \int_{380nm}^{780nm} \Phi_{e\lambda}(\lambda) * V'(\lambda) d\lambda\)</span></p>
+<h3 id="53-skalierungsfaktoren-km">5.3 Skalierungsfaktoren Km<a class="headerlink" href="#53-skalierungsfaktoren-km" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(K_m \approx  683 lm/W\)</span></p>
+<p><span class="arithmatex">\(K'_m \approx  1700 lm/W\)</span></p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 452-466 -->
+<h3 id="54-lichtstarke">5.4 Lichtstärke<a class="headerlink" href="#54-lichtstarke" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\Phi_v(\varphi_1) = lv(\varphi_1)* \Omega\)</span></p>
+<h3 id="55-lichtstarke">5.5 Lichtstärke<a class="headerlink" href="#55-lichtstarke" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(l_v(\varphi_1) = \frac{d\Phi_v(\varphi_1)}{d\Omega}\)</span></p>
+<p>Iv (φ1) wird als Lichtstärke bezeichnet. Die physiologische Einheit Candela (cd) der Lichtstärke Iv ist zugleich eine Basiseinheit des SI-Einheitensystems. Der Gesamtlichtstrom Φv, tot berechnet sich aus:</p>
+<h3 id="56-gesamtlichtstrom-v-to">5.6 Gesamtlichtstrom Φv, to<a class="headerlink" href="#56-gesamtlichtstrom-v-to" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\Phi_{v,tot} = \int_{4\pi} l_v (\varphi_1) * d\Omega\)</span></p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 472-495 -->
+<h3 id="57-leuchtdichte">5.7 Leuchtdichte<a class="headerlink" href="#57-leuchtdichte" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(L_{v0} = \frac{l_v(\varphi = 0)}{A}\)</span></p>
+<p><span class="arithmatex">\(L_{v(\varphi1)} = \frac{l_v (\varphi_1)}{A*\cos \varphi_1} * \frac{1}{\cos \varphi_1}\)</span></p>
+<p><span class="arithmatex">\(L_{v(\varphi1)} = \frac{dl_v}{dA} * \frac{1}{\cos \varphi_1}\)</span></p>
+<table>
+<thead>
+<tr>
+<th>Leuchtdiode</th>
+<th>Lichstrom, lm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leuchdiode</td>
+<td>10 <span class="arithmatex">\(^{-2}\)</span></td>
+</tr>
+<tr>
+<td>LED-Lampe 220 V, 8 W</td>
+<td>480</td>
+</tr>
+<tr>
+<td>Gluhlampe 220 V, 60 W</td>
+<td>730</td>
+</tr>
+<tr>
+<td>Gluhlampe 220 V, 100 W</td>
+<td>1380</td>
+</tr>
+<tr>
+<td>Leuchtstoffrohre 220 V, 40 W</td>
+<td>2300</td>
+</tr>
+<tr>
+<td>Quecksilberdampflampe 220 V, 125W</td>
+<td>5400</td>
+</tr>
+<tr>
+<td>Lichtbogen 250 W</td>
+<td><span class="arithmatex">\(\sim\)</span> 10'000</td>
+</tr>
+<tr>
+<td>Quecksilberdampflampe 220 V, 2000 W</td>
+<td><span class="arithmatex">\(\sim\)</span> 125'000</td>
+</tr>
+<tr>
+<td>Xe-Hochstdrucklampe 100 kW</td>
+<td>3*10 <span class="arithmatex">\(^{6}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Tabelle 5.1: Gesamtlichtstrom einiger Lichtquellen</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 501-514 -->
+<h3 id="58-leuchtdichte">5.8 Leuchtdichte<a class="headerlink" href="#58-leuchtdichte" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(cd*m^{-2}\)</span></th>
+<th><span class="arithmatex">\(cd*m^{-2}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nachthimmel 10 <span class="arithmatex">\(^{-3}\)</span></td>
+<td>Glimmlampe 2<em>+</em>10 <span class="arithmatex">\(^2\)</span> - 1 * 10 <span class="arithmatex">\(^3\)</span></td>
+</tr>
+<tr>
+<td>graue Wolken 10 <span class="arithmatex">\(^{3}\)</span></td>
+<td>Leuchtstofflampe 3*10 <span class="arithmatex">\(^3\)</span> - 7 * 10 <span class="arithmatex">\(^3\)</span></td>
+</tr>
+<tr>
+<td>blauer Himmel 3*10 <span class="arithmatex">\(^{3}\)</span></td>
+<td>Glühlampe 3*10 <span class="arithmatex">\(^4\)</span> - 3 * 10 <span class="arithmatex">\(^5\)</span></td>
+</tr>
+<tr>
+<td>weisse Wolken 10 <span class="arithmatex">\(^{4}\)</span></td>
+<td>Bogenlampe 1.8 * 10 <span class="arithmatex">\(^8\)</span></td>
+</tr>
+<tr>
+<td>Vollmond 2.5 * 10 <span class="arithmatex">\(^{3}\)</span></td>
+<td>Hg-Höchstdrucklampe 6 - 10 <span class="arithmatex">\(^8\)</span></td>
+</tr>
+<tr>
+<td>Sonne 1.5 * 10 <span class="arithmatex">\(^{9}\)</span></td>
+<td>Xe-Höchstdrucklampe 1 * 10 <span class="arithmatex">\(^{10}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Tabelle 5.2: Leuchdichten ausgewählter Lichtquellen</p>
+<!-- GENERATED FROM PYTHON SOURCE LINES 520-546 -->
+<h3 id="59-beleuchtungsstarke">5.9 Beleuchtungsstärke<a class="headerlink" href="#59-beleuchtungsstarke" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(E_v = \frac{\Phi_v}{A_E}\)</span></p>
+<p><span class="arithmatex">\(E_v = \frac{d\Phi_v}{dA_E}\)</span></p>
+<p>TODO: Bild</p>
+<p><img alt="" src="https://enbau-online.ch/bauphysik/wp-content/uploads/sites/5/2018/07/05-06.png"/></p>
+<p><span class="arithmatex">\(E_v = l_v(\varphi_1) * \frac{\cos \varphi_2}{r^2} * \Omega_0\)</span></p>
+<table>
+<thead>
+<tr>
+<th>Beluchtungsstärke</th>
+<th>zeitpunkt</th>
+<th>lx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sonnenlicht</td>
+<td>Juni <br/>Dezember</td>
+<td>bis 100'000 <br/> 9'000</td>
+</tr>
+<tr>
+<td>Tageslicht bei bedecktem Himmel</td>
+<td>Juni <br/>Dezember</td>
+<td>4'000 - 20'000 <br/> 900 - 2'000</td>
+</tr>
+<tr>
+<td>Vollmond</td>
+<td></td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Sterne ohne Mond, klare Nacht</td>
+<td></td>
+<td>10 <span class="arithmatex">\(^{-3}\)</span></td>
+</tr>
+<tr>
+<td>Grenze der Farbwahrnehmung</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>Arbeitsplatzbeleuchtung, hohe Ansprüche</td>
+<td></td>
+<td>1'000</td>
+</tr>
+<tr>
+<td>Wohnzimmerbeleuchtung</td>
+<td></td>
+<td>120</td>
+</tr>
+</tbody>
+</table>
+<p>Tabelle: Beleuchtungsstärke</p>
+<h3 id="gegenuberstellung-von-physikalischen-und-photometrischen-strahlungsgrossen">Gegenüberstellung von physikalischen und photometrischen Strahlungsgrössen<a class="headerlink" href="#gegenuberstellung-von-physikalischen-und-photometrischen-strahlungsgrossen" title="Permanent link">¶</a></h3>
+<!-- GENERATED FROM PYTHON SOURCE LINES 552-589 -->
+<h2 id="6-energieleistung">6 Energie/Leistung<a class="headerlink" href="#6-energieleistung" title="Permanent link">¶</a></h2>
+<p><a href="https://enbau-online.ch/bauphysik/6-energie-leistung/">Link Enbau</a></p>
+<h3 id="a61-klimakorrektur-mit-akkumulierten-temperaturdifferenzen-atd">A6.1 Klimakorrektur mit akkumulierten Temperaturdifferenzen (ATD)<a class="headerlink" href="#a61-klimakorrektur-mit-akkumulierten-temperaturdifferenzen-atd" title="Permanent link">¶</a></h3>
+<h3 id="62-heizenergiebedarf">6.2 Heizenergiebedarf<a class="headerlink" href="#62-heizenergiebedarf" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(E_{H,an} = \frac{\theta_{\sum,an}}{\theta_{\sum,per}}*E_{H,per}\)</span></p>
+<h3 id="63-heizenergiebedarf">6.3 Heizenergiebedarf<a class="headerlink" href="#63-heizenergiebedarf" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(E_{H,1} = \frac{\theta_{\sum,per1}}{\theta_{\sum,per2}}*E_{H,2}\)</span></p>
+<h3 id="a64-statische-warmekapazitat-c_stat">A6.4 Statische Wärmekapazität <span class="arithmatex">\(C_{stat}\)</span><a class="headerlink" href="#a64-statische-warmekapazitat-c_stat" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(C_{stat} = \sum A_i * \sum d_j * \rho_j * c_j\)</span></p>
+<ul>
+<li><span class="arithmatex">\(A_i\)</span> Flache des Bautells <span class="arithmatex">\(m^{2}\)</span></li>
+<li><span class="arithmatex">\(d_j\)</span> Dicke der Schicht j <span class="arithmatex">\(m\)</span></li>
+<li><span class="arithmatex">\(\psi_j\)</span> Rohdichte der Schicht j <span class="arithmatex">\(kg*m^{3}\)</span></li>
+<li><span class="arithmatex">\(c_j\)</span> spezifische Warmekapazitat der Schicht <span class="arithmatex">\(kJ*(kg*K)^{-1}\)</span></li>
+</ul>
+<h3 id="a65-dynamische-warmekapazitat-c_stat">A6.5 Dynamische Wärmekapazität <span class="arithmatex">\(C_{stat}\)</span><a class="headerlink" href="#a65-dynamische-warmekapazitat-c_stat" title="Permanent link">¶</a></h3>
+<h3 id="65-kuhlungsbedarf">6.5 Kühlungsbedarf<a class="headerlink" href="#65-kuhlungsbedarf" title="Permanent link">¶</a></h3>
+<h3 id="a66-kuhlungsbedarf">A6.6 Kühlungsbedarf<a class="headerlink" href="#a66-kuhlungsbedarf" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(C_r = \sum A_i*k_i\)</span></p>
+<ul>
+<li><span class="arithmatex">\(A_i\)</span> Flache des Bauteils i <span class="arithmatex">\(m^{2}\)</span></li>
+<li><span class="arithmatex">\(K_i\)</span> flachenbezogene Warmespeicherfahigkeit des Bauteils (mit <span class="arithmatex">\(R_{si}\)</span> und <span class="arithmatex">\(R_{se}\)</span>), <br/> berechnet nach EN ISO 13786 [6.7] <span class="arithmatex">\(kJ * (m^{2}* K)^{-1}\)</span></li>
+</ul>
+<!-- GENERATED FROM PYTHON SOURCE LINES 591-602 -->
+<h2 id="anhang">Anhang<a class="headerlink" href="#anhang" title="Permanent link">¶</a></h2>
+<p><a href="https://enbau-online.ch/bauphysik/9-anhang/">Link Enbau</a></p>
+<h3 id="92-maximal-zulassigen-u-wertes">9.2 maximal zulässigen U-Wertes<a class="headerlink" href="#92-maximal-zulassigen-u-wertes" title="Permanent link">¶</a></h3>
+<h3 id="93-maximal-zulassigen-u-wertes-bei-max-zul-luftgeschwindigkeit">9.3 maximal zulässigen U-Wertes bei max zul. Luftgeschwindigkeit<a class="headerlink" href="#93-maximal-zulassigen-u-wertes-bei-max-zul-luftgeschwindigkeit" title="Permanent link">¶</a></h3>
+<h3 id="94-sonnenschutz-gesamtenergiedurchlassgrad-des-fensters">9.4 Sonnenschutz Gesamtenergiedurchlassgrad des Fensters<a class="headerlink" href="#94-sonnenschutz-gesamtenergiedurchlassgrad-des-fensters" title="Permanent link">¶</a></h3>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.001 seconds)</p>
+<div id="download_links"></div>
+<p><a class="md-button center" href="../plot_3_Bauphysik.py"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> Download Python source code: plot_3_Bauphysik.py</a></p>
+<p><a class="md-button center" href="../plot_3_Bauphysik.ipynb"><span class="twemoji"><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg></span> Download Jupyter notebook: plot_3_Bauphysik.ipynb</a></p>
+<p><a class="mkd-glr-signature" href="https://mkdocs-gallery.github.io">Gallery generated by mkdocs-gallery</a></p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.footer", "navigation.instant", "navigation.tabs", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.fc8c2696.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

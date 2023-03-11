@@ -1,0 +1,18 @@
+
+
+Examples using ``numpy.arange``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+<div class="mkd-glr-thumbcontainer" tooltip="PVWatts">
+    <!--div class="figure align-default" id="id1"-->
+        <img alt="PVWatts" src="images/thumb/mkd_glr_plot_2_pvwatt_thumb.png" />
+        <p class="caption">
+            <span class="caption-text">
+                <a class="reference internal" href="plot_2_pvwatt">
+                    <span class="std std-ref">PVWatts</span>
+                </a>
+            </span>
+            <!--a class="headerlink" href="#id1" title="Permalink to this image"></a-->
+        </p>
+    <!--/div-->
+</div>
